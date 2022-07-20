@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
-
+https://enter.tistory.com/218
 void rand_num(int n)//랜덤번호 생성 함수
 
 void getISOTime(char* buffer, size_t bufferSize);
