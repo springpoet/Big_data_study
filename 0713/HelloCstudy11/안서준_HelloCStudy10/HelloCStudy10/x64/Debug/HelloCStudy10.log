@@ -1,0 +1,9 @@
+﻿  CStudy05.c
+C:\Users\KB\Desktop\수업\HelloCStudy10\HelloCStudy10\CStudy05.c(31,2): warning C4013: 'system'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\KB\Desktop\수업\HelloCStudy10\HelloCStudy10\CStudy05.c(39,17): warning C4047: '=': 'char'의 간접 참조 수준이 'void *'과(와) 다릅니다.
+C:\Users\KB\Desktop\수업\HelloCStudy10\HelloCStudy10\CStudy05.c(27): warning C4716: 'Q_2': 값을 반환해야 합니다.
+C:\Users\KB\Desktop\수업\HelloCStudy10\HelloCStudy10\CStudy05.c(52): warning C4716: 'Q_5': 값을 반환해야 합니다.
+C:\Users\KB\Desktop\수업\HelloCStudy10\HelloCStudy10\CStudy05.c(66): warning C4716: 'Q_6': 값을 반환해야 합니다.
+C:\Users\KB\Desktop\수업\HelloCStudy10\HelloCStudy10\CStudy05.c(102): warning C4716: 'Q_7': 값을 반환해야 합니다.
+C:\Users\KB\Desktop\수업\HelloCStudy10\HelloCStudy10\CStudy05.c(121): warning C4716: 'Q_8': 값을 반환해야 합니다.
+  HelloCStudy10.vcxproj -> C:\Users\KB\Desktop\수업\HelloCStudy10\x64\Debug\HelloCStudy10.exe

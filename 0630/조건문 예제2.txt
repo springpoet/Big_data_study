@@ -1,0 +1,44 @@
+내가 푼 것.
+#include<stdio.h>
+int main()
+{
+	//1.
+	int a, b;
+	printf("두 숫자를 입력하세요.");
+	scanf_s("%d,%d", &a, &b);
+	if (a > 0 && b > 0)
+		printf("1\n\n");
+	else if (a < 0 && b>0)
+		printf("2\n\n");
+	else if (a < 0 && b < 0)
+		printf("3\n\n");
+	else if (a > 0 && b < 0)
+		printf("4\n\n");
+	else if (a == 0 || b == 0)
+		printf("0\n\n");
+
+
+	//2.
+	
+	int age;
+	printf("나이를 입력하세요.\n");
+	scanf_s("%d", &age);
+	if (age < 20)
+		printf("미성년자");
+	if (age <= 50 && age >= 20)
+		printf("사회의 주 구성원");
+	if (age < 70 && age>50)
+		printf("관리자");
+	if (age > 70)
+		printf("지혜의 도서관");
+	else 
+		printf("타노스");
+
+	//3. 정답 5 ,6 9
+	int H, M;
+	scanf_s("%d,%d", &H, &M);
+	printf("
+
+
+	return 0;
+}

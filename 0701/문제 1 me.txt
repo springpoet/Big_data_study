@@ -1,0 +1,146 @@
+#include<stdio.h>
+int main()
+{
+	//1.	
+	int month;
+	printf("태어난 달을 입력하세요.\n");
+	scanf_s("%d", &month);
+	switch (month)
+	{
+	case 12:
+	case 1:
+	case 2:
+		printf("겨울\n");
+		break;
+	case 3:
+	case 4:
+	case 5:
+		printf("봄\n");
+		break;
+	case 6:
+	case 7:
+	case 8:
+		printf("여름\n");
+		break;
+	case 9:
+	case 10:
+	case 11:
+		printf("가을\n");
+		break;
+	default:
+		printf("오류 메세지\n");
+		break;
+	}
+
+	//2. 숫자 가위바위보 (%3 이용)
+	int player1, player2;
+	//0:가위 1:바위 2:보
+	printf("player1 숫자를 입력하세요.\n");
+	scanf_s("%d", &player1);
+	printf("player2 숫자를 입력하세요.\n");
+	scanf_s("%d", &player2);
+
+	player1 = player1 % 3;
+	player2 = player2 % 3;
+	switch (player1)
+	{
+	case 0:
+
+		switch (player2)
+		{
+		case 0:
+			printf("비겼다.\n");
+			break;
+		case 1:
+			printf("졌다.\n");
+			break;
+		case 2:
+			printf("이겼다.\n");
+			break;
+		default:
+			break;
+		}
+		break;
+	case 1:
+
+		switch (player2)
+		{
+		case 0:
+			printf("이겼다.\n");
+			break;
+		case 1:
+			printf("비겼다.\n");
+			break;
+		case 2:
+			printf("졌다.\n");
+			break;
+		default:
+			break;
+		}
+		break;
+	case 2:
+
+		switch (player2)
+		{
+		case 0:
+			printf("졌다.\n");
+			break;
+		case 1:
+			printf("이겼다.\n");
+			break;
+		case 2:
+			printf("비겼다.\n");
+			break;
+		default:
+			break;
+		}
+		break;
+	}
+	
+	//3. 태어난 년도를 입력하고 그에 따라 띠 출력
+	printf("태어난 년도는?\n");
+	int year;
+	scanf_s("%d", &year);
+	year = (year-4) % 12;
+	switch (year)
+	{
+	case 0:
+		printf("쥐띠\n");
+		break;
+	case 1:
+		printf("소띠\n");
+		break;
+	case 2:
+		printf("호랑이띠\n");
+		break;
+	case 3:
+		printf("토끼띠\n");
+		break;
+	case 4:
+		printf("용띠\n");
+		break;
+	case 5:
+		printf("뱀띠\n");
+		break;
+	case 6:
+		printf("말띠\n");
+		break;
+	case 7:
+		printf("양띠\n");
+		break;
+	case 8:
+		printf("원숭이띠\n");
+		break;
+	case 9:
+		printf("닭띠\n");
+		break;
+	case 10:
+		printf("개띠\n");
+		break;
+	case 11:
+		printf("돼지띠\n");
+		break;
+	}
+
+	return 0;
+}

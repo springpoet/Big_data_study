@@ -1,0 +1,87 @@
+#include<stdio.h>
+int main()
+{
+	if (0)
+	{
+		//1.
+
+		printf("제 이름은 김성근입니다.\n");
+
+
+		//2.자신의 나이를 입력받고 출력한다.
+		printf("내 나이는?\n");
+		int age;
+		scanf_s("%d", &age);
+		printf("내 나이는 %d살입니다.\n", age);
+
+		//3.피타고라스의 법칙 결과 출력하기
+		printf("두 숫자를 입력하세요.\n");
+		int a, b;
+		scanf_s("%d,%d", &a, &b);
+		printf("%d^2+%d^2=%d\n", a, b, a * a + b * b);
+
+		//4. 내 옆자리 학생의 이름은 %s입니다.
+		char name[7];
+		scanf_s("%s", &name, sizeof(name));
+		printf("내 옆자리 학생의 이름은 %s입니다.\n", name);
+
+		//5. 달러를 입력받으면 그에 따른 출력
+		printf("달러를 입력하세요.\n");
+		int dollor;
+		scanf_s("%d,%f", &dollor);
+		printf("%d달러는 %.2f원이다.\n", dollor, 1298.89 * dollor);
+
+		//6. 입력한 숫자가 짝수라면 짝, 숫자가 홀수라면 홀! 음수일 경우 음수!만 출력
+		printf("숫자를 입력하세요\n");
+		int num;
+		scanf_s("%d", &num);
+		if (num % 2 == 0)
+			printf("짝!\n");
+		else if (num % 2 == 1)
+			printf("홀!\n");a
+		else if (num < 0)
+			printf("음수!!\n");
+		else
+			printf("0\n");
+
+		//7. 구구단 5단을 입력하세요.
+		for (int i = 1; i <= 9; i++)
+			printf("구구단 5단은? 5*%d=%d\n", i, 5 * i);
+		//8. 구구단 n단을 입력하세요
+		int gugudan;
+		printf("출력하고 싶은 단:");
+		scanf_s("%d", &gugudan);
+		for (int i = 1; i <= 9; i++)
+			printf("%d * %d= %d\n", gugudan, i, gugudan * i);
+		//9.구구단 2단부터 9단까지 출력하기
+		for (int i = 2; i <= 9; i++)
+		{
+			printf("구구단 %d단은?\n", i);
+			for (int j = 1; j <= 9; j++)
+				printf("%d * %d = %d\n", i, j, i * j);
+		}
+
+	}
+	//10. 1부터 n까지의 합을 구하되 아래와 같은 출력 양식
+	//  단 0 이하의 숫자일 경우 잘못된 입력이라 출력하세요
+	int n;
+	int sum=0;
+	scanf_s("%d", &n);
+	for (int i = 1; i <= n; i++)
+	{
+			sum += i;
+		if (n > 0)
+			printf("%d 까지의 합:%d", n, sum);
+		else if (n<=0)
+			printf("잘못된 입력\n");
+	}
+
+
+
+
+
+
+
+
+	return 0;
+}

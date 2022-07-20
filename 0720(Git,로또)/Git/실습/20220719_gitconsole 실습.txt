@@ -1,0 +1,23 @@
+- git console
+1. 폴더 하나 만들고 그 곳을 저장소로 지정한다.
+2. commit을 2개 이상 한다.
+3. branch를 하나 만든다.
+4. 새로 만든 branch에 대해서도 commit을 하나 이상 해본다.
+5. log로 확인해본다.
+6. main branch와 새로 만든 branch 내용을 확인해본다.
+
+- git console2
+1. github에서 저장소를 만든다.
+2. 저장소에 파일을 올린다. (웹으로든 뭐로든 올려보기)
+3. branch 새로 추가하고, 거기에도  파일 올리고 해본다.
+4. console로 clone해본다.
+5. main branch에 파일 하나 올려본다.
+6. github에서 만든 branch에도 파일 하나 올려본다.
+7. github 사이트가서 branch별로 잘 올라갔는지 확인해본다.
+
+- git console3
+1. git console2에서 만든 저장소를 이용하되, pull 명령어로 특정 branch만 가져와본다.
+(main 아니고 다른 branch!!!)
+2. 옆자리 사람을 초대한다(=옆 자리 사람한테 초대 받는다.)
+3. 옆 자리 사람의 저장소의 특정 branch에 파일을 하나 업로드해보낟.
+4. 서로 잘 올라갔는지 확인해본다.

@@ -1,0 +1,11 @@
+D:\KSG\0712\HelloCSharp01\HelloCSharp01\bin\Debug\HelloCSharp01.exe.config
+D:\KSG\0712\HelloCSharp01\HelloCSharp01\bin\Debug\HelloCSharp01.exe
+D:\KSG\0712\HelloCSharp01\HelloCSharp01\bin\Debug\HelloCSharp01.pdb
+D:\KSG\0712\HelloCSharp01\HelloCSharp01\obj\Debug\HelloCSharp01.csproj.AssemblyReference.cache
+D:\KSG\0712\HelloCSharp01\HelloCSharp01\obj\Debug\HelloCSharp01.csproj.SuggestedBindingRedirects.cache
+D:\KSG\0712\HelloCSharp01\HelloCSharp01\obj\Debug\HelloCSharp01.Properties.Resources.resources
+D:\KSG\0712\HelloCSharp01\HelloCSharp01\obj\Debug\HelloCSharp01.csproj.GenerateResource.cache
+D:\KSG\0712\HelloCSharp01\HelloCSharp01\obj\Debug\HelloCSharp01.csproj.CoreCompileInputs.cache
+D:\KSG\0712\HelloCSharp01\HelloCSharp01\obj\Debug\HelloCSharp01.exe
+D:\KSG\0712\HelloCSharp01\HelloCSharp01\obj\Debug\HelloCSharp01.pdb
+D:\KSG\0712\HelloCSharp01\HelloCSharp01\obj\Debug\HelloCSharp01.Form1.resources

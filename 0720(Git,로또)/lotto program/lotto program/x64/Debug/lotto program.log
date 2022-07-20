@@ -1,0 +1,4 @@
+﻿  lotto_program.c
+lotto_program.obj : error LNK2019: rand_nummain 함수에서 참조되는 확인할 수 없는 외부 기호
+lotto_program.obj : error LNK2019: getISOTimemain 함수에서 참조되는 확인할 수 없는 외부 기호
+D:\KSG\0720\lotto program\x64\Debug\lotto program.exe : fatal error LNK1120: 2개의 확인할 수 없는 외부 참조입니다.
