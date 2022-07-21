@@ -14,5 +14,5 @@ int main()
 
 void printNum(int a)//함수의 원형을 위에 쓰고 정의를 밑에 쓰기도 함
 {
-	printf("\n%d",a)
+	printf("\n%d", a);
 }
