@@ -74,7 +74,7 @@ int function7()
 	int a7, b7;
 	char c7;
 	printf("두 숫자와 문자(+ * x -)를 입력하세요. : ");
-	scanf_s("%d,%d,%c", &a7, &b7, &c7, 1);
+	scanf_s("%d %d %c", &a7, &b7, &c7, 1);
 	int sum_7 = 0;
 	int sum_77 = 1;
 	if (a7 < b7)
@@ -106,23 +106,22 @@ int function7()
 	}
 }
 //8번
-int function8()
+int function8(int a8)
 {
-	printf("1부터 몇까지 곱?: ");
-	int a8;
-	scanf_s("%d", &a8);
-	int sum8 = 1;
-	for (int i = 1; i <= a8 ; i++)
+	int multiple = 1;
+	for (int i = 1; i <= a8; i++)
 	{
-		sum8 *= i;
+		multiple *= i;
 	}
-	printf("total : %d\n", sum8);
+	return multiple;
 }
 //9번
 int function9(int a9)
 {
-	if (a9 == 1)
+	if(a9 == 1)
+	{
 		return 1;
+	}
 	return a9 * function9(a9 - 1);
 }
 //10번
@@ -141,7 +140,7 @@ int main()
 	printf("1번\n");
 	int x, y, z;
 	printf("a,b,c값을 입력하세요.");
-	scanf_s("%d,%d,%d", &x, &y, &z);
+	scanf_s("%d %d %d", &x, &y, &z);
 	printf("%d부터 %d까지의 합(%d 배수 제외)\n", x, y, z);
 	int result = sum_a_to_b(x, y, z);
 	printf("결과 : %d\n", result);
@@ -179,7 +178,7 @@ int main()
 	printf("6번\n");
 	printf("몇부터 몇까지 곱할까요?");
 	int a6, b6;
-	scanf_s("%d,%d", &a6, &b6);
+	scanf_s("%d %d", &a6, &b6);
 	sum6(a6, b6);
 
 	//7번.
@@ -189,21 +188,26 @@ int main()
 
 	//8.
 	printf("8번\n");
-	function8();
+	int a8;
+	printf("1부터 몇 까지의 곱? ");
+	scanf_s("%d", &a8);
+	int result8 = function8(a8);
+	printf("=%d\n", result8);
 
 	//9.
 	printf("9번\n");
 	int a9;
-	printf("1부터 몇까지의 곱? : ");
+	printf("1부터 몇 까지의 곱? ");
 	scanf_s("%d", &a9);
-	printf("%d\n",function9(a9));
+	int result9 = function9(a9);
+	printf("=%d\n", result9);
 
 	//10
 	printf("10번\n");
 	int a10;
 	printf("피보나치 수열 몇번째까지 출력? ");
-	scanf_s("%d\n", &a10);
-	for (int i = 1; i < a10; i++)
+	scanf_s("%d", &a10);
+	for (int i = 1; i <= a10; i++)
 	{
 		printf("%d번째 수", i);
 		printf("%d\n", function10(i));
