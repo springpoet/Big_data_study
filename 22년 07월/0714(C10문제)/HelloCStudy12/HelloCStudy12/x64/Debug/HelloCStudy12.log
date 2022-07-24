@@ -1,7 +1,7 @@
-﻿  김성근_c_10문제.c
-C:\Users\김성근\Documents\GitHub\Big_data_study\22년 07월\0714(C10문제)\HelloCStudy12\HelloCStudy12\김성근_c_10문제.c(31,2): warning C4013: 'system'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-C:\Users\김성근\Documents\GitHub\Big_data_study\22년 07월\0714(C10문제)\HelloCStudy12\HelloCStudy12\김성근_c_10문제.c(40,17): warning C4047: '=': 'char'의 간접 참조 수준이 'void *'과(와) 다릅니다.
-C:\Users\김성근\Documents\GitHub\Big_data_study\22년 07월\0714(C10문제)\HelloCStudy12\HelloCStudy12\김성근_c_10문제.c(55): warning C4716: 'sum5': 값을 반환해야 합니다.
-C:\Users\김성근\Documents\GitHub\Big_data_study\22년 07월\0714(C10문제)\HelloCStudy12\HelloCStudy12\김성근_c_10문제.c(70): warning C4716: 'sum6': 값을 반환해야 합니다.
-C:\Users\김성근\Documents\GitHub\Big_data_study\22년 07월\0714(C10문제)\HelloCStudy12\HelloCStudy12\김성근_c_10문제.c(107): warning C4716: 'function7': 값을 반환해야 합니다.
+﻿  김성근_c10문제_수정.c
+C:\Users\김성근\Documents\GitHub\Big_data_study\22년 07월\0714(C10문제)\HelloCStudy12\HelloCStudy12\김성근_c10문제_수정.c(31,2): warning C4013: 'system'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\김성근\Documents\GitHub\Big_data_study\22년 07월\0714(C10문제)\HelloCStudy12\HelloCStudy12\김성근_c10문제_수정.c(40,17): warning C4047: '=': 'char'의 간접 참조 수준이 'void *'과(와) 다릅니다.
+C:\Users\김성근\Documents\GitHub\Big_data_study\22년 07월\0714(C10문제)\HelloCStudy12\HelloCStudy12\김성근_c10문제_수정.c(107): warning C4716: 'function7': 값을 반환해야 합니다.
+C:\Users\김성근\Documents\GitHub\Big_data_study\22년 07월\0714(C10문제)\HelloCStudy12\HelloCStudy12\김성근_c10문제_수정.c(70): warning C4716: 'sum6': 값을 반환해야 합니다.
+C:\Users\김성근\Documents\GitHub\Big_data_study\22년 07월\0714(C10문제)\HelloCStudy12\HelloCStudy12\김성근_c10문제_수정.c(55): warning C4716: 'sum5': 값을 반환해야 합니다.
   HelloCStudy12.vcxproj -> C:\Users\김성근\Documents\GitHub\Big_data_study\22년 07월\0714(C10문제)\HelloCStudy12\x64\Debug\HelloCStudy12.exe
