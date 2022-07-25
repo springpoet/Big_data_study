@@ -28,7 +28,7 @@ int time(int sec)
 //3.
 void color()
 {
-	system("color 1c");
+	system("color a0");
 }
 
 //4.
@@ -38,7 +38,7 @@ void color2(char a, char b)
 	color[6] = a;
 	color[7] = b;
 	color[8] = NULL;
-	system(color);
+	
 
 }
 //5.
@@ -75,8 +75,8 @@ int function7()
 	char c7;
 	printf("두 숫자와 문자(+ * x -)를 입력하세요. : ");
 	scanf_s("%d %d %c", &a7, &b7, &c7, 1);
-	int sum_7 = 0;
-	int sum_77 = 1;
+	int sum_7 = 0; // 합을 누적 시킬 변수
+	int sum_77 = 1; // 곱을 누적 시킬 변수
 	if (a7 < b7)
 	{
 		int temp = a7;
@@ -209,7 +209,7 @@ int main()
 	scanf_s("%d", &a10);
 	for (int i = 1; i <= a10; i++)
 	{
-		printf("%d번째 수", i);
+		printf("%d번째 수 : ", i);
 		printf("%d\n", function10(i));
 	}
 
