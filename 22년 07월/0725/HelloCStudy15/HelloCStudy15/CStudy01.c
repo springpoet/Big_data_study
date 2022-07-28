@@ -13,8 +13,8 @@ int main()
 	//2번 방법.
 	Student ss[3];
 	ss[0] = (Student){ .number = 2,.name = "김진규" };
-	//3번 방법.
 	printf("%s %d\n", ss[0].name,ss[0].number);
+	//3번 방법.
 	printf("학생의 이름은?");
 	gets(ss[1].name);
 	printf("학생의 번호는?");
