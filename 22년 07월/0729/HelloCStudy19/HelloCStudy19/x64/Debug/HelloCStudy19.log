@@ -1,0 +1,4 @@
+﻿  solve02_T.c
+D:\Big_data_study\22년 07월\0729\HelloCStudy19\HelloCStudy19\solve02_T.c(19,3): warning C4013: 'gets'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+D:\Big_data_study\22년 07월\0729\HelloCStudy19\HelloCStudy19\solve02_T.c(43,12): warning C4552: '<': 식의 결과가 사용되지 않습니다.
+  HelloCStudy19.vcxproj -> D:\Big_data_study\22년 07월\0729\HelloCStudy19\x64\Debug\HelloCStudy19.exe

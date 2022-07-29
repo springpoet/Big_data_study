@@ -1,0 +1,2 @@
+﻿  tetris.c
+D:\Big_data_study\22년 07월\0729\tetris\tetris\tetris.c(4,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'sys/time.h': No such file or directory
