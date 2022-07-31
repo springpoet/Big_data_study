@@ -1,0 +1,80 @@
+﻿  MAIN.C
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(65,5): warning C4013: 'gets'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(90,9): warning C4013: 'fclose_s'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(101,20): warning C4047: '함수': 'FILE *const '의 간접 참조 수준이 'FILE **'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(101,17): warning C4024: 'fprintf': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(87,1): warning C4047: '초기화 중': 'FILE *'의 간접 참조 수준이 'errno_t'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(112,45): warning C4047: '함수': 'const size_t'의 간접 참조 수준이 'char [16]'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(112,28): warning C4024: 'sprintf_s': 형식 및 실제 매개 변수 2의 형식이 서로 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(112,47): warning C4047: '함수': 'const char *const '의 간접 참조 수준이 'int'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(112,46): warning C4024: 'sprintf_s': 형식 및 실제 매개 변수 3의 형식이 서로 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(113,31): warning C4047: '=': 'FILE *'의 간접 참조 수준이 'errno_t'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(130,41): warning C4047: '함수': 'const size_t'의 간접 참조 수준이 'char [16]'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(130,24): warning C4024: 'sprintf_s': 형식 및 실제 매개 변수 2의 형식이 서로 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(130,89): warning C4047: '함수': 'const char *const '의 간접 참조 수준이 'int'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(130,85): warning C4024: 'sprintf_s': 형식 및 실제 매개 변수 3의 형식이 서로 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(133,40): warning C4047: '=': 'FILE *'의 간접 참조 수준이 'errno_t'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(139,42): warning C4047: '=': 'FILE *'의 간접 참조 수준이 'errno_t'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(147,21): warning C4047: '함수': 'FILE *const '의 간접 참조 수준이 'FILE **'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(147,18): warning C4024: 'fscanf_s': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(147,22): warning C4473: 'fscanf_s': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(147,22): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 1개가 제공되었습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(147,22): message : 누락된 variadic 인수 2이(가) 서식 문자열 '%s'에 필요합니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(147,22): message : 이 인수는 버퍼 크기로 사용됩니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(152,40): warning C4047: '=': 'FILE *'의 간접 참조 수준이 'errno_t'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(159,38): warning C4047: '=': 'FILE *'의 간접 참조 수준이 'errno_t'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(162,18): warning C4047: '함수': 'FILE *const '의 간접 참조 수준이 'FILE **'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(162,14): warning C4024: 'fscanf_s': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(162,19): warning C4473: 'fscanf_s': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(162,19): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 1개가 제공되었습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(162,19): message : 누락된 variadic 인수 2이(가) 서식 문자열 '%s'에 필요합니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(162,19): message : 이 인수는 버퍼 크기로 사용됩니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(165,22): warning C4047: '함수': 'FILE *const '의 간접 참조 수준이 'FILE **'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(165,18): warning C4024: 'fscanf_s': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(198,13): warning C4473: 'scanf_s': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(198,13): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 1개가 제공되었습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(198,13): message : 누락된 variadic 인수 2이(가) 서식 문자열 '%s'에 필요합니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(198,13): message : 이 인수는 버퍼 크기로 사용됩니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(213,17): warning C4473: 'scanf_s': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(213,17): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 1개가 제공되었습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(213,17): message : 누락된 variadic 인수 2이(가) 서식 문자열 '%s'에 필요합니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(213,17): message : 이 인수는 버퍼 크기로 사용됩니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(221,1): warning C4047: '초기화 중': 'FILE *'의 간접 참조 수준이 'errno_t'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(242,43): warning C4047: '=': 'FILE *'의 간접 참조 수준이 'errno_t'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(247,17): warning C4473: 'fscanf_s': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(247,17): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 1개가 제공되었습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(247,17): message : 누락된 variadic 인수 2이(가) 서식 문자열 '%s'에 필요합니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(247,17): message : 이 인수는 버퍼 크기로 사용됩니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(263,45): warning C4047: '함수': 'const size_t'의 간접 참조 수준이 'char [16]'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(263,28): warning C4024: 'sprintf_s': 형식 및 실제 매개 변수 2의 형식이 서로 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(263,47): warning C4047: '함수': 'const char *const '의 간접 참조 수준이 'int'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(263,46): warning C4024: 'sprintf_s': 형식 및 실제 매개 변수 3의 형식이 서로 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(264,38): warning C4047: '=': 'FILE *'의 간접 참조 수준이 'errno_t'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(267,21): warning C4473: 'fscanf_s': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(267,21): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 1개가 제공되었습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(267,21): message : 누락된 variadic 인수 2이(가) 서식 문자열 '%s'에 필요합니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(267,21): message : 이 인수는 버퍼 크기로 사용됩니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(277,38): warning C4047: '=': 'FILE *'의 간접 참조 수준이 'errno_t'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(304,12): warning C4473: 'scanf_s': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(304,12): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 1개가 제공되었습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(304,12): message : 누락된 variadic 인수 2이(가) 서식 문자열 '%c'에 필요합니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(304,12): message : 이 인수는 버퍼 크기로 사용됩니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(318,29): warning C4473: 'scanf_s': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(318,29): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 1개가 제공되었습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(318,29): message : 누락된 variadic 인수 2이(가) 서식 문자열 '%s'에 필요합니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(318,29): message : 이 인수는 버퍼 크기로 사용됩니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(323,29): warning C4473: 'scanf_s': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(323,29): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 1개가 제공되었습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(323,29): message : 누락된 variadic 인수 2이(가) 서식 문자열 '%c'에 필요합니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(323,29): message : 이 인수는 버퍼 크기로 사용됩니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(390,41): warning C4047: '함수': 'const size_t'의 간접 참조 수준이 'char [16]'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(390,24): warning C4024: 'sprintf_s': 형식 및 실제 매개 변수 2의 형식이 서로 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(390,54): warning C4047: '함수': 'const char *const '의 간접 참조 수준이 'int'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(390,51): warning C4024: 'sprintf_s': 형식 및 실제 매개 변수 3의 형식이 서로 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\election.h(391,1): warning C4047: '초기화 중': 'FILE *'의 간접 참조 수준이 'errno_t'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\MAIN.C(8,17): warning C4473: 'scanf_s': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\MAIN.C(8,17): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 1개가 제공되었습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\MAIN.C(8,17): message : 누락된 variadic 인수 2이(가) 서식 문자열 '%c'에 필요합니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Mini-Voting-System\MAIN.C(8,17): message : 이 인수는 버퍼 크기로 사용됩니다.
+MAIN.obj : error LNK2019: fclose_sbanID 함수에서 참조되는 확인할 수 없는 외부 기호
+C:\Users\김성근\Desktop\성근\프로그래밍\Big_data_study\테스트폴더\0731test\Project1\x64\Debug\Project1.exe : fatal error LNK1120: 1개의 확인할 수 없는 외부 참조입니다.

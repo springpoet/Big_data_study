@@ -18,8 +18,5 @@
     <ClCompile Include="selfc01.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="정렬 알고리즘.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

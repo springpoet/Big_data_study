@@ -42,17 +42,18 @@ int main()
 	int javaIndex = 0;
 	for (int i = 0; i < 5; i++)
 	{
-		if (cMax < students[i].cScore)
+		if (cMax > students[i].cScore)
 		{
 			cMax = students[i].cScore;
 			cIndex = i;
 		}
-		if (javaMax < students[i].cScore)
+		if (javaMax > students[i].cScore)
 		{
 			javaMax = students[i].javaScore;
 			javaIndex = i;
 		}
 	}
+	printf("%d %d", cIndex, javaIndex);
 
 	return 0;
 }

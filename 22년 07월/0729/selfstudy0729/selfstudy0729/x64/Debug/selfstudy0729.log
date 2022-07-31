@@ -1,3 +1,3 @@
 ﻿  selfc01.c
-D:\Big_data_study\22년 07월\0729\selfstudy0729\selfstudy0729\selfc01.c(22,3): warning C4013: 'gets'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-  selfstudy0729.vcxproj -> D:\Big_data_study\22년 07월\0729\selfstudy0729\x64\Debug\selfstudy0729.exe
+C:\Users\김성근\Desktop\성근\프로그래밍\Big_data_study\22년 07월\0729\selfstudy0729\selfstudy0729\selfc01.c(22,3): warning C4013: 'gets'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  selfstudy0729.vcxproj -> C:\Users\김성근\Desktop\성근\프로그래밍\Big_data_study\22년 07월\0729\selfstudy0729\x64\Debug\selfstudy0729.exe

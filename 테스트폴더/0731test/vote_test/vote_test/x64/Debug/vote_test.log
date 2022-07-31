@@ -1,0 +1,3 @@
+﻿  voting.c
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\mini_voting\voting.c(65,5): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
+  vote_test.vcxproj -> C:\Users\김성근\Desktop\성근\프로그래밍\Big_data_study\테스트폴더\0731test\vote_test\x64\Debug\vote_test.exe

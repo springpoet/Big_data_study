@@ -1,0 +1,70 @@
+﻿  main.c
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(50,9): warning C4013: 'gets'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(83,44): warning C4047: '=': 'FILE *'의 간접 참조 수준이 'errno_t'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(86,48): warning C4047: '=': 'FILE *'의 간접 참조 수준이 'errno_t'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(124,29): warning C4473: 'scanf_s': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(124,29): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 1개가 제공되었습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(124,29): message : 누락된 variadic 인수 2이(가) 서식 문자열 '%s'에 필요합니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(124,29): message : 이 인수는 버퍼 크기로 사용됩니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(157,29): warning C4473: 'scanf_s': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(157,29): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 1개가 제공되었습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(157,29): message : 누락된 variadic 인수 2이(가) 서식 문자열 '%s'에 필요합니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(157,29): message : 이 인수는 버퍼 크기로 사용됩니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(164,37): warning C4477: 'scanf_s' : 서식 문자열 '%s'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'int *'입니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(164,37): message : 이 인수는 버퍼 크기로 사용됩니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(164,37): warning C4477: 'scanf_s' : 서식 문자열 '%d'에 'int *' 형식의 인수가 필요하지만 variadic 인수 3의 형식이 'float *'입니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(164,37): warning C4473: 'scanf_s': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(164,37): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 4개 필요하지만 3개가 제공되었습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(164,37): message : 누락된 variadic 인수 4이(가) 서식 문자열 '%f'에 필요합니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(181,29): warning C4473: 'scanf_s': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(181,29): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 1개가 제공되었습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(181,29): message : 누락된 variadic 인수 2이(가) 서식 문자열 '%s'에 필요합니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(181,29): message : 이 인수는 버퍼 크기로 사용됩니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(182,55): warning C4047: '=': 'FILE *'의 간접 참조 수준이 'errno_t'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(195,56): warning C4047: '=': 'FILE *'의 간접 참조 수준이 'errno_t'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(217,44): warning C4047: '=': 'FILE *'의 간접 참조 수준이 'errno_t'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(220,48): warning C4047: '=': 'FILE *'의 간접 참조 수준이 'errno_t'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(259,29): warning C4473: 'scanf_s': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(259,29): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 1개가 제공되었습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(259,29): message : 누락된 variadic 인수 2이(가) 서식 문자열 '%s'에 필요합니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(259,29): message : 이 인수는 버퍼 크기로 사용됩니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(291,29): warning C4473: 'scanf_s': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(291,29): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 1개가 제공되었습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(291,29): message : 누락된 variadic 인수 2이(가) 서식 문자열 '%s'에 필요합니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(291,29): message : 이 인수는 버퍼 크기로 사용됩니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(298,37): warning C4477: 'scanf_s' : 서식 문자열 '%s'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'int *'입니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(298,37): message : 이 인수는 버퍼 크기로 사용됩니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(298,37): warning C4477: 'scanf_s' : 서식 문자열 '%d'에 'int *' 형식의 인수가 필요하지만 variadic 인수 3의 형식이 'float *'입니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(298,37): warning C4473: 'scanf_s': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(298,37): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 4개 필요하지만 3개가 제공되었습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(298,37): message : 누락된 variadic 인수 4이(가) 서식 문자열 '%f'에 필요합니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(315,29): warning C4473: 'scanf_s': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(315,29): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 1개가 제공되었습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(315,29): message : 누락된 variadic 인수 2이(가) 서식 문자열 '%s'에 필요합니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(315,29): message : 이 인수는 버퍼 크기로 사용됩니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(316,55): warning C4047: '=': 'FILE *'의 간접 참조 수준이 'errno_t'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(329,56): warning C4047: '=': 'FILE *'의 간접 참조 수준이 'errno_t'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(342,42): warning C4047: '=': 'FILE *'의 간접 참조 수준이 'errno_t'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(345,46): warning C4047: '=': 'FILE *'의 간접 참조 수준이 'errno_t'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(383,29): warning C4473: 'scanf_s': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(383,29): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 1개가 제공되었습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(383,29): message : 누락된 variadic 인수 2이(가) 서식 문자열 '%s'에 필요합니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(383,29): message : 이 인수는 버퍼 크기로 사용됩니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(416,29): warning C4473: 'scanf_s': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(416,29): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 1개가 제공되었습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(416,29): message : 누락된 variadic 인수 2이(가) 서식 문자열 '%s'에 필요합니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(416,29): message : 이 인수는 버퍼 크기로 사용됩니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(423,37): warning C4477: 'scanf_s' : 서식 문자열 '%s'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'int *'입니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(423,37): message : 이 인수는 버퍼 크기로 사용됩니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(423,37): warning C4477: 'scanf_s' : 서식 문자열 '%d'에 'int *' 형식의 인수가 필요하지만 variadic 인수 3의 형식이 'float *'입니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(423,37): warning C4473: 'scanf_s': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(423,37): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 4개 필요하지만 3개가 제공되었습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(423,37): message : 누락된 variadic 인수 4이(가) 서식 문자열 '%f'에 필요합니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(440,29): warning C4473: 'scanf_s': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(440,29): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 1개가 제공되었습니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(440,29): message : 누락된 variadic 인수 2이(가) 서식 문자열 '%s'에 필요합니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(440,29): message : 이 인수는 버퍼 크기로 사용됩니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(441,55): warning C4047: '=': 'FILE *'의 간접 참조 수준이 'errno_t'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(454,54): warning C4047: '=': 'FILE *'의 간접 참조 수준이 'errno_t'과(와) 다릅니다.
+C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Stock-Management-System-in-C\Stock-Management-System-in-C\main.c(38,38): warning C4101: 'ch' :참조되지 않은 지역 변수입니다.
+  stocktest.vcxproj -> C:\Users\김성근\Desktop\성근\프로그래밍\Big_data_study\테스트폴더\0731test\stocktest\x64\Debug\stocktest.exe
