@@ -15,8 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\project\C\Snake-Game-In-C\Snake-Game-In-C\snake game.c">
+    <ClCompile Include="hangmantest.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="hangman22.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\KB\Downloads\hangman\hangman\word.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

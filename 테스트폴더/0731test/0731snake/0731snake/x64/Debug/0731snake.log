@@ -1,15 +1,101 @@
-﻿  snake game.c
-C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Snake-Game-In-C\Snake-Game-In-C\snake game.c(53,10): warning C4101: 'key' :참조되지 않은 지역 변수입니다.
-C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Snake-Game-In-C\Snake-Game-In-C\snake game.c(222,9): warning C4101: 'row' :참조되지 않은 지역 변수입니다.
-C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Snake-Game-In-C\Snake-Game-In-C\snake game.c(222,19): warning C4101: 'c' :참조되지 않은 지역 변수입니다.
-C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Snake-Game-In-C\Snake-Game-In-C\snake game.c(222,13): warning C4101: 'col' :참조되지 않은 지역 변수입니다.
-C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Snake-Game-In-C\Snake-Game-In-C\snake game.c(298,15): warning C4244: '함수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Snake-Game-In-C\Snake-Game-In-C\snake game.c(464,42): warning C4047: '=': 'FILE *'의 간접 참조 수준이 'errno_t'과(와) 다릅니다.
-C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Snake-Game-In-C\Snake-Game-In-C\snake game.c(468,13): warning C4473: 'scanf_s': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
-C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Snake-Game-In-C\Snake-Game-In-C\snake game.c(468,13): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 1개가 제공되었습니다.
-C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Snake-Game-In-C\Snake-Game-In-C\snake game.c(468,13): message : 누락된 variadic 인수 2이(가) 서식 문자열 '%[^\n]'에 필요합니다.
-C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Snake-Game-In-C\Snake-Game-In-C\snake game.c(468,13): message : 이 인수는 버퍼 크기로 사용됩니다.
-C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Snake-Game-In-C\Snake-Game-In-C\snake game.c(489,18): warning C4477: 'fprintf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'errno_t'입니다.
-C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Snake-Game-In-C\Snake-Game-In-C\snake game.c(489,18): warning C4313: 'fprintf': 서식 문자열의 '%s'이(가) errno_t' 형식의 인수 1과(와) 충돌합니다.
-C:\Users\김성근\Desktop\성근\프로그래밍\project\C\Snake-Game-In-C\Snake-Game-In-C\snake game.c(502,45): warning C4047: '=': 'FILE *'의 간접 참조 수준이 'errno_t'과(와) 다릅니다.
-  0731snake.vcxproj -> C:\Users\김성근\Desktop\성근\프로그래밍\Big_data_study\테스트폴더\0731test\0731snake\x64\Debug\0731snake.exe
+﻿  hangman22.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(159,29): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(168,9): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(169,9): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(625,5): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(628,1): error C2059: 구문 오류: '}'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(637,5): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(638,5): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(639,1): error C2059: 구문 오류: '}'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(679,9): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(761,9): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(2603,5): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(2604,5): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(2607,5): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(2609,5): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(2610,5): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(2612,5): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(2613,5): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(2630,1): error C2059: 구문 오류: '}'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(2650,5): error C2061: 구문 오류: 식별자 'XSAVE_FORMAT'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(2652,1): error C2059: 구문 오류: '}'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(2658,36): error C2061: 구문 오류: 식별자 'PXSAVE_AREA'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(2670,1): error C2059: 구문 오류: '}'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3467,37): error C2146: 구문 오류: ')'이(가) 'Destination' 식별자 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3467,37): error C2061: 구문 오류: 식별자 'Destination'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3467,37): error C2059: 구문 오류: ';'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3467,48): error C2059: 구문 오류: ','
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3470,5): error C2059: 구문 오류: ')'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3504,37): error C2146: 구문 오류: ')'이(가) 'Destination' 식별자 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3504,37): error C2061: 구문 오류: 식별자 'Destination'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3504,37): error C2059: 구문 오류: ';'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3504,48): error C2059: 구문 오류: ','
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3507,5): error C2059: 구문 오류: ')'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3687,1): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3711,10): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3711,17): error C2146: 구문 오류: ')'이(가) 'Data' 식별자 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3711,17): error C2061: 구문 오류: 식별자 'Data'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3711,17): error C2059: 구문 오류: ';'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3712,5): error C2059: 구문 오류: ')'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3756,10): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3756,17): error C2146: 구문 오류: ')'이(가) 'Value' 식별자 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3756,17): error C2061: 구문 오류: 식별자 'Value'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3756,17): error C2059: 구문 오류: ';'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3757,5): error C2059: 구문 오류: ')'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3864,22): error C2061: 구문 오류: 식별자 'XMM_SAVE_AREA32'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3864,22): error C2059: 구문 오류: ';'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3864,37): error C2059: 구문 오류: ','
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3928,5): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3929,5): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3930,5): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3931,5): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3932,5): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3933,5): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3979,9): error C2061: 구문 오류: 식별자 'XMM_SAVE_AREA32'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(3999,26): warning C4094: 태그 없는 'struct'에서 기호를 선언하지 않았습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(4000,5): error C2059: 구문 오류: '}'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(4018,1): error C2059: 구문 오류: '}'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(4102,5): error C2061: 구문 오류: 식별자 'PCONTEXT'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(4108,1): error C2059: 구문 오류: '}'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(7722,5): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(7723,5): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(7744,1): error C2059: 구문 오류: '}'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(8226,1): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(8237,1): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(8248,1): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(8261,33): error C2143: 구문 오류: ')'이(가) '상수' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(8261,33): error C2143: 구문 오류: '{'이(가) '상수' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(8261,33): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(8263,5): error C2059: 구문 오류: ')'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(8274,33): error C2143: 구문 오류: ')'이(가) '상수' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(8274,33): error C2143: 구문 오류: '{'이(가) '상수' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(8274,33): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(8276,5): error C2059: 구문 오류: ')'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(8287,33): error C2143: 구문 오류: ')'이(가) '상수' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(8287,33): error C2143: 구문 오류: '{'이(가) '상수' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(8287,33): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(8289,5): error C2059: 구문 오류: ')'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(8816,5): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(8817,5): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(8837,7): error C2371: 'HighWord': 재정의. 기본 형식이 다릅니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(7743): message : 'HighWord' 선언을 참조하십시오.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(8838,1): error C2059: 구문 오류: '}'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(8842,5): error C2061: 구문 오류: 식별자 'WOW64_LDT_ENTRY'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(8843,1): error C2059: 구문 오류: '}'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(8906,5): error C2061: 구문 오류: 식별자 'PCONTEXT'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(8907,1): error C2059: 구문 오류: '}'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(9811,5): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(9812,5): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(9813,5): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(9814,1): error C2059: 구문 오류: '}'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(9815,13): error C2143: 구문 오류: '{'이(가) '*' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(9841,5): error C2059: 구문 오류: '상수'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(9842,1): error C2059: 구문 오류: '}'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(9843,20): error C2143: 구문 오류: '{'이(가) '*' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(9979,5): error C2061: 구문 오류: 식별자 'ACE_HEADER'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(9982,1): error C2059: 구문 오류: '}'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(9984,28): error C2143: 구문 오류: '{'이(가) '*' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(9987,5): error C2061: 구문 오류: 식별자 'ACE_HEADER'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(9990,1): error C2059: 구문 오류: '}'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(9991,27): error C2143: 구문 오류: '{'이(가) '*' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(9993,34): fatal error C1046: 컴파일러 한계: struct이(가) 너무 많이 중첩되었습니다.
