@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class solve {
+	public static void main(String args[]) {
+		String name="김성근";
+		System.out.println("Hello World"+name);
+		
+		int year=2022;
+		System.out.println("This year is "+year);
+		
+		System.out.println("당신의 각오를 말해보세요");
+		System.out.println("<dangerousmankimsungkun>");
+		
+		Scanner s=new Scanner(System.in);
+		String name2_s=s.next();
+		System.out.println("김성근"+name2_s);
+		System.out.println("Hello World"+name2_s);
+		
+		
+	}
+}

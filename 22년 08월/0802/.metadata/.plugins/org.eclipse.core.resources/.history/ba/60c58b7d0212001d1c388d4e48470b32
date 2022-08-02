@@ -1,0 +1,17 @@
+//package MyFistJava; 집에서 할 때 넣어도 됨
+
+public class HelloWorld {
+	public static void main(String args[]) {
+	System.out.printf("%s","Hello World\n");
+	System.out.print("Hello World"); // "Hello World" 출력
+	
+	System.out.printf("%s", "Hello World\n");
+	System.out.println("Hello World"); // "Hello World\n" 출력
+	String name="KSG";
+	int year=2022;
+	
+	System.out.println(name);
+	System.out.println(year);
+	}
+	
+}

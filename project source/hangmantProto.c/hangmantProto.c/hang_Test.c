@@ -10,7 +10,7 @@
 #include <string.h>
 
 #define WORDS 10 //총 단어의 갯수
-#define WORDLEN 40 //각 단어의 최대 크기
+#define WORDLEN 20 //각 단어의 최대 크기
 #define CHANCE 6 //주어지는 기회
 
 bool srand_called = false;
@@ -85,14 +85,12 @@ int main() {
 	printf("\n\t - 6번 이상 틀리면 안됩니다.");
 	printf("\n\t - 모든 알파벳은 소문자로 적어야 합니다.");
 	printf("\n\t - Hint : 인기있는 사이트 중 하나입니다. ex. Google");
-	char values[WORDS][WORDLEN] = { "N~mqOlJ^tZletXodeYgs","gCnDIfFQe^CdP^^B{hZpeLA^hv","7urtrtwQv{dt`>^}FaR]i]XUug^GI",
-									"aSwfXsxOsWAlXScVQmjAWJG","cruD=idduvUdr=gmcauCmg]","BQt`zncypFVjvIaTl]u=_?Aa}F",
-									"iLvkKdT`yu~mWj[^gcO|","jSiLyzJ=vPmnv^`N]^>ViAC^z_","xo|RqqhO|nNstjmzfiuoiFfhwtdh~",
-									"OHkttvxdp|[nnW]Drgaomdq" };
+	char values[WORDS][WORDLEN] = { "google","naver","youtube","github",
+			"facebook","coupang","namuwiki","tistory","daum","instagram" };
 	char* body =malloc(CHANCE + 1);
 
 	int id = i_rnd(WORDS); //i_rnd에서 rand % 10 해서 나온 랜덤 수 = id
-	char* word = decrypt(values[id]);
+	char* word = values[id];
 	//랜덤 수를 values에 대입=>입력된 문자열 중 랜덤 수에 해당하는 문자열을 decrypt에 대입.
 	//decrypt=암호화 해제 하는 과정.
 	int len = strlen(word);  //decrypt 과정을 통화 복호화(해독) 된 단어의 길이 찾기.

@@ -1,0 +1,14 @@
+
+public class solve {
+	public static void main(String args[]) {
+		String name="김성근";
+		System.out.println("Hello World"+name);
+		
+		int year=2022;
+		System.out.println("This year is "+year);
+		
+		System.out.println("당신의 각오를 말해보세요");
+		System.out.println("<dangerousmankimsungkun>");
+		
+	}
+}

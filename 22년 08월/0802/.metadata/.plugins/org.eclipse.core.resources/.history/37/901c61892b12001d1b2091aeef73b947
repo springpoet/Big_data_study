@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class JavaStudy02 {
+	public static void main(String args[]) {
+	//주의. 입력을 nextLine() 쓰기 전에 엔터키 입력받고 버리도록 하기 (아래 참고)
+	String str1=s.nextLine();
+	String str2=s.nextLine();
+	System.out.println(str1+" "+str2);		// 이 경우엔 str1 끝부분에 엔터키가 들어가서 문제 없이 실행됌
+	
+	int n=s.nextInt();
+	s.nextLine();		// 이게 없으면 n 입력을 마칠 시 엔터를 누르는데 이 엔터키가 str3에 들어가면서 프로그램 종료됌
+						// 해당 문구로 엔터키를 입력받고 버린 뒤, str3 입력을 받도록 한다.
+	String str3=s.nextLine();
+	System.out.println(n+" "+str3);
+	int a[]=new int[5];
+	int n1=s.nextInt();
+	int arr[]=new int[n1];
+	int num=s.nextInt();
+	int score[]=new int [num];
+	int sum=0;
+	for(int i=0;i<num;i++)
+	{
+		score[i]=s.nextInt();
+		sum+=score[i];
+	}
+	
+	for(int i=0;i<num;i++)
+	{
+		System.out.println(score[i]+" ");	
+	}
+	System.out.println("합계는 "+sum);
+}
+
+
+}

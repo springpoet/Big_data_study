@@ -1,0 +1,38 @@
+//package MyFistJava; 집에서 할 때 넣어도 됨
+import java.util.Scanner;
+
+public class JavaStudy01 {
+	public static void main(String args[]) {
+	System.out.printf("%s","Hello World\n");
+	System.out.print("Hello World"); // "Hello World" 출력
+	
+	System.out.printf("%s", "Hello World\n");
+	System.out.println("Hello World"); // "Hello World\n" 출력
+	String name="KSG";
+	int year=2022;
+	
+	System.out.println(name);
+	System.out.println(year);
+	System.out.println("Hello World " +name);
+	System.out.println("You are learning Java with "+year);
+	System.out.println("당신의 각오를 말해보세요.");
+	System.out.println("후이에에엥");
+	
+	Scanner s=new Scanner(System.in);
+	//int n; \n scanf_s("%d",&n);
+	
+	//숫자 입력문 종류 - 한 문장에 하나 씩 입력 받기
+	int n=s.nextInt();
+	short sh_short=s.nextShort();
+	float f_float=s.nextFloat();
+	double d_double=s.nextDouble();
+
+	//문자 입력문 종류
+	char c_char=s.next().charAt(0);  //char 입력문
+	String s_st=s.next();            //공백 포함 x 입력문
+	String s_str=s.nextLine();       //공백 포함 o 입력문
+	
+	}
+	
+	
+}

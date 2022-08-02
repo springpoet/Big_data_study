@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class solve {
+	public static void main(String args[]) {
+
+		Scanner s=new Scanner(System.in);
+		String name2_s=s.next();
+		System.out.println("김성근"+name2_s);
+		System.out.println("Hello World"+name2_s);
+		
+		
+	}
+}
