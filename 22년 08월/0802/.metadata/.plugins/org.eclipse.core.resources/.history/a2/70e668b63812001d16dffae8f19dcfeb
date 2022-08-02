@@ -17,21 +17,12 @@ public class solve02 {
 		{
 			if(alphabet[i]!=0)
 			{
-				System.out.println(""+(char)(i+97)+"는"+(alphabet[i])+"개 있습니다.");
+				System.out.println(""+(char)(i+97)+
+						"는"+(alphabet[i])+"개 있습니다.");
 			}
 		}
 		
 		//2번.
-		System.out.println();
-		String word2=s.next();
-		int alphabet2[]=new int[26];
-		
-		for(int i=0;i<word2.length();i++)
-		{
-			int index=word2.charAt(i)-(int)'a';
-			
-		}
-		
-		
+		int 
 	}
 }
