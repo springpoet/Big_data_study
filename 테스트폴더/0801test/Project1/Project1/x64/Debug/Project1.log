@@ -1,9 +1,10 @@
-﻿  encrypt.c
-D:\Big_data_study\테스트폴더\0801test\Project1\Project1\encrypt.c(6,13): warning C4013: 'strlen'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-D:\Big_data_study\테스트폴더\0801test\Project1\Project1\encrypt.c(7,18): warning C4013: 'malloc'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-D:\Big_data_study\테스트폴더\0801test\Project1\Project1\encrypt.c(12,30): warning C4013: 'i_rnd'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-D:\Big_data_study\테스트폴더\0801test\Project1\Project1\encrypt.c(21,2): warning C4013: 'free'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-D:\Big_data_study\테스트폴더\0801test\Project1\Project1\encrypt.c(7,1): warning C4047: '초기화 중': 'char *'의 간접 참조 수준이 'int'과(와) 다릅니다.
-D:\Big_data_study\테스트폴더\0801test\Project1\Project1\encrypt.c(11,25): warning C4244: '초기화 중': '__int64'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-encrypt.obj : error LNK2019: i_rndencrypt 함수에서 참조되는 확인할 수 없는 외부 기호
-D:\Big_data_study\테스트폴더\0801test\Project1\x64\Debug\Project1.exe : fatal error LNK1120: 1개의 확인할 수 없는 외부 참조입니다.
+﻿  hangman.c
+D:\Big_data_study\project source\hangman.c(15,26): warning C4244: '함수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\Big_data_study\project source\hangman.c(29,42): warning C4244: '=': '__int64'에서 'char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\Big_data_study\project source\hangman.c(22,38): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\Big_data_study\project source\hangman.c(118,15): warning C4473: 'scanf_s': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+D:\Big_data_study\project source\hangman.c(118,15): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 1개가 제공되었습니다.
+D:\Big_data_study\project source\hangman.c(118,15): message : 누락된 variadic 인수 2이(가) 서식 문자열 '%c'에 필요합니다.
+D:\Big_data_study\project source\hangman.c(118,15): message : 이 인수는 버퍼 크기로 사용됩니다.
+D:\Big_data_study\project source\hangman.c(90,12): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Project1.vcxproj -> D:\Big_data_study\테스트폴더\0801test\Project1\x64\Debug\Project1.exe
