@@ -24,10 +24,10 @@
     <ClCompile Include="hangman_origin.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="HangmanFunction.c">
+    <ClCompile Include="hangFunctionTest.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="hangmanfuction2.c">
+    <ClCompile Include="HangMan.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
