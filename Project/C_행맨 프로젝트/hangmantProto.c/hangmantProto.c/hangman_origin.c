@@ -1,8 +1,3 @@
-/**
-* @autor Saroj Tripathi
-* @name Hangman
-*/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -97,7 +92,7 @@ int main() {
 	//decrypt=암호화 해제 하는 과정.
 	int len = strlen(word);  //decrypt 과정을 통화 복호화(해독) 된 단어의 길이 찾기.
 	char* guessed = malloc(len); // 단어의 길이 만큼 할당.
-	char falseWord[CHANCE]; //
+	char falseWord[CHANCE]; 
 
 	memset(body, ' ', CHANCE + 1);
 	memset(guessed, '_', len);

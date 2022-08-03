@@ -24,6 +24,12 @@
     <ClCompile Include="hangman_origin.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="HangmanFunction.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="hangmanfuction2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="word.h">
