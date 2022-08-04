@@ -85,6 +85,17 @@ int login()
 	return n;
 }
 
+void win_pose()
+{
+	printf("\t _________\n"
+		"\t|         |\n"
+		"\t|       \t ( )\n"
+		"\t|       \t /|\\\n"
+		"\t|       \t / \\\n"
+		"\t|       \t      \n"
+		"\t|       \t      ");
+}
+
 
 int main()
 {
@@ -93,7 +104,7 @@ int main()
 	case 1:
 		printf("\n");
 		char values[WORDS][WORDLEN] = { "google", "naver", "youtube", "github",
-			"facebook","coupang","namuwiki","tistory","daum","instagram" };
+			"facebook","coupang","namuwiki","twitch","daum","instagram" };
 		//que_answer(values);
 		system("cls");
 		printf("\n\t - 인기있는 사이트 중 하나입니다. ex. Google");
@@ -170,16 +181,17 @@ int main()
 		//내가 적은 문자열에 _가 없다 = 승리
 		if (win == NULL)
 		{
-			printf("\n");
-			printWord(guessed, len);
-			printf("\n\t축하합니다! 한 사람을 구했습니다. : %s\n\n", word);
+			printf("\n\n\n");
+			printf("\tMistakes :%d\n", mistakes);
+			win_pose();
+			printf("\n\n\t축하합니다! 한 사람을 구했습니다! \n\t정답은 : \t[%s]\n\n", word);
 		}
 		//그 외의 경우(6번이상 적거나 NULL이 있는 경우)
 		else
 		{
-			printf("\n");
+			printf("\n\n\n");
 			printBody(mistakes, body); //body가 6까지 누적된 모습을 출력
-			printf("\n\n\t다음 기회에! 정답은 : %s\n\n", word);
+			printf("\n\n\t다음 기회에! \n\t정답은 : \t[%s]\n\n", word);
 		}
 
 		free(body); //동적 할당 제거
@@ -252,6 +264,7 @@ int main()
 		else
 		{
 			printf("\n");
+			win_pose();
 			printBody(mistakes2, body2);
 			printf("\n\n\t다음 기회에! 정답은 : %s\n\n", word2);
 		}
@@ -321,6 +334,7 @@ int main()
 		if (win3 == NULL)
 		{
 			printf("\n");
+			win_pose();
 			printWord(guessed3, len3);
 			printf("\n\t축하합니다! 한 사람을 구했습니다. : %s\n\n", word3);
 		}

@@ -1,0 +1,6 @@
+중복 제거
+falseword :  배열에 틀린 문자 저장
+
+틀린 문자를 처음 쓸 경우 = falsword 첫 자리에 저장
+틀린 문자를 또 쓸 경우 = falseword 배열에 저장하지않고 mistakes도 올리지 않음
+또 다른 틀린 문자를 쓸 경우 = falseword 배열에 mistakes자리에 저장하고 mistakes에 1 더함.

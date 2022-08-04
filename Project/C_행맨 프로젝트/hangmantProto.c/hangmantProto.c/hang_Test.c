@@ -333,3 +333,13 @@ int main()
 
 	return EXIT_SUCCESS;
 }
+
+//틀린단어중복제거
+//for (int i = 0; i < mistakes; i++)
+//	if (falseWord[i] = guess)
+//		continue;
+//	else
+//	{
+//		falseWord[mistakes] = guess;
+//		mistakes += 1;
+//	}
