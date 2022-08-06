@@ -18,9 +18,6 @@
     <ClCompile Include="hang_Proto.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="hang_Test.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="hangman_origin.c">
       <Filter>소스 파일</Filter>
     </ClCompile>

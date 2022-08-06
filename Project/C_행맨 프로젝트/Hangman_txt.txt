@@ -1,0 +1,16 @@
+body와 guessed를 동적 할당 해준다.
+기본 형태 불러내기(준비 과정)
+
+입력한 문자(guess)가 word에 포함되는가? (found = true)?
+->네 : guessed에 해당하는 guess 문자 입력 후 found=true로 변경
+
+->아니오 : 입력한 단어를 또 적었는가?(falsecheck=false)?
+		->네(이전에 입력한 적이 있다.) : 아무것도 하지 않고 falsecheck=true로 변경
+		->아니오(이전에 입력한 적이 없다.) : falseWord의 mistake인덱스에
+									guess 입력 후 mistake++
+									
+->win=guessed에 _갯수 체크
+	->win의 _갯수가 0(NULL) = 정답 -> 틀린 횟수, win_pose 출력
+	->그 외의 경우 = 오답	 -> 단두대 에 메달린 모양 출력
+->동적 할당 제거.
+	
