@@ -103,13 +103,12 @@ int main()
 		system("cls");
 		printf("\n\t - 인기있는 사이트 중 하나입니다. ex. Google");
 		char* body = malloc(CHANCE + 1);
-		int id = i_rnd(WORDS); //i_rnd에서 rand % 10 해서 나온 랜덤 수 = id
+		int id = i_rnd(WORDS); 
 		char* word = values[id];
-		//랜덤 수를 values에 대입=>입력된 문자열 중 랜덤 수에 해당하는 문자열을 decrypt에 대입.
-		//decrypt=암호화 해제 하는 과정.
-		int len = strlen(word);  //decrypt 과정을 통화 복호화(해독) 된 단어의 길이 찾기.
-		char* guessed = malloc(len); // 단어의 길이 만큼 할당.
-		char falseWord[CHANCE]; //
+
+		int len = strlen(word); 
+		char* guessed = malloc(len);
+		char falseWord[CHANCE];
 
 		memset(body, ' ', CHANCE + 1);
 		memset(guessed, '_', len);
@@ -154,7 +153,7 @@ int main()
 				mistakes += 1;
 			}
 			win = strchr(guessed, '_');
-			system("cls"); //system("cls"); 함수i 위치 체크하기
+			system("cls"); 
 		} while (mistakes < CHANCE && win != NULL);
 
 		if (win == NULL)
@@ -180,13 +179,11 @@ int main()
 		system("cls");
 		printf("\n\t - 국가명 중 하나입니다. ex. korea");
 		char* body2 = malloc(CHANCE + 1);
-		int id2 = i_rnd(WORDS); //i_rnd에서 rand % 10 해서 나온 랜덤 수 = id
+		int id2 = i_rnd(WORDS); 
 		char* word2 = values2[id2];
-		//랜덤 수를 values에 대입=>입력된 문자열 중 랜덤 수에 해당하는 문자열을 decrypt에 대입.
-		//decrypt=암호화 해제 하는 과정.
-		int len2 = strlen(word2);  //decrypt 과정을 통화 복호화(해독) 된 단어의 길이 찾기.
-		char* guessed2 = malloc(len2); // 단어의 길이 만큼 할당.
-		char falseWord2[CHANCE]; //
+		int len2 = strlen(word2); 
+		char* guessed2 = malloc(len2); 
+		char falseWord2[CHANCE]; 
 
 		memset(body2, ' ', CHANCE + 1);
 		memset(guessed2, '_', len2);
@@ -231,7 +228,7 @@ int main()
 				mistakes2 += 1;
 			}
 			win2 = strchr(guessed2, '_');
-			system("cls"); //system("cls"); 함수i 위치 체크하기
+			system("cls"); 
 		} while (mistakes2 < CHANCE && win2 != NULL);
 
 		if (win2 == NULL)
@@ -257,13 +254,11 @@ int main()
 		system("cls");
 		printf("\n\t -과일 이름 중 하나입니다. ex. orange");
 		char* body3 = malloc(CHANCE + 1);
-		int id3 = i_rnd(WORDS); //i_rnd에서 rand % 10 해서 나온 랜덤 수 = id
+		int id3 = i_rnd(WORDS); 
 		char* word3 = values3[id3];
-		//랜덤 수를 values에 대입=>입력된 문자열 중 랜덤 수에 해당하는 문자열을 decrypt에 대입.
-		//decrypt=암호화 해제 하는 과정.
-		int len3 = strlen(word3);  //decrypt 과정을 통화 복호화(해독) 된 단어의 길이 찾기.
-		char* guessed3 = malloc(len3); // 단어의 길이 만큼 할당.
-		char falseWord3[CHANCE]; //
+		int len3 = strlen(word3);  
+		char* guessed3 = malloc(len3); 
+		char falseWord3[CHANCE]; 
 
 		memset(body3, ' ', CHANCE + 1);
 		memset(guessed3, '_', len3);
@@ -308,7 +303,7 @@ int main()
 				mistakes3 += 1;
 			}
 			win3 = strchr(guessed3, '_');
-			system("cls"); //system("cls"); 함수i 위치 체크하기
+			system("cls");
 		} while (mistakes3 < CHANCE && win3 != NULL);
 
 		if (win3 == NULL)
@@ -333,13 +328,3 @@ int main()
 
 	return EXIT_SUCCESS;
 }
-
-//틀린단어중복제거
-//for (int i = 0; i < mistakes; i++)
-//	if (falseWord[i] = guess)
-//		continue;
-//	else
-//	{
-//		falseWord[mistakes] = guess;
-//		mistakes += 1;
-//	}

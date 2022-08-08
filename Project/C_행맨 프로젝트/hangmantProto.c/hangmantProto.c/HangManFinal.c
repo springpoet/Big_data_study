@@ -173,7 +173,7 @@ int que_answer(char values[][WORDLEN])
 				mistakes += 1;
 			}
 		}
-
+		 
 		win = strchr(guessed, '_');
 		system("cls");
 	} while (mistakes < CHANCE && win != NULL);
