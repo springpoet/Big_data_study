@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\22년 07월\0720(Git,로또)\lotto_program.c">
+    <ClCompile Include="..\..\..\22년 07월\0720%28Git,로또%29\lottoComment.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="lotto_test.c">
+    <ClCompile Include="lotto_report.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
