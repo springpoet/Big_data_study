@@ -14,7 +14,6 @@ public class Baekjoon10987
 				sum++;
 			}
 		}
-		System.out.println(sum);
+    	System.out.println(sum);
 	}
-
 }
