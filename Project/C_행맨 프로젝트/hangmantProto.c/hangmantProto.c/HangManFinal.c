@@ -12,7 +12,6 @@
 #define WORDLEN 30 
 #define CHANCE 6 
 
-bool srand_called = false;
 
 void consolesize()
 {
@@ -20,11 +19,7 @@ void consolesize()
 }
 int i_rnd(int i)
 {
-	if (!srand_called)
-	{
 		srand(time(NULL));
-		srand_called = true;
-	}
 	return rand() % i;
 }
 
