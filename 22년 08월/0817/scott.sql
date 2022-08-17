@@ -1,0 +1,68 @@
+--이 코드가 SQL문의 가~장 기본적인 코드
+--모든 데이터를 조회해 볼 수 있는 코드
+--컨트롤 엔터=실행하기
+SELECT * FROM STUDENT;
+
+--where 붙이고 내가 원하는 조건들을 적으면 된다.
+SELECT * FROM STUDENT WHERE AGE>27;
+
+--SQL문의 조건문에선 같은지 체크할 때 =으로 한다.
+SELECT * FROM STUDENT WHERE AGE>25 AND HAKBEON='002';
+
+INSERT INTO STUDENT (HAKBEON, NAME, AGE) VALUES ('1','이동준',34);
+
+--SQL의 핵심
+--CRUD
+--select = read : 조회
+--insert = create : 삽입
+--update = update : 수정
+--delete = delete : 삭제
+
+--조회
+SELECT * FROM STUDENT;
+
+--학번 1을 가진 사람의 이름을 장태연으로 바꿈
+UPDATE STUDENT SET NAME='장태연' WHERE HAKBEON='1';
+
+--조회
+SELECT * FROM STUDENT;
+
+--다 제거
+--delete form student;
+
+--30살 초과하는 사람을 다 제거
+DELETE FROM STUDENT WHERE AGE>30;
+
+COMMIT; --추가 수정 할때마다 그 내용을 저장해 주는 것
+
+--내가 마지막으로 커밋한 지점으로 돌아갈 수 있다.
+ROLLBACK;
+
+DELETE FROM STUDENT;
+
+COMMIT;
+
+SELECT * FROM STUDENTS WHERE AGE>=10 AND AGE<20;
+
+DELETE FROM STUDENTS WHERE HAKBEON=12;
+
+UPDATE STUDENTS SET AGE=20 WHERE NAME='박지호';
+
+COMMIT;
+
+SELECT * FROM STUDENTS;
+
+INSERT INTO LIBRARY (BOOKNUMBER,BOOKNAME,BOOKWRITER) VALUES (1,'책하나','김지은이');
+
+SELECT * FROM LIBRARY;
+
+UPDATE LIBRARY SET BOOKWRITER='박지은이' WHERE BOOKNUMBER=1;
+COMMIT;
+
+
+UPDATE LIBRARY SET BOOKWRITER='최지은' WHERE BOOKWRITER='박지은이';
+INSERT INTO LIBRARY (BOOKNUMBER, BOOKNAME, BOOKWRITER) VALUES (2,'책둘','김성근');
+DELETE LIBRARY WHERE BOOKNUMBER=1;
+commit;
+SELECT * FROM LIBRARY;
+

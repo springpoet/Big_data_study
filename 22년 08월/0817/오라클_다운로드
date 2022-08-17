@@ -1,0 +1,21 @@
+오라클 설치
+oracle download 검색 후 소프트웨어 다운로드 클릭
+-아래로 내리면 데이터베이스에 Database Express Edition 클릭 후 윈도우버전 다운로드
+
+sql developer 검색 후 Oracle SQL Developer Downloads 클릭 후
+Windows 64-bit with JDK included 다운로드.
+아이디 tjdrms4439@naver.com	비밀번호 : 30 K ! 임. 대소문자 특문 들어간 비번
+
+다운로드 후 OracleXE213_Win64 설치 후 sql plus 검색 후
+아이디 system, 비밀번호 1234 후
+create user c##scott identified by tiger; 치기
+-scott이라는 계정을 만들고 비밀번호를 tiger로 설정한다
+grant connect, resource to c##scott; 치기
+-권한부여
+alter user c##scott default tablespace users quota unlimited on users;
+-용량 제한 제거
+
+sqldeveloper 폴더 들어가서 sqldeveloper 실행 
+젤 위에 scott 밑에 c##scott 비밀번호 tiger 입력. 테스트 후 성공 시 저장-접속
+scott열어서 테이블+ 후 추가
+PK=메인키
