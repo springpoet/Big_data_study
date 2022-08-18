@@ -1,0 +1,24 @@
+--2번 문제
+--경영, 코드 005 추가
+--학생 2명 추가
+insert into major values('경영','005');
+commit;
+insert into stu values('이경영',60,'18','005');
+insert into stu values('진행좌',30,'19','005');
+commit;
+select * from stu;
+
+--3번 문제
+select stu.name "학생명", stu.age "나이" from stu where stu.code='001';
+
+--4번 문제
+--코드가 301인 학생 나이를 20으로 바꿈
+update stu set age=20 where code='301';
+commit;
+select stu.name"학생명", stu.age"나이",stu.code from stu where stu.code='301';
+
+--5번 문제
+--이씨 성을 가진 사람 제거
+delete from stu where name like '이%';
+commit;
+select * from stu;

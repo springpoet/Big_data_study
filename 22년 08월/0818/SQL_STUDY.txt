@@ -1,0 +1,79 @@
+--이 코드가 SQL문의 가~장 기본적인 코드
+--모든 데이터를 조회해 볼 수 있는 코드
+--컨트롤 엔터=실행하기
+SELECT * FROM STUDENT;
+
+--where 붙이고 내가 원하는 조건들을 적으면 된다.
+SELECT * FROM STUDENT WHERE AGE>27;
+
+--SQL문의 조건문에선 같은지 체크할 때 =으로 한다.
+SELECT * FROM STUDENT WHERE AGE>25 AND HAKBEON='002';
+
+INSERT INTO STUDENT (HAKBEON, NAME, AGE) VALUES ('1','이동준',34);
+
+--SQL의 핵심
+--CRUD
+--select = read : 조회
+--insert = create : 삽입
+--update = update : 수정
+--delete = delete : 삭제
+
+--조회
+SELECT * FROM STUDENT;
+
+--학번 1을 가진 사람의 이름을 장태연으로 바꿈
+UPDATE STUDENT SET NAME='장태연' WHERE HAKBEON='1';
+
+--조회
+SELECT * FROM STUDENT;
+
+--다 제거
+--delete from student;
+
+--30살 초과하는 사람을 다 제거
+DELETE FROM STUDENT WHERE AGE>30;
+
+COMMIT; --추가 수정 할때마다 그 내용을 저장해 주는 것
+
+--내가 마지막으로 커밋한 지점으로 돌아갈 수 있다.
+ROLLBACK;
+
+--delete : 안에 내용을 지움    
+--drop, truncate : 테이블 자체를 삭제 복구가 안됨
+DELETE FROM STUDENT;
+
+SELECT * FROM STUDENTS;
+create table stu (
+name varchar2(20),
+age number,
+hakbeon varchar2(20) primary key);
+
+insert into stu (hakbeon, name, age) values ('11','안서준',19);
+insert into stu (hakbeon, name, age) values ('10','이동준',17);
+insert into stu (hakbeon, name, age) values ('12','김혜민',15);
+insert into stu (hakbeon, name, age) values ('13','이범식',16);
+insert into stu (hakbeon, name, age) values ('14','오세룡',33);
+commit;
+select * from stu;
+select * from stu where age>=10 and age<20;
+select name from stu where age>9 and age<20;
+--name 항목을 "이 름" 으로 바꿈
+select name as "이 름" from stu where age>9 and age<20; 
+select name "이 름" from stu where age>9 and age<20;
+
+insert into stu (hakbeon, name, age) values ('15','최호준',40);
+commit;
+
+select * from stu;
+
+delete from stu where name='최호준';
+commit;
+select * from stu;
+insert into stu (hakbeon, name, age) values ('16','박지호',28);
+commit;
+update stu set age=20 where name='박지호';
+commit;
+select * from stu;
+
+--관계를 표현함에 있어서 매우 중요한 요소인 fk를 할 것
+--2개 이상의 테이블을 하나로 보이게 해주는 join에 대해 다뤄볼 것

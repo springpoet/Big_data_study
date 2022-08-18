@@ -19,3 +19,15 @@ sqldeveloper 폴더 들어가서 sqldeveloper 실행
 젤 위에 scott 밑에 c##scott 비밀번호 tiger 입력. 테스트 후 성공 시 저장-접속
 scott열어서 테이블+ 후 추가
 PK=메인키
+
+테이블 통째로 백업하는법
+-cmd 창을 연 후 :d, :c 등 원하는 위치로 이동 후
+exp c##scott/tiger file=mybackup.dmp = 백업용 덤프 파일을 생성
+
+사용할 컴퓨터로 이동 후
+cmd 창에서
+imp c##scott/tiger file=mybackup.dmp full=y
+
+한 테이블만 백업하는 법
+-해당 테이블 우클릭 후 export 후 확인 확인
+-가져올때는 좌측 상단 파일-열기-해당 sql 파일 연 후 스크립트 실행 누르기.
