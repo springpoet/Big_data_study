@@ -1,0 +1,4 @@
+oracle developer 뷰 권한 주는 명령어
+sql plus 관리자 권한으로 실행한 후
+grant create view to c##scott;
+입력

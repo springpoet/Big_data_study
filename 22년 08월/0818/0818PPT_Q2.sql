@@ -1,5 +1,5 @@
 create table samsungpeople (
-i_d integer,
+i_d integer primary key,
 name varchar(20),
 boss_id integer);
 
@@ -14,6 +14,11 @@ insert into samsungpeople values (8,'ªÔº∫∂Û¿Ãø¬¡Ó',4);
 
 select * from samsungpeople;
 
-select a.name as "NAME", b.name as "BOSS" from samsungpeople a 
-     join samsungpeople b on a.boss_id=b.i_d;
+select a.name as "NAME", b.name as "BOSS" 
+from samsungpeople a 
+join samsungpeople b on a.boss_id=b.i_d;
 --inner join Ω·µµ µ 
+
+select a.name as "NAME", b.name as "BOSS" 
+from samsungpeople a 
+join samsungpeople b on a.i_d=b.boss_id;

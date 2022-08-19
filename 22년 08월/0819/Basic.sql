@@ -1,0 +1,157 @@
+--이 코드가 SQL문의 가~장 기본적인 코드
+--모든 데이터를 조회해 볼 수 있는 코드
+--컨트롤 엔터=실행하기
+SELECT * FROM STUDENT;
+
+--where 붙이고 내가 원하는 조건들을 적으면 된다.
+SELECT * FROM STUDENT WHERE AGE>27;
+
+--SQL문의 조건문에선 같은지 체크할 때 =으로 한다.
+SELECT * FROM STUDENT WHERE AGE>25 AND HAKBEON='002';
+
+INSERT INTO STUDENT (HAKBEON, NAME, AGE) VALUES ('1','이동준',34);
+
+--SQL의 핵심
+--CRUD
+--select = read : 조회
+--insert = create : 삽입
+--update = update : 수정
+--delete = delete : 삭제
+
+--조회
+SELECT * FROM STUDENT;
+
+--학번 1을 가진 사람의 이름을 장태연으로 바꿈
+UPDATE STUDENT SET NAME='장태연' WHERE HAKBEON='1';
+
+--조회
+SELECT * FROM STUDENT;
+
+--다 제거
+--delete from student;
+
+--30살 초과하는 사람을 다 제거
+DELETE FROM STUDENT WHERE AGE>30;
+
+COMMIT; --추가 수정 할때마다 그 내용을 저장해 주는 것
+
+--내가 마지막으로 커밋한 지점으로 돌아갈 수 있다.
+ROLLBACK;
+
+--delete : 안에 내용을 지움    
+--drop, truncate : 테이블 자체를 삭제 복구가 안됨
+DELETE FROM STUDENT;
+
+COMMIT;
+
+SELECT * FROM STUDENTS WHERE AGE>=10 AND AGE<20;
+
+DELETE FROM STUDENTS WHERE HAKBEON=12;
+
+UPDATE STUDENTS SET AGE=20 WHERE NAME='박지호';
+
+COMMIT;
+
+SELECT * FROM STUDENTS;
+
+INSERT INTO LIBRARY (BOOKNUMBER,BOOKNAME,BOOKWRITER) VALUES (1,'책하나','김지은이');
+
+SELECT * FROM LIBRARY;
+
+UPDATE LIBRARY SET BOOKWRITER='박지은이' WHERE BOOKNUMBER=1;
+COMMIT;
+
+
+UPDATE LIBRARY SET BOOKWRITER='최지은' WHERE BOOKWRITER='박지은이';
+INSERT INTO LIBRARY (BOOKNUMBER, BOOKNAME, BOOKWRITER) VALUES (2,'책둘','김성근');
+DELETE LIBRARY WHERE BOOKNUMBER=1;
+commit;
+SELECT * FROM LIBRARY;
+
+create table stu (
+name varchar2(20),
+age number,
+hakbeon varchar2(20) primary key);
+
+insert into stu (hakbeon, name, age) values ('11','안서준',19);
+insert into stu (hakbeon, name, age) values ('10','이동준',17);
+insert into stu (hakbeon, name, age) values ('12','김혜민',15);
+insert into stu (hakbeon, name, age) values ('13','이범식',16);
+insert into stu (hakbeon, name, age) values ('14','오세룡',33);
+commit;
+select * from stu;
+select * from stu where age>=10 and age<20;
+select name from stu where age>9 and age<20;
+--name 항목을 "이 름" 으로 바꿈
+select name as "이 름" from stu where age>9 and age<20; 
+select name "이 름" from stu where age>9 and age<20;
+
+insert into stu (hakbeon, name, age) values ('15','최호준',40);
+commit;
+
+select * from stu;
+
+delete from stu where name='최호준';
+commit;
+select * from stu;
+insert into stu (hakbeon, name, age) values ('16','박지호',28);
+commit;
+update stu set age=20 where name='박지호';
+commit;
+select * from stu;
+
+--관계를 표현함에 있어서 매우 중요한 요소인 fk(외래키)를 할 것
+--2개 이상의 테이블을 하나로 보이게 해주는 join에 대해 다뤄볼 것
+
+create table major (name varchar(20), code char(3) primary key);
+
+insert into major values('컴공','001');
+insert into major values('화공','301');
+--학과코드 추가할 때 major 테이블의 code랑 자료형, 크기가 모두 맞아야함
+alter table stu add (code char(3));
+alter table stu add constraint fk_stu foreign key(code) references major(code);
+select * from stu;
+
+insert into stu values('김성근',28,'17','001');
+commit;
+
+select * from stu;
+select * from major;
+select stu.name "학생명" ,major.name "학과명" ,hakbeon from stu join major on stu.code=major.code;
+
+--char와 varchar 둘 다 문자열
+--char은 크기가 고정, varchar는 크기가 유동
+--char(20) : 무조건 20바이트 크기 할당, varchar(20) : 최대 20바이트 할당
+
+--2번 문제
+insert into major values('경영','005');
+insert into stu values('이경영',60,'18','005');
+insert into stu values('진행좌',30,'19','005');
+select * from stu;
+
+--3번 문제
+select stu.name "학생명", stu.age "나이" from stu where stu.code='001';
+
+--4번 문제
+update stu set age=20 where code='301';
+select stu.name"학생명", stu.age"나이",stu.code from stu where stu.code='301';
+
+--5번 문제
+delete from stu where name like '이%';
+select * from stu;
+
+create table grade(hakjum varchar(20), grade_alpah varchar(20) primary key);
+
+alter table stu add(sungjuk varchar(20));
+alter table stu add constraint fk_stu foreign key(sungjuk) references grade_alpha(hakjum);
+
+insert into grade values ('4.5','A+');
+insert into grade values ('3.5','B+');
+insert into grade values ('3.5','C+');
+insert into grade values ('2.5','D+');
+insert into grade values ('0.0','F');
+
+select stu.name "학생이름", grade.sungjuk "성적" from stu join grade on stu.sungjuk=grade.hakjum;
+
+
+
