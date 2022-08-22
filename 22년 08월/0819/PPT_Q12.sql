@@ -100,7 +100,9 @@ where age = (select max(age) from mydbstudent);
 
 select mydbhakgwa.name, avgage 
 from mydbhakgwa 
-join (select hakgwacode, avg(age) avgage from mydbstudent group by hakgwacode) a 
+join (select hakgwacode, avg(age) avgage 
+from mydbstudent 
+group by hakgwacode) a 
 on mydbhakgwa.code = a.hakgwacode;
 
 -- 만약 view 생성 안 되면 system 계정으로 접속해서 아래 쿼리를 실행한다.

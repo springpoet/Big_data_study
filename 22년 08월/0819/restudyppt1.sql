@@ -25,38 +25,38 @@ SELECT  MYDBHAKGWA2.NAME AS "학과명",MYDBSTUDENT2.NAME AS "학생 이름", AG
 FROM MYDBSTUDENT2 
 JOIN MYDBHAKGWA2 ON MYDBSTUDENT2.HAKGWACODE=MYDBHAKGWA2.CODE;
 
---2번
+select mydbstudent2.hakbeon as "학번", mydbstudent2.name as "학생명", mydbhakgwa2.name
+from mydbstudent2
+join mydbhakgwa2 on mydbstudent2.hakgwacode=mydbhakgwa2.code
+order by hakgwacode;
 
-drop table mykbstudent2;
-create table mykbstudent2 (
-name varchar2(30),
-age char(2),
-hakbeon varchar(10) primary key,
-code char(3),
-regdate date default sysdate);
+--전체 나이 평균 구하기
+select avg(age) from mydbstudent2;
 
-drop table mykbmajor2;
-create table mykbmajor2 (
-name varchar2(30),
-code char(3) primary key,
-regdate date default sysdate);
+--특정학과의 평균만 구하기
+select avg(age) 
+from mydbstudent2
+where hakgwacode='002';
 
-alter table mykbstudent2 add constraint fk_mystu2 foreign key(code) references mykbmajor2(code);
+--과별로 평균 구하기
+--select mydbhakgwa2.name as "학과명", mydbstudent2.age as "나이"
+--from mydbstudent2
+--join mydbhakgwa2 on mydbstudent2.hakgwacode=mydbhakgwa2.code;
+select name as "나이 평균이 높은 학과",avg(age) 
+from mydbstudent2 
+group by name 
+having avg(age)=(select max(avg(age)) 
+from mydbstudent2 group by name);
 
-insert into mykbmajor2(name,code) values ('경영','001');
-insert into mykbmajor2 values ('세무','002','2000-01-01');
-select * from mykbmajor2;
+create view age_by_student2 as select mydbhakgwa2.name, age 
+from mydbstudent2 
+join mydbhakgwa2 on mydbstudent2.hakgwacode=mydbhakgwa2.code;
 
-insert into mykbstudent2 values ('일번',20,'00001','001','2014-04-13');
-insert into mykbstudent2 values ('이번',22,'00002','002','2016-04-01');
-insert into mykbstudent2(name,age,hakbeon,code) values ('삼번',16,'00003','001');
-select * from mykbstudent2;
+--원본값을 바꾸면 view 값도 바뀜.
+select * from age_by_student2;
 
-select mykbstudent2.name as "학생명", mykbstudent2.hakbeon as "학번", mykbmajor2.name as "학과명"
-from mykbstudent2 
-join mykbmajor2 on mykbstudent2.code=mykbmajor2.code;
+--각과의 평균을 보기
+select name, avg(age)
+from age_by_student2
+group by name;
 
-select mykbstudent2.name as "학생명", mykbstudent2.hakbeon as "학번", mykbmajor2.name
-from mykbstudent2 
-join mykbmajor2 on mykbstudent2.code=mykbmajor2.code 
-where mykbmajor2.name='경영';

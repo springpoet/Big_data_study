@@ -20,7 +20,7 @@ public class Baekjoon2153 {
 		}
 		
 		//소수인지 체크하는 변수
-		boolean primeword = false;
+		int primeword = 0;
 		
 		
 		for(int i=2;i<=arrSum;i++) {
@@ -31,10 +31,10 @@ public class Baekjoon2153 {
 			//1부터 합까지 하나하나 나눴을 때 0이 되는게 없으면 소수가 맞음
 			//나눠지는 수가 i 하나밖에 없고 i가 합인 경우 소수이다.
 			if(i==arrSum && arrSum % i ==0) {
-				primeword = true;
+				primeword = 1;
 			}
 		}
-		if(primeword || arrSum ==1) {
+		if(primeword==1 || arrSum ==1) {
 			System.out.println("It is a prime word.");
 		}
 		else {
