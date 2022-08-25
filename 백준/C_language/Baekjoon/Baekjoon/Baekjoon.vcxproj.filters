@@ -24,5 +24,20 @@
     <ClCompile Include="Baekjoon9498.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Baekjoon14681.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon2753.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon2420.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon2741.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon10872.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
