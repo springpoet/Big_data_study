@@ -1,0 +1,107 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>0826 Q1 실습</title>
+    <style>
+        body {
+            font-family: verdana;
+            background-color:beige;
+            background-image: url('data:image/jpeg;base64,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');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        h1 {
+            background-color: white;
+            color: tomato;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            background-color: white;
+            padding: 5px;
+        }
+
+        h3 {
+            background-color: maroon;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        table {
+            width: 80%;
+            border: 2px solid black;
+            background-color: white;
+        }
+
+        th {
+            border: 1px solid black;
+            text-align:left;
+        }
+
+        p {
+            background-color: whitesmoke;
+        }
+        ul{
+            background-color:beige;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello World</h1>
+    <h3>**각 정보는 본인에게 맞춰서 작성하세요.**<br>
+        (글씨체는 verdana로 설정)</h3>
+    <h2>내 정보</h2>
+    <ul>
+        <li>이름 : 김성근</li>
+        <li>성별 : 남자</li>
+        <li>나이 : 28</li>
+        <li>직업 : 학생</li>
+        <li>소개 : <a href="https://www.acmicpc.net/user/springpoet">백준(개인 프로필)</a></li>
+        <li>좋아 하는 것</li>
+        <dt>커피(coffee)</dt>
+        <dd>"무인다방 커피 맛있졍"</dd>
+             <dt>순두부찌개</dt>
+        <dd>"기본이 제일 맛있졍"</dd>
+              <dt>백준(Baekjoon)</dt>
+        <dd>"언제 브론즈 탈출?"</dd>
+        <li>프로필 사진</li>
+        <dd><img src="https://trboard.game.onstove.com/Data/TR/20160115/19/635884829128688447.jpg" width="500",height="300"></dd>
+    </ul>
+    <h2>일정</h2>
+    <table>
+        <tr>
+            <th>우선순위</th> 
+            <th>마감기한</th>
+            <th>내용</th>
+        </tr>
+        <tr>
+            <td>1.</td> 
+            <td>8/27</td>
+            <td>맛집 찾기</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>8/28</td>
+            <td>백준 풀기</td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>9/22</td>
+            <td>텅장</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>9/4</td>
+            <td>집들이 선물 사기</td>
+        </tr>
+    </table>
+    <h3>**수고하셨습니다**</h3>
+    <h1>Goodbye World</h1>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Hello World</title>
+        <!--link : 링크의 기본 색상-->
+        <!--visited : 클릭을 한번이라도 한 링크의 색상-->
+        <!--hover : 마우스를 갖다대면 바뀌는 색상-->
+        <!--active : 마우스를 꾹 눌렀을 때 색상-->
+        <style>
+            body{
+                background-image:url('https://cdn.crowdpic.net/list-thumb/thumb_l_D623AE308211C3678E61EC0E3FF3C969.jpg');
+                background-repeat:no-repeat;
+                background-size:cover;
+            }
+            a:link{
+                color:crimson;
+            }
+            a:visited{
+                color:deepskyblue;
+            }
+            a:hover{
+                color:darkorchid;
+            }
+            a:active{
+                color:silver;
+            }
+            table{
+                border: 3px solid black;
+                width:70%;
+                background-color:white;
+            }
+            th, td{
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <p>w3school 사이트(blockquote 사용)</p>
+        <blockquote>Html, Css, 자바 스크립트, 그 외의 다른 문법도 함께 소개하는 사이트<br>꽤 유용한 사이트</blockquote>
+        <br>
+        <p>w3school 사이트(q 태그 사용하여 설명)</p>
+        <!--q 태그 : 인용문 태그, blockquote 보다는 짧은 인용문 작성에 사용 ""가 적힘-->
+        <q>Html, Css, 자바 스크립트, 그 외의 다른 문법도 함께 소개하는 사이트<br>꽤 유용한 사이트</q>
+        <!--table 태그: 표를 만들어주는 태그-->
+        <!--tr, th, td 태그 통해서 표를 구성-->
+        <p>내 일정</p>
+        <table>
+            <!--tr: 표에 있어서 하나의 행을 표현-->
+            <tr>
+                <!--th: 해당 행에 대한 구성 요소 (head)-->
+                <th>마감기한</th>
+                <th>우선순위</th>
+                <th>할일</th>
+            </tr>
+            <tr>
+                <!--td: 해당 행에 대한 구성 요소 (data)-->
+                <td>8/26</td>
+                <td>2</td>
+                <td>숙면</td>
+            </tr>
+            <tr>
+                <td>8/26</td>
+                <td>1</td>
+                <td>오늘 수업</td>
+            </tr>
+        </table>
+        <br>
+
+        <p>좋아하는 것</p>
+        <!--ul 태그 : 순서가 없는 목록을 나타내는 데 사용-->
+        <ul>
+            <!--li 태그 : 목로 태그 안에서 사용, 각 요소들을 표현-->
+            <li>순두부찌개</li>
+            <li>커피</li>
+            <li>초밥</li>
+        </ul>
+                </ul>
+        <br>
+
+        <p>좋아하는 것</p>
+        <!--ol 태그: 순서가 있는 목록을 나타내는 데에 사용-->
+        <ol>
+            <!--li 태그: 목록 태그 안에서 사용, 각 요소들을 표현-->
+            <li>커피</li>
+            <li>초밥</li>
+            <li>가을</li>
+        </ol>
+        <br>
+
+        <p>좋아하는 것</p>
+        <!--ol 태그: 순서가 있는 목록을 나타내는 데에 사용-->
+        <ol>
+            <!--li 태그: 목록 태그 안에서 사용, 각 요소들을 표현-->
+            <li>커피</li>
+            <li>초밥</li>
+            <li>가을</li>
+        </ol>
+        <br>
+        <p>좋아 하는 것</p>
+        <!--dl 태그 : 목록 태그 중, 하나 각 리스트에 대한 설명을 추가할 수 있음-->
+        <dl>
+            <!--dt 태그 : li 태그와 비슷하게 목록에 있어 각 요소를 표현-->
+            <!--dd 태그 : dt 태그에 작성한 리스트에 대한 설명 삽입 가능-->
+            <dt>초밥</dt>
+            <dd>고오오오급 초밥</dd>
+            <dt>커피</dt>
+            <dd>무인다방 커피 좋아영</dd>
+        </dl>
+    </body>
+</html>
