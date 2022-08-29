@@ -1,4 +1,4 @@
---PPT 1¹ø ÆäÀÌÁö
+--PPT 1ë²ˆ í˜ì´ì§€
 drop table mydbstudent;
 create table MyDbStudent (
 hakbeon varchar2(10) primary key,
@@ -13,33 +13,33 @@ name varchar(20));
 
 alter table MyDbStudent add constraint fk_dbstu foreign key(code) references MYDbHakgwa(code);
 
-insert into Mydbhakgwa values('001','ÄÄ°ø');
-insert into mydbhakgwa values('002','¾Æµ¿°¡Á·ÇĞ');
---Ãß°¡ ¹®Á¦
-insert into mydbhakgwa values('003','°æ¿µ');
+insert into Mydbhakgwa values('001','ì»´ê³µ');
+insert into mydbhakgwa values('002','ì•„ë™ê°€ì¡±í•™');
+--ì¶”ê°€ ë¬¸ì œ
+insert into mydbhakgwa values('003','ê²½ì˜');
 
-insert into MyDbStudent values('100001','±èÀÏ¹ø',20,'002');
-insert into MyDbStudent values('100002','ÃÖÀÌ¹ø',22,'003');
-insert into MyDbStudent values('100003','¹Ú»ï¹ø',25,'001');
-insert into MyDbStudent values('100004','ÀÌ»ç¹ø',23,'001');
-insert into MyDbStudent values('100005','³ª¿À¹ø',21,'002');
---Ãß°¡¹®Á¦
-insert into mydbstudent values('100006','À°¹ø',31,'003');
-insert into mydbstudent values('100007','Ä¥¹ø',19,'002');
-insert into mydbstudent values('100008','ÆÈ¹ø',13,'001');
-insert into mydbstudent values('100009','±¸¹ø',28,'003');
-insert into mydbstudent values('100010','½Ê¹ø',12,'002');
+insert into MyDbStudent values('100001','ê¹€ì¼ë²ˆ',20,'002');
+insert into MyDbStudent values('100002','ìµœì´ë²ˆ',22,'003');
+insert into MyDbStudent values('100003','ë°•ì‚¼ë²ˆ',25,'001');
+insert into MyDbStudent values('100004','ì´ì‚¬ë²ˆ',23,'001');
+insert into MyDbStudent values('100005','ë‚˜ì˜¤ë²ˆ',21,'002');
+--ì¶”ê°€ë¬¸ì œ
+insert into mydbstudent values('100006','ìœ¡ë²ˆ',31,'003');
+insert into mydbstudent values('100007','ì¹ ë²ˆ',19,'002');
+insert into mydbstudent values('100008','íŒ”ë²ˆ',13,'001');
+insert into mydbstudent values('100009','êµ¬ë²ˆ',28,'003');
+insert into mydbstudent values('100010','ì‹­ë²ˆ',12,'002');
 
 select * from mydbstudent;
 select * from mydbhakgwa;
 
-select mydbstudent.name as ÇĞ»ı¸í, mydbhakgwa.name as ÇĞ°ú¸í,hakbeon ÇĞ¹ø from mydbstudent
+select mydbstudent.name as í•™ìƒëª…, mydbhakgwa.name as í•™ê³¼ëª…,hakbeon í•™ë²ˆ from mydbstudent
 join mydbhakgwa on mydbstudent.hakgwacode=mydbhakgwa.code;
 
-select avg(age) from mydbstudent; --³ªÀÌ Æò±Õ Ãâ·Â
-select hakgwacode, avg(age) from mydbstudent group by hakgwacode;--°úº° ³ªÀÌ Æò±Õ Ãâ·Â
+select avg(age) from mydbstudent; --ë‚˜ì´ í‰ê·  ì¶œë ¥
+select hakgwacode, avg(age) from mydbstudent group by hakgwacode;--ê³¼ë³„ ë‚˜ì´ í‰ê·  ì¶œë ¥
 
---ÇĞ°úº° Æò±Õ ³ªÀÌ¸¦ Ãâ·ÂÇÏµÇ 30»ì ³Ñ´Â °ú¸¸ Ç¥½ÃÇÏ±â
+--í•™ê³¼ë³„ í‰ê·  ë‚˜ì´ë¥¼ ì¶œë ¥í•˜ë˜ 30ì‚´ ë„˜ëŠ” ê³¼ë§Œ í‘œì‹œí•˜ê¸°
 select hakgwacode,avg(age) from mydbstudent group by hakgwacode having avg(age)>20;
 
 select mydbhakgwa.name,avgage 
@@ -47,21 +47,21 @@ from mydbhakgwa
 join (select hakgwacode, avg(age) as avgage from mydbstudent group by hakgwacode) a 
 on mydbhakgwa.code=a.hakgwacode;
 
---Ãß°¡¹®Á¦
-select name as "³ªÀÌ Æò±ÕÀÌ ³ôÀº ÇĞ°ú",avg(age) 
+--ì¶”ê°€ë¬¸ì œ
+select name as "ë‚˜ì´ í‰ê· ì´ ë†’ì€ í•™ê³¼",avg(age) 
 from mydbstudent 
 group by name 
 having avg(age)=(select max(avg(age)) 
 from mydbstudent group by name);
 
---ÀÌ¸§, ÇĞ°ú¸í, ³ªÀÌ Ãâ·ÂÇÏ±â
+--ì´ë¦„, í•™ê³¼ëª…, ë‚˜ì´ ì¶œë ¥í•˜ê¸°
 select mydbstudent.name, mydbhakgwa.name, age 
 from mydbstudent
 join mydbhakgwa on mydbstudent.hakgwacode=mydbhakgwa.code;
 
---Æò±ÕÀÌ ³ªÀÌ°¡ °¡Àå ¸¹Àº ÇĞ°ú
---1.ÇĞ°úº° Æò±Õ³ªÀÌ
-select mydbhakgwa.name as "ÇĞ°ú",age as "³ªÀÌ"
+--í‰ê· ì´ ë‚˜ì´ê°€ ê°€ì¥ ë§ì€ í•™ê³¼
+--1.í•™ê³¼ë³„ í‰ê· ë‚˜ì´
+select mydbhakgwa.name as "í•™ê³¼",age as "ë‚˜ì´"
 from mydbstudent
 join mydbhakgwa on mydbstudent.hakgwacode=mydbhakgwa.code; 
 
@@ -69,31 +69,31 @@ create view age_by_student as select mydbhakgwa.name, age
 from mydbstudent 
 join mydbhakgwa on mydbstudent.hakgwacode=mydbhakgwa.code;
 
---¿øº»°ªÀ» ¹Ù²Ù¸é view °ªµµ ¹Ù²ñ.
+--ì›ë³¸ê°’ì„ ë°”ê¾¸ë©´ view ê°’ë„ ë°”ë€œ.
 select * from age_by_student;
 
---°¢ °úÀÇ Æò±ÕÀ» º¸´Â Äõ¸®
+--ê° ê³¼ì˜ í‰ê· ì„ ë³´ëŠ” ì¿¼ë¦¬
 select name, avg(age) 
 from age_by_student 
 group by name;
 
---ºä¸¦ ¶Ç ¸¸µç´Ù???????
+--ë·°ë¥¼ ë˜ ë§Œë“ ë‹¤???????
 create view avg_age_major  
 as select name, avg(age) avgage 
 from age_by_student 
 group by name;
 
---Á¦ÀÏ ³ôÀº Æò±Õ °ªÀ» Ãâ·Â
+--ì œì¼ ë†’ì€ í‰ê·  ê°’ì„ ì¶œë ¥
 select max(avgage) from avg_age_major;
 
---Á¦ÀÏ ³ôÀº Æò±Õ °ªÀ» °¡Áø °ú¸¦ Ãâ·Â
+--ì œì¼ ë†’ì€ í‰ê·  ê°’ì„ ê°€ì§„ ê³¼ë¥¼ ì¶œë ¥
 select name 
 from avg_age_major
 where avgage=(select max(avgage)from avg_age_major);
 
 
 select * from mydbstudent;
--- Á¦ÀÏ ¿¬ÀåÀÚ¸¦ »Ì´Â ¹æ¹ı(ÁßÃ¸ÁúÀÇ)
+-- ì œì¼ ì—°ì¥ìë¥¼ ë½‘ëŠ” ë°©ë²•(ì¤‘ì²©ì§ˆì˜)
 
 select * from mydbstudent 
 where age = (select max(age) from mydbstudent);
@@ -105,31 +105,31 @@ from mydbstudent
 group by hakgwacode) a 
 on mydbhakgwa.code = a.hakgwacode;
 
--- ¸¸¾à view »ı¼º ¾È µÇ¸é system °èÁ¤À¸·Î Á¢¼ÓÇØ¼­ ¾Æ·¡ Äõ¸®¸¦ ½ÇÇàÇÑ´Ù.
+-- ë§Œì•½ view ìƒì„± ì•ˆ ë˜ë©´ system ê³„ì •ìœ¼ë¡œ ì ‘ì†í•´ì„œ ì•„ë˜ ì¿¼ë¦¬ë¥¼ ì‹¤í–‰í•œë‹¤.
 --grant create view to c##scott;
 
 create view max_age as(select max(age) maxAge from mydbstudent);
 select *from max_age;
---°¡»ó Å×ÀÌºíÀ» ¸¸µë
---ÀÌ·¯ÇÑ °¡»ó Å×ÀÌºíÀ» ºä¶ó°í ÇÑ´Ù.
---ÁßÃ¸ÁúÀÇ µî¿¡¼­ ¾²±âÀ§ÇØ ¸¹ÀÌ È°¿ë
---select ¹® µîÀÌ ¸Å¿ì º¹ÀâÇØ Áú °æ¿ì ´Ü¼øÈ­ÇÒ ¶§ ¸¹ÀÌ ¾²ÀÓ
+--ê°€ìƒ í…Œì´ë¸”ì„ ë§Œë“¬
+--ì´ëŸ¬í•œ ê°€ìƒ í…Œì´ë¸”ì„ ë·°ë¼ê³  í•œë‹¤.
+--ì¤‘ì²©ì§ˆì˜ ë“±ì—ì„œ ì“°ê¸°ìœ„í•´ ë§ì´ í™œìš©
+--select ë¬¸ ë“±ì´ ë§¤ìš° ë³µì¡í•´ ì§ˆ ê²½ìš° ë‹¨ìˆœí™”í•  ë•Œ ë§ì´ ì“°ì„
 
 select *from mydbstudent where age=(select * from max_age);
 
---¸¸¾à ÃÖ ¿¬ÀåÀÚÀÇ ÇĞ°ú¸¦ Ãâ·ÂÇÏ·Á°í ÇÑ´Ù¸é?
+--ë§Œì•½ ìµœ ì—°ì¥ìì˜ í•™ê³¼ë¥¼ ì¶œë ¥í•˜ë ¤ê³  í•œë‹¤ë©´?
 create view max_age_student as select * 
 from mydbstudent where age=(select * from max_age);
 select mydbhakgwa.name from max_age_student join mydbhakgwa on 
 max_age_student.hakgwacode = mydbhakgwa.code;
---ÇĞ°ú ÇÏ³ª Ãß°¡ÇÏ°í, Æò±Õ ³ªÀÌ°¡ °¡Àå ¸¹Àº ÇĞ°ú Ã£±â
+--í•™ê³¼ í•˜ë‚˜ ì¶”ê°€í•˜ê³ , í‰ê·  ë‚˜ì´ê°€ ê°€ì¥ ë§ì€ í•™ê³¼ ì°¾ê¸°
 select *from max_age_student;
 delete from max_age_student;
 select * from mydbstudent;
 select * from max_age;
 --delete from max_age;
 
---PPT 2¹ø ÆäÀÌÁö
+--PPT 2ë²ˆ í˜ì´ì§€
 drop table mykbstudent;
 create table mykbstudent (
 name varchar2(30),
@@ -143,27 +143,27 @@ create table hakgwa (
 name varchar2(30),
 code char(3) primary key,
 enterdate timestamp default sysdate);
---enterdate date ·Î ÇßÀ¸³ª À§Ã³·³ ÇÏ´Â°Ô ¸Â´Ù°í ÇÔ. date·Îµµ ÇÒ ¼ö´Â ÀÖÀ½
+--enterdate date ë¡œ í–ˆìœ¼ë‚˜ ìœ„ì²˜ëŸ¼ í•˜ëŠ”ê²Œ ë§ë‹¤ê³  í•¨. dateë¡œë„ í•  ìˆ˜ëŠ” ìˆìŒ
 
 alter table mykbstudent add constraint fk_mykb foreign key(hakgwacode) references hakgwa(code);
 --alter table mykbstudent add constraint fk_mykb2 foreign key(enterdate) references hakgwa(date);
 
 
-insert into hakgwa values('ÀÎ°øÁö´É','001','2022-08-19');
-insert into hakgwa values('Á¦°úÁ¦»§','002','2022-05-22');
+insert into hakgwa values('ì¸ê³µì§€ëŠ¥','001','2022-08-19');
+insert into hakgwa values('ì œê³¼ì œë¹µ','002','2022-05-22');
 
-insert into mykbstudent values('±èÀÏ¹ø','20','1234567890','001');
-insert into mykbstudent values('ÃÖÀÌ¹ø','22','2345678901','002','2022-08-12');
-insert into mykbstudent values('¹Ú»ï¹ø','23','3456789012','002','2022-07-11');
+insert into mykbstudent values('ê¹€ì¼ë²ˆ','20','1234567890','001');
+insert into mykbstudent values('ìµœì´ë²ˆ','22','2345678901','002','2022-08-12');
+insert into mykbstudent values('ë°•ì‚¼ë²ˆ','23','3456789012','002','2022-07-11');
 
 select nvl(enterdate,sysdate) from mykbstudent;
 select * from mykbstudent;
 
-select mykbstudent.name as ÀÌ¸§, mykbstudent.hakbeon as ÇĞ¹ø, hakgwa.name from mykbstudent 
+select mykbstudent.name as ì´ë¦„, mykbstudent.hakbeon as í•™ë²ˆ, hakgwa.name from mykbstudent 
 join hakgwa on mykbstudent.hakgwacode=hakgwa.code;
 
-select mykbstudent.name as ÀÌ¸§, hakgwa.name as Æ¯Á¤ÇĞ°ú from mykbstudent
-join hakgwa on mykbstudent.hakgwacode=hakgwa.code where hakgwa.name='Á¦°úÁ¦»§';
+select mykbstudent.name as ì´ë¦„, hakgwa.name as íŠ¹ì •í•™ê³¼ from mykbstudent
+join hakgwa on mykbstudent.hakgwacode=hakgwa.code where hakgwa.name='ì œê³¼ì œë¹µ';
 
 
 

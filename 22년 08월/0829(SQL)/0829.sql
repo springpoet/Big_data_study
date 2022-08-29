@@ -1,0 +1,92 @@
+DROP TABLE food;
+CREATE TABLE food (
+NUM INTEGER PRIMARY KEY,
+NAME VARCHAR2(50),
+price INTEGER);
+
+INSERT INTO food(NUM,NAME,price) VALUES (1,'불고기',7000);
+INSERT INTO food(NUM,NAME,price) VALUES (2,'김치찌개',6000);
+INSERT INTO food(NUM,NAME,price) VALUES (3,'순두부찌개',9000);
+SELECT * FROM food;
+
+--name과 price 만 나오게 하기
+SELECT NAME AS 이름, price AS 가격 FROM food;
+
+--update 문에서 끝에 where을 안 적을 경우 모든 데이터가 다 일괄적으로 바뀜
+UPDATE food SET NAME='김치+제육' WHERE NUM=4;
+
+SELECT * FROM food;
+
+
+INSERT INTO food(NUM,NAME,price) VALUES (4,'돈까스',5000);
+INSERT INTO food(NUM,NAME,price) VALUES (5,'우동',3500);
+INSERT INTO food(NUM,NAME) VALUES (6,'김밥');
+INSERT INTO food(NUM,NAME,price) VALUES (7,'오징어덮밥',6000);
+INSERT INTO food(NUM,NAME,price) VALUES (8,'민트덮밥',3500);
+INSERT INTO food(NUM,NAME,price) VALUES (9,'라볶이',4500);
+INSERT INTO food(NUM,NAME,price) VALUES (10,'잔치국수',3500);
+INSERT INTO food(NUM,NAME,price) VALUES (11,'하와이안피자',4000);
+INSERT INTO food(NUM,NAME,price) VALUES (12,'비빔만두',3000);
+
+--2번
+SELECT * FROM food WHERE NAME LIKE '김치%';
+
+--3번
+SELECT * FROM food WHERE price BETWEEN 5000 AND 7000;
+
+--4번
+UPDATE food SET price=1000 WHERE price IS NULL;
+
+--5번
+UPDATE food SET NAME='맛있는불고기' WHERE NUM=1;
+
+--6번
+COMMIT;
+SELECT * FROM food;
+
+ALTER TABLE food ADD recipe VARCHAR2(30) DEFAULT '-' NOT NULL;
+
+--1번
+DELETE food WHERE NAME LIKE '민트%';
+
+--2번 
+DELETE food WHERE NAME LIKE '하와이안%';
+
+--3번
+DELETE food WHERE price >= 10000;
+
+--4번 
+UPDATE food SET recipe='msg 추가' WHERE price <=5000;
+
+--5번
+SELECT price AS 가격, NAME AS 메뉴, recipe AS 레시피 FROM food ORDER BY price;
+
+SELECT code 분류코드, NAME 분류명 FROM food_category;
+
+DROP TABLE FOOD_TRUCK
+CREATE TABLE food_truck(
+NUM INTEGER PRIMARY KEY,
+NAME VARCHAR2(100) NOT NULL,
+price INT,
+foodcode NUMBER NOT NULL,
+FOREIGN KEY(foodcode) REFERENCES food_category(code));
+
+--시퀀스 생성
+--FOR 문의 I 처럼 값이 순차적으로 늘어나는 것.
+DROP SEQUENCE FOOD_ROWNUM;
+CREATE SEQUENCE FOOD_ROWNUM;
+
+INSERT INTO FOOD_TRUCK VALUES(FOOD_ROWNUM.NEXTVAL,'민트덮밥',5000,5);
+INSERT INTO FOOD_TRUCK VALUES(FOOD_ROWNUM.NEXTVAL,'딸기카레',7000,5);
+INSERT INTO FOOD_TRUCK VALUES(FOOD_ROWNUM.NEXTVAL,'타이어',30000,7);
+
+SELECT * FROM FOOD_TRUCK;
+COMMIT;
+
+SELECT FOOD_TRUCK.NAME AS 음식명, PRICE AS 가격, FOOD_CATEGORY.NAME AS 분류
+FROM FOOD_TRUCK
+JOIN FOOD_CATEGORY ON FOOD_TRUCK.FOODCODE=FOOD_CATEGORY.CODE;
+
+
+
+
