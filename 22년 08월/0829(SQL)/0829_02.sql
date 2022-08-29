@@ -105,6 +105,58 @@ select * from find_max_price;
 select * from food_truck where price=(select * from find_max_price);
 
 --실습1
-select * from food_truck
-where price=(select max(price) from food_truck)
-group by foodcode, price;
+--1-1.
+select food_category.name as 분류명,avg(food_truck.price) as 평균
+from food_truck
+join food_category on food_truck.foodcode=food_category.code 
+group by food_category.name
+order by avg(price);
+
+--1-2.
+select food_category.name as 분류명,avg(food_truck.price) as 평균
+from food_truck
+join food_category on food_truck.foodcode=food_category.code 
+group by food_category.name
+order by avg(price) desc;
+
+--실습2
+select food_category.name as 분류명, max(food_truck.price) as "가장 비싼 음식"
+from food_truck
+join food_category on food_truck.foodcode=food_category.code
+group by food_category.name;
+
+--실습3
+select food_category.name as 분류명, min(food_truck.price) as "가장 저렴한 음식"
+from food_truck
+join food_category on food_truck.foodcode=food_category.code
+group by food_category.name;
+
+--실습4
+--분류명과 가격만 따로 빼낸 뷰를 생성
+create view food_price
+as select food_category.name, price 
+from food_truck
+join food_category on food_truck.foodcode=food_category.code;
+
+select * from food_price;
+
+--생성한 뷰의 분류명과 가격을 통해 분류명, 평균값을 컬럼으로 가진 뷰를 생성 
+--avg(price)를 컬럼으로 만들기 위해서는 컬럼명(avgprice)를 설정해줘야 함
+create view food_avg_price
+as select name, avg(price) avgprice
+from food_price 
+group by name;
+
+select * from food_avg_price;
+
+--분류명, 평균값으로 이루어진 뷰에서 분류별 평균에서 최댓값을 가진 분류명 출력
+select name 
+from food_avg_price 
+where avgprice=(select max(avgprice) from food_avg_price);
+
+--실습5
+--분류명, 평균값으로 이루어진 뷰에서 분류별 평균에서 최댓값을 가진 분류명 출력
+select * from food_avg_price;
+select name 
+from food_avg_price 
+where avgprice=(select min(avgprice) from food_avg_price);
