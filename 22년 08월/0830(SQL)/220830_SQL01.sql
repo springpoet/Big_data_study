@@ -166,7 +166,9 @@ on food_truck.foodcode=food_category.code;
 
 select * from food_category_truck;
 
-select categoryname, max(price) from food_category_truck 
+
+select categoryname, max(price) 
+from food_category_truck 
 group by categoryname;
 
 create view max_food
@@ -175,6 +177,7 @@ from food_category_truck
 group by  categoryname;
 
 select * from max_food;
+
 
 select foodname, price, max_food.categoryname 
 from max_food 

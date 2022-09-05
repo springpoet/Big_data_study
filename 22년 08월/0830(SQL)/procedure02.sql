@@ -1,6 +1,7 @@
 --프로시저
 --drop procedure add_person;
 --add_person이 없으면 create하고 없으면 replace(덮어쓰기) 함
+--drop procedure add_person;
 create or replace procedure add_person(
 mynum in integer,
 myname varchar2,
