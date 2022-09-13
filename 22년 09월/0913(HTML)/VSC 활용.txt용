@@ -1,0 +1,15 @@
+Visual Studio Code insider
+
+유용 확장프로그램
+Lorem ipsum = 무작위의 단어 생성
+- 사용법 : lorem100  엔터. = 100개의 랜덤 단어 생성
+Lorem picsum = 무작위의 이미지 생성
+- 사용법 picsum 엔터. = 끝에 숫자를 바꾸면 그에 맞춰서 사이즈가 달라짐
+Open in brower = 실행화면 확인 해주는 프로그램
+- 사용법 alt+b = 내가 지정한 기본 브라우저로 실행 
+Prettier = 코드 정리 프로그램
+- 사용법 alt+shift+f 
+	프리티어(prettier)의 다른 기능으로는 저장을 하면 바로 코드 정리가 되게 하는 옵션이 있습니다.
+	1) 설정 들어갑니다.
+	2) editor format on save 검색합니다.
+	3) Format On Save 체크합니다.
