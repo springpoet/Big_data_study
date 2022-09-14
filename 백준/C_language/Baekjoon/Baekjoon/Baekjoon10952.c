@@ -1,12 +1,13 @@
-#include<stdio.h>
-int main()
-{
-	int A=0 , B=0;
-	while (A ==0 && B==0)
-	{
-		scanf_s("%d %d", &A, &B);
-		printf("%d\n", A + B);
-	}
+#include <stdio.h>
 
+int main() {
+	int a = 1, b = 1;
+	while (1) {
+		scanf("%d %d", &a, &b);
+		if (a == 0 && b == 0) {
+			break;
+		}
+		printf("%d\n", a + b);
+	}
 	return 0;
 }
