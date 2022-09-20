@@ -5,17 +5,62 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>RSP Game</title>
+    <style>
+      img {
+        max-width: 300px;
+        max-height: 300px;
+      }
+    </style>
   </head>
   <body>
-    <div id="computer">
-      <div><button id="rock"</div>
-    </div>
+    <div id="page"><img src="begin.png" , id="what" /></div>
+    <button id="rocks">Rock</button>
+    <button id="scissors">Scissor</button>
+    <button id="papers">Paper</button>
+    <div id="result"></div>
     <script>
-      let me;
-      let computer;
-      let my_hand;
-      let com_hand;
+      let rock = document.getElementById("rocks");
+      let scissor = document.getElementById("scissors");
+      let paper = document.getElementById("papers");
+      let randompush = Math.floor(Math.random() * 3);
+
+      rock.onclick = function () {
+        if (randompush == 0) {
+          result.innerText = "비겼습니다.";
+          document.getElementById("what").src = "rock.png";
+        } else if (randompush == 1) {
+          result.innerText = "이겼습니다.";
+          document.getElementById("what").src = "scissor.png";
+        } else {
+          result.innerText = "졌습니다.";
+          document.getElementById("what").src = "paper.png";
+        }
+      };
+      scissor.onclick = function () {
+        if (randompush == 0) {
+          result.innerText = "졌습니다.";
+          document.getElementById("what").src = "rock.png";
+        } else if (randompush == 1) {
+          result.innerText = "비겼습니다.";
+          document.getElementById("what").src = "scissor.png";
+        } else {
+          result.innerText = "이겼습니다.";
+          document.getElementById("what").src = "paper.png";
+        }
+      };
+      paper.onclick = function () {
+        if (randompush == 0) {
+          result.innerText = "이겼습니다.";
+          document.getElementById("what").src = "rock.png";
+        } else if (randompush == 1) {
+          result.innerText = "졌습니다.";
+          document.getElementById("what").src = "scissor.png";
+        } else {
+          result.innerText = "비겼습니다.";
+          document.getElementById("what").src = "paper.png";
+        }
+      };
     </script>
   </body>
 </html>
