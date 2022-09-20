@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let num = prompt("숫자 입력하기"); //문자열
+      num %= 12; // 이 시점까지 문자열
+      num = Number(num); //이 시점부터 숫자로 바뀜
+      num++;
+      console.log(num);
+      //결론: 입력받는 값은 기본적으로 문자임.
+      //숫자로 쓰기 위해서는 별도의 처리 필요
+
+      let test = 20;
+      if (test == "20") console.log("==값을 비교");
+      if (test == 20) console.log("타입도 비교함");
+
+      //4계절 문제 if문으로.
+      let mymonth = prompt("몇 월생?");
+      document.querySelector("body").style.backgroundRepeat = "no-repeat";
+      if (mymonth == 12 || mymonth == 1 || mymonth == 2) {
+        document.querySelector("body").background =
+          "https://file.mk.co.kr/meet/neds/2021/01/image_readbot_2021_90469_16117848634516238.jpg";
+      } else if (mymonth == 3 || mymonth == 4 || mymonth == 5) {
+        document.querySelector("body").background =
+          "https://w.namu.la/s/936e58e0a6a3f3e7ffa4184bd389f5ea8f3d909f84251407e1f6052b520750c5157eab91ed705292fb2c49902a70f0d1454e5db2400543372ad332b9b3c925106b8b218b6b7e932fa1343045c737564d3d859d2554c2beb8aec3cb5f2fbdefef";
+      }
+    </script>
+  </body>
+</html>

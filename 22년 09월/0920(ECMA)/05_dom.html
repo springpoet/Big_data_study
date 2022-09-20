@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">Lorem, ipsum.</h1>
+    <img src="" />
+    <h1>Lorem, ipsum dolor.</h1>
+    <img src="" alt="" id="abcd" />
+    <script>
+      let title = document.querySelector("#title");
+      let img = document.getElementById("abcd");
+      title.style.color = "blue";
+      img.src =
+        "https://trboard.game.onstove.com/Data/TR/20160115/19/635884829128688447.jpg";
+      let h1 = document.querySelectorAll("h1");
+      let images = document.getElementsByTagName("img");
+      for (let item of h1) item.style.background = "springgreen";
+      images[0].src =
+        "https://trboard.game.onstove.com/Data/TR/20160115/19/635884829128688447.jpg";
+      let name = prompt("이름이 뭐에요?");
+      h1[0].textContent = name;
+    </script>
+  </body>
+</html>
