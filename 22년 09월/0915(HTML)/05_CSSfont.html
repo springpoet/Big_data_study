@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* id가 button인 태그 */
+      #button {
+        width: 150px;
+        height: 70px;
+        background-color: aqua;
+        border: 10px solid pink;
+        border-radius: 30px;
+      }
+      /* id가 button인 태그의 자손인 a태그
+        a태그는 원래 inline이라서 넓이 개념이 없음
+        line-height와 위의 height 값이 같아야 함 */
+      #button > a {
+        display: block;
+        line-height: 70px;
+        text-align: center;
+        color: inherit;
+        cursor: pointer;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="button">
+      <a href="">내용</a>
+    </div>
+  </body>
+</html>

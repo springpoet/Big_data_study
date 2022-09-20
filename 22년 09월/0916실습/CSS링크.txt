@@ -1,0 +1,5 @@
+스타일 링크
+-https://blog.counter-strike.net/wp-content/themes/counterstrike_launch/style.css?v=1051
+
+헤드 스타일 링크
+-https://blog.counter-strike.net/wp-content/themes/counterstrike_launch/twentytwenty.css

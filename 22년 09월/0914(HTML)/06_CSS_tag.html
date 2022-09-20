@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--h3,h4만 바꾸고 싶을때는 ',' 사용-->
+    <!--특정 id만 바꿀때는 #id명 사용-->
+    <!--특정 클래스만 바꿀때는 .class명 사용-->
+    <!--li.select : li 태그이면서 select 클래스인 경우-->
+    <!--h1.select,h2#big : h1 태그의 select 클래스 또는 h2 태그면서 id가 big인 경우-->
+    <style>
+      body {
+        color: pink;
+      }
+      h1 {
+        background-color: blue;
+        font-family: IBM Plex Mono;
+      }
+      p {
+        font-family: D2Coding;
+        background-color: brown;
+      }
+      h3,
+      h4 {
+        color: red;
+      }
+      #temp {
+        color: violet;
+      }
+      .select {
+        color: aqua;
+      }
+      li.select {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>반갑습니당</h2>
+    <h1>HELLO</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam error quae
+      sint consectetur voluptatibus, dicta at tempora maxime? Excepturi, a.
+    </p>
+    <h3>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at deleniti
+      repudiandae nisi beatae dolorem.
+    </h3>
+    <h4>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, eum.
+    </h4>
+    <h5 id="temp">id가 temp인 h5입니다.</h5>
+    <h4 class="select">Lorem ipsum dolor sit amet.</h4>
+    <h5 class="select">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    </h5>
+    <ul>
+      <li class="select">li 태그면서 select 클래스</li>
+      <li class="select">li 태그면서 select 클래스</li>
+      <!--아무것도 속해있지않기 때문에 기본 body 컬러인 핑크가 출력-->
+      <li class="strange">li 태그이지만 select 클래스가 아님</li>
+    </ul>
+  </body>
+</html>

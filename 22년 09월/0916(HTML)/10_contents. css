@@ -1,0 +1,12 @@
+#contents{
+    width:960px;
+    margin:0 auto;
+    overflow:hidden;
+}
+#contents>#main_section{
+    width:750px;
+    float:left;
+}
+#contents#main_aside{
+    width:
+}

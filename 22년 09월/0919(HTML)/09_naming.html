@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container > div {
+        border: 1px solid black;
+        background-color: springgreen;
+        overflow: hidden;
+      }
+      #container {
+        display: grid;
+        gap: 10px;
+        grid-template: 1fr 200px 1fr/500px 1fr;
+        grid-template-areas:
+          "Header Header"
+          "Aside Section"
+          "Footer Footer";
+        /* grid-template-columns: 1fr 200px 1fr;
+        grid-template-rows: 50px 1fr; */
+      }
+      .Header {
+        grid-area: Header;
+      }
+      .Aside {
+        grid-area: Aside;
+      }
+      .Section {
+        grid-area: Section;
+      }
+      .Footer {
+        grid-area: Footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="Header">Lorem ipsum dolor sit amet.</div>
+      <div class="Aside">Lorem ipsum dolor sit amet.</div>
+      <div class="Section">Lorem ipsum dolor sit amet.</div>
+      <div class="Footer">Lorem ipsum dolor sit amet.</div>
+    </div>
+  </body>
+</html>

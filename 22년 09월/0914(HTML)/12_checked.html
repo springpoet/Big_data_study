@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--input 태그(checkbox)가 체크된 상태면 높이를 0으로 하고 check 아닌 경우 크기를 키움-->
+    <!--overflow : 내가 정한 크기보다 내용이 많은 경우 처리하는 방법-->
+    <!--hidden : 숨김, scroll : 스크롤해서 더 보기 가능-->
+    <!--위는 체크 시 접힘 밑은 체크 시 나타남-->
+    <style>
+      input[id="box"]:checked + div {
+        height: 0;
+      }
+      div {
+        overflow: scroll;
+        width: 650px;
+        height: 300px;
+        transition-duration: 1s;
+      }
+      input[id="box2"]:checked + div {
+        height: 300px;
+      }
+      div[id="div2"] {
+        overflow: scroll;
+        width: 650px;
+        height: 0px;
+        transition-duration: 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="checkbox" name="check" id="box" />
+    <div>
+      <h1>Lorem, ipsum.</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur
+        laboriosam velit aut quod mollitia perspiciatis labore iste tempore
+        magnam. Et quas iusto quos quia similique, voluptatibus fugiat tenetur
+        rem beatae laboriosam harum, voluptatem inventore animi non vitae
+        quisquam. Tempore ducimus quas corrupti est deserunt delectus nesciunt
+        in ipsum aspernatur magnam blanditiis minima, eligendi odit esse nisi
+        doloribus. Ea neque eveniet praesentium voluptates, quod quae delectus
+        maxime dignissimos eaque, aliquid reiciendis, maiores facilis possimus
+        atque. Facilis, qui dolores dolorum quo voluptate dicta odio optio
+        pariatur provident voluptatibus molestias expedita perferendis eveniet
+        odit, inventore obcaecati saepe quisquam quod accusamus atque unde
+        illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. At quasi
+        iusto dicta omnis voluptates rerum atque. Tempore magnam, recusandae
+        dignissimos qui quo nobis culpa quia, in consectetur, dolorem quae
+        pariatur?
+      </p>
+    </div>
+    <input type="checkbox" name="second" id="box2" />
+    <div id="div2">
+      <h1>Lorem, ipsum dolor.</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed ducimus
+        veritatis nostrum laboriosam, enim autem amet quidem in voluptatum
+        doloremque adipisci molestiae provident aperiam nihil explicabo placeat
+        ad illo similique deleniti omnis vitae! Assumenda asperiores dicta
+        dolorem, pariatur incidunt at vel optio delectus alias dolores fuga
+        soluta porro similique. Rem pariatur exercitationem repudiandae velit,
+        cumque a ullam repellendus quam, soluta, itaque est quae omnis nemo
+        harum ab. Nobis rerum, modi totam aperiam amet adipisci earum illo,
+        dolor eos possimus, eaque temporibus. Sint, earum deleniti odit totam
+        alias maxime, dolor velit ullam dolore minus obcaecati nihil. Alias
+        laudantium ab doloribus id.
+      </p>
+    </div>
+  </body>
+</html>
