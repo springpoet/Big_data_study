@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function Abs(num) {
+        if (num < 0) {
+          num *= -1;
+          return num;
+        }
+      }
+      console.log(Abs(-5));
+      //콜백 함수라는 것이 굉장히 쓰기 편하다.
+      //콜백 함수 : 함수를 매개변수로 받는 함수
+      //특정 메세지를 출력하는 함수를 특정 횟수 출력하기
+
+      function printConsole(func, count) {
+        for (let i = 0; i < count; i++) {
+          func();
+        }
+      }
+      function SayHello() {
+        console.log("안녕하세요");
+      }
+      printConsole(SayHello, 5);
+      printConsole(function () {
+        console.log("KSG");
+      }, 10);
+    </script>
+  </body>
+</html>

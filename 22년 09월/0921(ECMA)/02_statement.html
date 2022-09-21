@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" name="" id="number" />
+    <button id="calcul">홀,짝?</button>
+    <h1></h1>
+    <script>
+      let num = document.querySelector("#number");
+      let cal = document.querySelector("#calcul");
+
+      let result = document.querySelector("h1");
+      cal.onclick = function () {
+        let num1 = num.value;
+        if (num1 == 0) {
+          result.textContent = "제로";
+        } else if (num1 % 2 == 0) {
+          result.textContent = "짝수";
+        } else if (num1 % 2 == 1) {
+          result.textContent = "홀수";
+        } else {
+          result.textContent = "잘못 입력";
+        }
+      };
+    </script>
+  </body>
+</html>
