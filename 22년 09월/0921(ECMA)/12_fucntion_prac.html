@@ -77,6 +77,45 @@
         }
       }
       Diamond2(5, "red");
+
+      //4번
+      let COLOR2 = ["red", "blue", "green"];
+      let random = Math.floor(Math.random() * 3);
+
+      function Diamond3(SIZE, COLOR2) {
+        for (let i = 1; i <= SIZE; i++) {
+          for (let j = SIZE; j > i; j--) {
+            let space = document.createElement("span");
+            space.innerHTML = "&nbsp;";
+            document.body.appendChild(space);
+          }
+          for (let k = 0; k < 2 * i - 1; k++) {
+            let star = document.createElement("span");
+
+            star.setAttribute("style", "color:" + COLOR2[random]);
+            star.innerHTML = "*";
+            document.body.appendChild(star);
+          }
+          let br = document.createElement("br");
+          document.body.appendChild(br);
+        }
+        for (let i = SIZE - 1; i > 0; i--) {
+          for (let j = SIZE; j > i; j--) {
+            let space = document.createElement("span");
+            space.innerHTML = "&nbsp;";
+            document.body.appendChild(space);
+          }
+          for (let k = 0; k < 2 * i - 1; k++) {
+            let star = document.createElement("span");
+            star.setAttribute("style", "color:" + COLOR2[random]);
+            star.innerHTML = "*";
+            document.body.appendChild(star);
+          }
+          let br = document.createElement("br");
+          document.body.appendChild(br);
+        }
+      }
+      Diamond3(5, random);
     </script>
   </body>
 </html>
