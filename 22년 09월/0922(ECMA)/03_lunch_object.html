@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="02_mincho.json"></script>
+    <script>
+      window.onload = function () {
+        let btn = document.querySelector("button");
+        let mylunch = document.querySelector("img");
+        let result = document.querySelector("#result");
+
+        let 국수 = {
+          이름: "국수",
+          사진: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTsaCyddhG09jP46dweepuObRgyw9E_L9SQA&usqp=CAU",
+        };
+
+        let 햄버거 = {
+          이름: "햄버거",
+          사진: "https://dimg.donga.com/wps/NEWS/IMAGE/2022/01/02/111057059.1.edit.jpg",
+        };
+
+        let 샌드위치 = {
+          이름: "샌드위치",
+          사진: "https://recipe1.ezmember.co.kr/cache/recipe/2018/12/12/6d6941d611d34c90c5dc19f4d67c857a1.jpg",
+        };
+
+        let lunch = [국수, 햄버거, 샌드위치];
+
+        let lunches_name = ["국수", "햄버거", "샌드위치"];
+        btn.textContent = "점심선택";
+
+        btn.onclick = () => {
+          mylunch.width = 300;
+          mylunch.height = 300;
+          mylunch.style.display = "block";
+          let idx = Math.floor(Math.random() * lunch.length);
+          mylunch.src = lunch[idx].사진;
+          result.textContent = lunch[idx].이름;
+        };
+      };
+    </script>
+  </head>
+  <body>
+    <h1>오늘의 점심은?</h1>
+    <button></button>
+    <img src="" alt="" />
+    <h1 id="result"></h1>
+  </body>
+</html>

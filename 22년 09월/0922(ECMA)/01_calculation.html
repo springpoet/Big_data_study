@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" name="" id="one" />
+    <input type="text" name="" id="two" />
+    <button id="add">+</button>
+    <button id="mul">*</button>
+    <button id="dv" onclick="calculator('/')">/</button>
+    <button id="mi">-</button>
+    <script>
+      let o = document.querySelector("#one");
+      let t = document.querySelector("#two");
+      let add = document.querySelector("#add");
+      let mul = document.querySelector("#mul");
+
+      add.onclick = function () {
+        let num1 = o.value;
+        let num2 = t.value;
+        alert(Number(num1) + Number(num2));
+      };
+      mul.onclick = function () {
+        let num1 = o.value;
+        let num2 = t.value;
+        alert(Number(num1) * Number(num2));
+      };
+    </script>
+    <script>
+      function calculator(buho) {
+        if (buho == "/") {
+          let num1 = o.value;
+          let num2 = t.value;
+          alert(Number(num1) / Number(num2));
+        } else if (buho == "-") {
+          let num1 = o.value;
+          let num2 = t.value;
+          alert(Number(num1) - Number(num2));
+        }
+      }
+      let minus = document.querySelector("#mi");
+      minus.onclick = () => {
+        calculator("-");
+      };
+    </script>
+  </body>
+</html>
