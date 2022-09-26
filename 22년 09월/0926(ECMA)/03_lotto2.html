@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function generate_num() {
+        let lotto = new Array();
+
+        let len = 7;
+        let num = 0;
+        let result = "";
+        let duplicate = false;
+
+        for (let i = 1; i <= len; i++) {
+          lotto.push(0);
+        }
+
+        for (let i = 1; i <= len; i++) {
+          num = Math.ceil(Math.random() * 45);
+          if (i == 0) {
+            lotto[i] = num;
+          } else {
+            for (let j = 0; j <= i - 1; j++) {
+              if (lotto[j] == num) {
+                duplicate = true;
+                i -= 1;
+                break;
+              } else {
+                duplicate = false;
+              }
+            }
+            if (duplicate == false) {
+              lotto[i] = num;
+            }
+          }
+        }
+        lotto.sort(function (a, b) {
+          return a - b;
+        });
+
+        for (let i = 1; i <= len; i++) {
+          if (i == len) {
+            result += "<br>Bonus : ";
+          }
+          result += lotto[i] + " ";
+        }
+
+        document.getElementById("result_text").innerHTML = result;
+      }
+    </script>
+  </head>
+
+  <body>
+    <input
+      type="button"
+      id="make_button"
+      onclick="generate_num();"
+      value="번호 생성"
+    />
+    <h2 id="result_text">결과 출력</h2>
+  </body>
+</html>
