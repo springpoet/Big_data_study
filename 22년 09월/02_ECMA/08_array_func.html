@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const mynums = [10, 20, 30, 40, 50, 99, 101];
+      mynums.forEach((value, index, arr) => {
+        console.log("배열 자체 : " + arr);
+        console.log(`${index}번째 값 ${value}`);
+      });
+      mynums.forEach((v, i) => {
+        console.log(`${i}번째 값 ${v}`);
+      });
+      mynums.forEach((v) => {
+        `값 ${v}`;
+      });
+
+      //map
+      //배열에 있는 내용들 재가공
+      //power_numbers에 mynums에 있는 값들으 제곱한 거 집어넣음
+      const power_numbers = mynums.map((v) => v * v);
+      //forof, Tap 누르기.
+      for (const iterator of power_numbers) {
+        console.log(iterator);
+      }
+      //filter
+      //재가공인데 내가 지정한 조건의 값만 가져오는 것
+      const odd_numbers = mynums.filter((v) => {
+        return v % 2 == 1;
+      });
+      for (const iterator of odd_numbers) {
+        console.log(iterator);
+      }
+
+      console.log("복합 활용 : 홀수만 가져와서 제곱한 다음 출력");
+      mynums
+        .filter((v) => v % 2 == 1)
+        .map((v) => v * v)
+        .forEach((v) => console.log(v));
+    </script>
+  </body>
+</html>
