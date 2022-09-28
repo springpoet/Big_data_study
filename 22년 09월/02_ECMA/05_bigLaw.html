@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $().ready(function () {
+        let input = prompt("주사위 굴릴 횟수 입력");
+        let dicenum = 0;
+        let dice = [0, 0, 0, 0, 0, 0];
+        let percent = [0, 0, 0, 0, 0, 0];
+        let max = 0;
+        for (let i = 1; i <= input; i++) {
+          dicenum = Math.floor(Math.random() * 6);
+          dice[dicenum]++;
+        }
+        for (let i = 1; i <= 6; i++) {
+          percent[i] = (dice[i] / input) * 100;
+        }
+
+        $(".a1:first").text(dice[0]);
+        $(".a2:first").text(dice[1]);
+        $(".a3:first").text(dice[2]);
+        $(".a4:first").text(dice[3]);
+        $(".a5:first").text(dice[4]);
+        $(".a6:first").text(dice[5]);
+
+        $(".a1:last").text(percent[0]);
+        $(".a2:last").text(percent[1]);
+        $(".a3:last").text(percent[2]);
+        $(".a4:last").text(percent[3]);
+        $(".a5:last").text(percent[4]);
+        $(".a6:last").text(percent[5]);
+        for (let i = 1; i <= 6; i++) {
+          if (dice[i] > max) {
+            max = dice[i];
+            $("max").css("color", "red");
+          }
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <h1>1</h1>
+    <h1 class="a1">0</h1>
+    <h2 class="a1">0</h2>
+    <h1>2</h1>
+    <h1 class="a2">0</h1>
+    <h2 class="a2">0</h2>
+    <h1>3</h1>
+    <h1 class="a3">0</h1>
+    <h2 class="a3">0</h2>
+    <h1>4</h1>
+    <h1 class="a4">0</h1>
+    <h2 class="a4">0</h2>
+    <h1>5</h1>
+    <h1 class="a5">0</h1>
+    <h2 class="a5">0</h2>
+    <h1>6</h1>
+    <h1 class="a6">0</h1>
+    <h2 class="a6">0</h2>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .myred {
+        border: 3px solid red;
+      }
+      .mycyan {
+        background-color: cyan;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="first">Lorem, ipsum dolor.</h1>
+    <h1 id="second">Lorem ipsum dolor sit.</h1>
+    <script>
+      $("#first").css("color", "red").addClass("myred");
+
+      let first = document.querySelector("#second");
+      first.setAttribute("class", "myred");
+      first.style.color = "blue";
+      //클래스명 제일 앞에 띄어쓰기 해야함
+      first.className += " mycyan";
+    </script>
+  </body>
+</html>
