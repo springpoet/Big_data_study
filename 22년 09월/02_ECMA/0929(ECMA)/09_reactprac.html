@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="main"></div>
+    <script type="text/babel">
+      const name = prompt("동물을 입력하세요.");
+      const imageurl = [
+        "https://trboard.game.onstove.com/Data/TR/20160115/19/635884829128688447.jpg",
+        "https://t1.daumcdn.net/cfile/tistory/99FDF03C5CD44AA11F",
+        "http://image.dongascience.com/Photo/2020/03/d2bb40617ababa299660cccc0442f993.jpg",
+      ];
+      switch (name) {
+        case "곰":
+          <img src={imageurl[0]} />;
+          break;
+        case "강아지":
+          <img src={imageurl[1]} />;
+          break;
+        case "고양이":
+          <img src={imageurl[2]} />;
+          break;
+        default:
+          break;
+      }
+      const container = document.getElementById("main");
+      ReactDOM.r, ender(component, container);
+    </script>
+  </body>
+</html>
