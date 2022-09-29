@@ -18,21 +18,24 @@
         "https://t1.daumcdn.net/cfile/tistory/99FDF03C5CD44AA11F",
         "http://image.dongascience.com/Photo/2020/03/d2bb40617ababa299660cccc0442f993.jpg",
       ];
-      switch (name) {
-        case "곰":
-          <img src={imageurl[0]} />;
-          break;
-        case "강아지":
-          <img src={imageurl[1]} />;
-          break;
-        case "고양이":
-          <img src={imageurl[2]} />;
-          break;
-        default:
-          break;
+      for (const iterator of component) {
+        switch (name) {
+          case "곰":
+            <img src={imageurl[0]} />;
+            break;
+          case "강아지":
+            <img src={imageurl[1]} />;
+            break;
+          case "고양이":
+            <img src={imageurl[2]} />;
+            break;
+          default:
+            break;
+        }
       }
+
       const container = document.getElementById("main");
-      ReactDOM.r, ender(component, container);
+      ReactDOM.render(component, container);
     </script>
   </body>
 </html>
