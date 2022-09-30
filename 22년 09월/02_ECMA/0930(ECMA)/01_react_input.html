@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      let name = prompt("이름이 뭐야!");
+      let imageUrl;
+      let component;
+      if (name == "개") {
+        imageUrl =
+          "https://cdn.huffingtonpost.kr/news/photo/201911/90011_169154.jpeg";
+      } else if (name == "토끼") {
+        imageUrl =
+          "https://mblogthumb-phinf.pstatic.net/MjAxODA4MjlfMzUg/MDAxNTM1NTA5OTQ1NjY5.aZf6k9FXHp2Hs1WobXccbC9i2lv49P09CmqGCIsK4Vcg.Bn76ZrRmvjoBNpOC4ppvM6lscit14Fw7KyWawBcOADkg.PNG.thisme73/%ED%9D%B0%ED%86%A0%EB%81%BC.png?type=w800";
+      } else {
+        imageUrl =
+          "https://trboard.game.onstove.com/Data/TR/20160115/19/635884829128688447.jpg";
+      }
+      component = (
+        <div>
+          <h1>({name})</h1>;
+          <img src={imageUrl} />
+        </div>
+      );
+
+      const container = document.getElementById("root");
+      ReactDOM.render(component, container);
+    </script>
+  </body>
+</html>
