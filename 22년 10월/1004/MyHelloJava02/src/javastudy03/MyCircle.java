@@ -37,8 +37,4 @@ public class MyCircle {
 	public MyCircle() {
 		
 	}
-	
-	
-	
-	
 }

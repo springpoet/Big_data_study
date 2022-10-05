@@ -20,6 +20,7 @@ public class HelloJava01_Circle {
 		}
 		
 		MyCircle m1=new MyCircle(4);
+		
 		if(m1.getArea()!=0) {
 			System.out.println(m1.getArea());
 		}
