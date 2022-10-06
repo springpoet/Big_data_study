@@ -8,9 +8,9 @@ public class HelloJava01_Game {
 		Scanner scan=new Scanner(System.in);
 		ArrayList<GameCharacter> character=new ArrayList<GameCharacter>();
 		int n=scan.nextInt();
-		GameCharacter g1=new GameCharacter("청산당한사람","전사",12);
-		GameCharacter g2=new GameCharacter("09714j","마법사",22);
-		GameCharacter g3=new GameCharacter("3대티모","바텀도우미",7);
+		GameCharacter g1=new GameCharacter("청산당한사람","전사");
+		GameCharacter g2=new GameCharacter("09714j","마법사");
+		GameCharacter g3=new GameCharacter("3대티모","바텀도우미");
 		
 		g1.sayHello();
 		System.out.println(g1.getId());

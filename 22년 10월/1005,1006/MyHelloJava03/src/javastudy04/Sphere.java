@@ -8,6 +8,12 @@ public class Sphere extends Circle{
 	}
 	
 	public double getvolume() {
-		return (4/3)*getPI()*getR()*getR()*getR();
+		return (4/3)*getPI()*Math.pow(getR(), 3);
+	}
+	
+	
+	protected String Color;
+	protected void spin() {
+		System.out.println("ºù±Ûºù±Û");
 	}
 }

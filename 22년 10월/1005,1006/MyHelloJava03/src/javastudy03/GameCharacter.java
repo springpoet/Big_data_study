@@ -50,10 +50,9 @@ public class GameCharacter {
 		count+=1;
 	}
 	
-	public GameCharacter(String id,String job,int level) {
+	public GameCharacter(String id,String job) {
 		this.id=id;
 		this.job=job;
-		this.level=level;
 		count+=1;
 	}
 	public void printInfo() {

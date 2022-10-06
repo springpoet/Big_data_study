@@ -17,8 +17,8 @@ public class KBStudent extends Student{
 		this.education = education;
 	}
 	
-	public void attend() {
+	public void attend(String att) {
 		System.out.println("이름 : "+getName()+" 나이 : "+getAge()+" 성별 : "+gender+" 학력 : "+education);
-		System.out.println("입실");
+		System.out.println(att+"!!!");
 	}
 }

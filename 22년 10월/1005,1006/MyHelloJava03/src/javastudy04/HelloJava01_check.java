@@ -24,9 +24,9 @@ public class HelloJava01_check {
 		k1.setGender("남자");
 		k1.setEducation("대졸");
 
-		k1.attend();
+		k1.attend("입실");
 
-		Sphere ss1 = new Sphere(5);
+		Sphere ss1 = new Sphere(6);
 		System.out.println(ss1.getvolume());
 
 		Cuboid cc1 = new Cuboid(5);

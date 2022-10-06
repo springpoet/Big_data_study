@@ -21,7 +21,7 @@ public class HelloJava02_T {
 			String job=s.nextLine();
 			System.out.println("해당 캐릭터의 ID는?");
 			String id=s.nextLine();
-			players[i]=new GameCharacter(id,job,lv);
+			players[i]=new GameCharacter(id,job);
 //			players[i].setLevel(lv);
 			
 		}
@@ -42,7 +42,7 @@ public class HelloJava02_T {
 			String job=s.nextLine();
 			System.out.println("캐릭터 ID?");
 			String id=s.nextLine();
-			gamers.add(new GameCharacter(id,job,level));
+			gamers.add(new GameCharacter(id,job));
 		}
 	}
 }
