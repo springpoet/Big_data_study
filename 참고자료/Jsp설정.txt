@@ -1,0 +1,2 @@
+window-show-view-server
+-create new server-Apache-tomcat8.5-next-Browse(경로에한글없어야함)-server창 Tomcat v8.5어쩌고 누르기-Server Loacation에 Use Tomcat installation으로 선택-우측 Ports에 HTTP/1.1 포트 넘버를 8181로 변경-밑의 server창에서 초록색 실행 버튼 누른 뒤-크롬 주소창에 localhost:8181 입력-이상한 고양이 사이트 나오면 성공
