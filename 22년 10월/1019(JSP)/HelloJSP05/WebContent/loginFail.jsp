@@ -7,9 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%= session.getAttribute("name") %>
-	님의 회원정보 수정이 정상처리 되었습니다.<br>
-	<a href="Logout.jsp">로그아웃</a> <br>
-	<a href="modify.jsp">정보수정</a>
+<h1>비밀번호 틀렸음</h1>
 </body>
 </html>

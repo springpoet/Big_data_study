@@ -12,6 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * Servlet implementation class ModifyOk
@@ -53,23 +54,33 @@ public class ModifyOk extends HttpServlet {
 		// TODO Auto-generated method stub
 		request.setCharacterEncoding("UTF-8");
 
+		HttpSession httpSession;
+		httpSession=request.getSession();
+		System.out.println(httpSession.getAttribute("id"));
+		
+		
 		String strName = request.getParameter("name");
 		String strId = request.getParameter("id");
 		String strPw = request.getParameter("pw");
-		String strPhone = request.getParameter("phone") + "-" + request.getParameter("phone2") + "-"
-				+ request.getParameter("phone3");
+		String strPhone = 
+				request.getParameter("phone")+
+				request.getParameter("phone2")+
+				request.getParameter("phone3");
 		String strGender = request.getParameter("gender");
+//
+//		System.out.println("update되는 값들");
+//		System.out.println(strName);
+//		System.out.println(strPw);
+//		System.out.println(strPhone);
+//		System.out.println(strGender);
+//
+		String strQuery = String.format(
+				"update member set name='%s',"
+				+ "hp='%s',gender='%s',pw='%s' where id='%s'", 
+				strName,strPhone,strGender,strPw,
+				httpSession.getAttribute("id"));
 
-		System.out.println("update되는 값들");
-		System.out.println(strName);
-		System.out.println(strPw);
-		System.out.println(strPhone);
-		System.out.println(strGender);
-
-		String strQuery = String.format("update member set name='%s', pw='%s', hp='%s', gender='%s' where id='%s'", strName,
-				strPw, strPhone, strGender,strId);
-
-		System.out.println(strQuery);
+		System.out.println(strQuery+"수정");
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 		} catch (ClassNotFoundException e1) {
@@ -89,6 +100,7 @@ public class ModifyOk extends HttpServlet {
 			int i = stmt.executeUpdate(strQuery);
 			if (i == 1) {
 				System.out.println("성공");
+				httpSession.setAttribute("name", strName);
 				response.sendRedirect("modifyResult.jsp");
 			} else {
 				System.out.println("실패");
@@ -105,5 +117,40 @@ public class ModifyOk extends HttpServlet {
 				e2.printStackTrace();
 			}
 		}
+//		try {
+//			Class.forName("com.mysql.cj.jdbc.Driver");
+//		} catch (ClassNotFoundException e1) {
+//			// TODO Auto-generated catch block
+//			e1.printStackTrace();
+//		}
+//		Connection conn = null;
+//		Statement stmt = null;
+//		ResultSet rs = null;
+//		try {
+//			String jdbcDriver = "jdbc:mysql://localhost:3306/jspdb?" + "useUnicode=true&characterEncoding=utf8&"
+//					+ "serverTimezone=UTC";
+//			String dbUser = "root";
+//			String dbPass = "1234";
+//			conn = DriverManager.getConnection(jdbcDriver, dbUser, dbPass);
+//			stmt = conn.createStatement();
+//			int i = stmt.executeUpdate(strQuery);
+//			if (i == 1) {
+//				System.out.println("성공");
+//				response.sendRedirect("modifyResult.jsp");
+//			} else {
+//				System.out.println("실패");
+//				response.sendRedirect("modify.jsp");
+//			}
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		} finally {
+//			try {
+//				stmt.close();
+//				conn.close();
+//			} catch (Exception e2) {
+//				// TODO: handle exception
+//				e2.printStackTrace();
+//			}
+//		}
 	}
 }
