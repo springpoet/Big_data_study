@@ -92,6 +92,8 @@ public class LoginOk extends HttpServlet {
 				response.sendRedirect("loginOk.jsp");
 			} else {
 				System.out.println("½ÇÆÐ");
+				HttpSession httpsession=request.getSession();
+				httpsession.setAttribute("tryId", strID);
 				response.sendRedirect("loginFail.jsp");
 			}
 

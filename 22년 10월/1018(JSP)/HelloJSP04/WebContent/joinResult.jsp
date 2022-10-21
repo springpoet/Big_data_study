@@ -8,6 +8,7 @@
 </head>
 <body>
 <h1>환영합니다! 회원가입이 정상처리되었습니다!</h1>
+
 <a href="login.html">Login</a>
 </body>
 </html>

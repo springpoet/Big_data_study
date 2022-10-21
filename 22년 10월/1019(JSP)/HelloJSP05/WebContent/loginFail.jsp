@@ -7,6 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>비밀번호 틀렸음</h1>
+<%! String strID,tryId; %>
+
+<% strID=(String)session.getAttribute("id");
+	  tryId=(String)session.getAttribute("tryId");%>
+
+<h1><%=strID %>의 비밀번호 잘못 입력했습니다.</h1>
+<h1>입력한 ID : <%=tryId %></h1>
 </body>
 </html>
