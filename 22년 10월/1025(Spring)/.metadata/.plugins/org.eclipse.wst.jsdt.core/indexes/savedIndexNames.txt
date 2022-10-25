@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\USER\Documents\GitHub\Big_data_study\22³â 10¿ù\1025(Spring)\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2585139015.index
+3164153920.index
+4127034607.index
+1660892542.index
+3345782756.index
+3036408687.index
