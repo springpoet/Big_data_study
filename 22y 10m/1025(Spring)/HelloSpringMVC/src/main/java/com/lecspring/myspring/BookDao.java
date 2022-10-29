@@ -26,19 +26,49 @@ public class BookDao {
 		this.sqlSessionTemplate.insert
 		("book.insert",map);
 	}
-	public Map<String, Object> selectDetail(Map<String, Object> map) {
-	    return this.sqlSessionTemplate.selectOne("book.select_detail", map);
+	
+	public Map<String,Object> selectDetail
+	(Map<String,Object> map) {
+		return this.sqlSessionTemplate.
+				selectOne("book.select_detail",map);
 	}
-	public int update(Map<String, Object> map) {  
-		return this.sqlSessionTemplate.update("book.update", map);  
-		}  
-	public int delete(Map<String, Object> map) {  
-		return this.sqlSessionTemplate.delete("book.delete", map);  
-		}  
-	public List<Map<String, Object>> selectList(Map<String, Object> map) {  
-		return this.sqlSessionTemplate.selectList("book.select_list", map);  
-		}  
+	
+	public int update(Map<String,Object> map) {
+		return 
+		this.sqlSessionTemplate.update
+		("book.update", map);
+	}
+	
+	public int delete(Map<String, Object> map) {
+		return 
+		this.sqlSessionTemplate.delete
+		("book.delete",map);
+	}
+	
+	//java.util을 import : List
+	//여러 개의 Map<String,Object>을 반환함
+	public List<Map<String,Object>> selectList
+	(Map<String, Object> map) {
+		return this.sqlSessionTemplate.selectList
+				("book.select_list",map);
+	}
+	
+	public int countBookBoard(Map<String,Object> map) {
+		return this.sqlSessionTemplate.selectOne
+				("book.countBookBoard",map);
+	}
+	
 }
+
+
+
+
+
+
+
+
+
+
 
 
 

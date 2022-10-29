@@ -9,10 +9,15 @@
 	<h1>책 목록</h1>
 	<p>
 	<form>
-		<input type="text" placeholder="검색" name="keyword" value="${keyword}" />
-		<input type="submit" value="검색" />
+	<!-- placeholder 기본으로 쓰여있는 값 -->
+		<input type="text" 
+		placeholder="검색" 
+		name="keyword" 
+		value="${keyword}">
+		<input type="submit" value="검색">
 	</form>
 	</p>
+
 	<table>
 		<thead>
 			<tr>
@@ -33,8 +38,40 @@
 			</c:forEach>
 		</tbody>
 	</table>
+	<c:if test="${startPage!=1}">
+		<a href="/list?nowPage=${startPage-1}&keyword=${keyword}">&lt;</a>
+	</c:if>
+	<c:forEach var="idx" begin="${startPage}" end="${endPage}">
+		<c:choose>
+			<c:when test="${nowPage!=idx}">
+				<a href="/list?nowPage=${idx}&keyword=${keyword}"> ${idx}&nbsp;</a>
+			</c:when>
+			<c:when test="${nowPage==idx}">
+				<b>${idx}&nbsp;</b>
+				<!-- 현재껀 진하게 표시 -->
+			</c:when>
+		</c:choose>
+	</c:forEach>
+	<c:if test="${endPage!=totalCount}">
+		<a href="/list?nowPage=${endPage+1}&keyword=${keyword}">&gt;</a>
+	</c:if>
+
+
+
 	<p>
 		<a href="/create">생성</a>
 	</p>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -22,24 +22,41 @@ public class BookServiceImpl implements BookService{
 	}
 	
 	@Override
-	public Map<String, Object> detail(Map<String, Object>map){
+	public Map<String,Object> detail
+		(Map<String,Object> map) {
 		return this.bookDao.selectDetail(map);
 	}
+
+	@Override
+	public boolean edit(Map<String, Object> map) {
+		int afftectRowCount = 
+				this.bookDao.update(map);
+		//afftectRowCount가 1일 때 true리턴
+		//즉 update 성공시 true리턴
+		return afftectRowCount==1;
+	}
 	
-	@Override  
-	public boolean edit(Map<String, Object> map) {  
-	int affectRowCount = this.bookDao.update(map);  
-	return affectRowCount == 1;  
-	}  
-	@Override  
-	public boolean remove(Map<String, Object> map) {  
-	int affectRowCount = this.bookDao.delete(map);  
-	return affectRowCount == 1;  
-	}  
-	@Override  
-	public List<Map<String, Object>> list(Map<String, Object> map){  
-	return this.bookDao.selectList(map);  
-	}  
+	@Override
+	public boolean remove(Map<String,Object> map) {
+		int affectRowCount 
+		= this.bookDao.delete(map);
+		return affectRowCount==1;
+	}
+	
+	//import시 주의사항 : java.awt 아님
+	@Override
+	public List<Map<String,Object>> list
+	(Map<String,Object> map) {
+		return this.bookDao.selectList(map);
+	}
+
+	@Override
+	public int countBookBoard(Map<String, Object> map) {
+		return this.bookDao.countBookBoard(map);
+	}
+
+
+	
 }
 
 

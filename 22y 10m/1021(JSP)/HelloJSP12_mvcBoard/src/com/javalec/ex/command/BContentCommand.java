@@ -14,7 +14,6 @@ public class BContentCommand implements BCommand {
 		String bId = request.getParameter("bId");
 		BDao dao = new BDao();
 		BDto dto = dao.contentView(bId);
-		//객체를 실어서 보낼 준비함
 		request.setAttribute("content_view", dto);
 
 	}

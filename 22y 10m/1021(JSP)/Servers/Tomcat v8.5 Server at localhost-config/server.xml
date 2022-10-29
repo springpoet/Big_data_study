@@ -153,7 +153,11 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="HelloJSP07" path="/HelloJSP07" reloadable="true" source="org.eclipse.jst.jee.server:HelloJSP07"/><Context docBase="HelloJSP08" path="/HelloJSP08" reloadable="true" source="org.eclipse.jst.jee.server:HelloJSP08"/><Context docBase="HelloJSP11" path="/HelloJSP11" reloadable="true" source="org.eclipse.jst.jee.server:HelloJSP11"/><Context docBase="HelloJSP12_mvcBoard" path="/HelloJSP12_mvcBoard" reloadable="true" source="org.eclipse.jst.jee.server:HelloJSP12_mvcBoard"/></Host>
+      <Context docBase="HelloJSP07" path="/HelloJSP07" reloadable="true" source="org.eclipse.jst.jee.server:HelloJSP07"/>
+      <Context docBase="HelloJSP08" path="/HelloJSP08" reloadable="true" source="org.eclipse.jst.jee.server:HelloJSP08"/>
+      <Context docBase="HelloJSP11" path="/HelloJSP11" reloadable="true" source="org.eclipse.jst.jee.server:HelloJSP11"/>
+      <Context docBase="HelloJSP12_mvcBoard" path="/HelloJSP12_mvcBoard" reloadable="true" source="org.eclipse.jst.jee.server:HelloJSP12_mvcBoard"/>
+      <Context docBase="JspSelf_mvcBoard" path="/JspSelf_mvcBoard" reloadable="true" source="org.eclipse.jst.jee.server:JspSelf_mvcBoard"/></Host>
     </Engine>
   </Service>
 </Server>
