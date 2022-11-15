@@ -1,0 +1,8 @@
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1115\HelloCSharp02\HelloCSharp02_03\bin\Debug\HelloCSharp02_03.exe.config
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1115\HelloCSharp02\HelloCSharp02_03\bin\Debug\HelloCSharp02_03.exe
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1115\HelloCSharp02\HelloCSharp02_03\bin\Debug\HelloCSharp02_03.pdb
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1115\HelloCSharp02\HelloCSharp02_03\obj\Debug\HelloCSharp02_02.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1115\HelloCSharp02\HelloCSharp02_03\obj\Debug\HelloCSharp02_02.csproj.SuggestedBindingRedirects.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1115\HelloCSharp02\HelloCSharp02_03\obj\Debug\HelloCSharp02_02.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1115\HelloCSharp02\HelloCSharp02_03\obj\Debug\HelloCSharp02_03.exe
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1115\HelloCSharp02\HelloCSharp02_03\obj\Debug\HelloCSharp02_03.pdb
