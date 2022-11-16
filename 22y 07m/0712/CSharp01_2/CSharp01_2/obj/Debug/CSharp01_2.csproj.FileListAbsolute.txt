@@ -11,3 +11,16 @@ D:\KSG\0712\CSharp01_2\CSharp01_2\obj\Debug\CSharp01_2.exe
 D:\KSG\0712\CSharp01_2\CSharp01_2\obj\Debug\CSharp01_2.pdb
 D:\KSG\0712\CSharp01_2\CSharp01_2\obj\Debug\CSharp01_2.FirstCustomControl.resources
 D:\KSG\0712\CSharp01_2\CSharp01_2\obj\Debug\CSharp01_2.SecondCustomContrl.resources
+C:\Users\USER\Documents\GitHub\Big_data_study\22y 07m\0712\CSharp01_2\CSharp01_2\bin\Debug\CSharp01_2.exe.config
+C:\Users\USER\Documents\GitHub\Big_data_study\22y 07m\0712\CSharp01_2\CSharp01_2\bin\Debug\CSharp01_2.exe
+C:\Users\USER\Documents\GitHub\Big_data_study\22y 07m\0712\CSharp01_2\CSharp01_2\bin\Debug\CSharp01_2.pdb
+C:\Users\USER\Documents\GitHub\Big_data_study\22y 07m\0712\CSharp01_2\CSharp01_2\obj\Debug\CSharp01_2.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\22y 07m\0712\CSharp01_2\CSharp01_2\obj\Debug\CSharp01_2.csproj.SuggestedBindingRedirects.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\22y 07m\0712\CSharp01_2\CSharp01_2\obj\Debug\CSharp01_2.FirstCustomControl.resources
+C:\Users\USER\Documents\GitHub\Big_data_study\22y 07m\0712\CSharp01_2\CSharp01_2\obj\Debug\CSharp01_2.Form1.resources
+C:\Users\USER\Documents\GitHub\Big_data_study\22y 07m\0712\CSharp01_2\CSharp01_2\obj\Debug\CSharp01_2.Properties.Resources.resources
+C:\Users\USER\Documents\GitHub\Big_data_study\22y 07m\0712\CSharp01_2\CSharp01_2\obj\Debug\CSharp01_2.SecondCustomContrl.resources
+C:\Users\USER\Documents\GitHub\Big_data_study\22y 07m\0712\CSharp01_2\CSharp01_2\obj\Debug\CSharp01_2.csproj.GenerateResource.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\22y 07m\0712\CSharp01_2\CSharp01_2\obj\Debug\CSharp01_2.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\22y 07m\0712\CSharp01_2\CSharp01_2\obj\Debug\CSharp01_2.exe
+C:\Users\USER\Documents\GitHub\Big_data_study\22y 07m\0712\CSharp01_2\CSharp01_2\obj\Debug\CSharp01_2.pdb
