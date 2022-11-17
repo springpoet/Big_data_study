@@ -89,8 +89,7 @@
             this.SidePanel.Name = "SidePanel";
             this.SidePanel.Size = new System.Drawing.Size(10, 39);
             this.SidePanel.TabIndex = 4;
-            this.SidePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
-            // 
+          // 
             // button7
             // 
             this.button7.FlatAppearance.BorderSize = 0;
@@ -106,8 +105,7 @@
             this.button7.TabIndex = 0;
             this.button7.Text = "Customers";
             this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button6_Click);
-            // 
+           // 
             // 아이콘
             // 
             this.아이콘.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("아이콘.ImageStream")));
@@ -138,8 +136,7 @@
             this.button6.TabIndex = 0;
             this.button6.Text = "Driver Payment";
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
+          // 
             // button5
             // 
             this.button5.FlatAppearance.BorderSize = 0;
@@ -202,8 +199,7 @@
             this.button14.Size = new System.Drawing.Size(33, 30);
             this.button14.TabIndex = 0;
             this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button6_Click);
-            // 
+          // 
             // Social
             // 
             this.Social.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("Social.ImageStream")));
@@ -266,8 +262,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(107, 133);
             this.panel3.TabIndex = 2;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            // 
+           // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -330,8 +325,7 @@
             this.button8.Size = new System.Drawing.Size(33, 30);
             this.button8.TabIndex = 0;
             this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button6_Click);
-            // 
+         // 
             // button9
             // 
             this.button9.FlatAppearance.BorderSize = 0;
@@ -346,8 +340,7 @@
             this.button9.Size = new System.Drawing.Size(33, 30);
             this.button9.TabIndex = 0;
             this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button6_Click);
-            // 
+           // 
             // button10
             // 
             this.button10.FlatAppearance.BorderSize = 0;
@@ -362,8 +355,7 @@
             this.button10.Size = new System.Drawing.Size(33, 30);
             this.button10.TabIndex = 0;
             this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button6_Click);
-            // 
+         // 
             // button11
             // 
             this.button11.FlatAppearance.BorderSize = 0;
@@ -378,8 +370,7 @@
             this.button11.Size = new System.Drawing.Size(33, 30);
             this.button11.TabIndex = 0;
             this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button6_Click);
-            // 
+        // 
             // button12
             // 
             this.button12.FlatAppearance.BorderSize = 0;
@@ -394,8 +385,7 @@
             this.button12.Size = new System.Drawing.Size(33, 30);
             this.button12.TabIndex = 0;
             this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button6_Click);
-            // 
+       // 
             // button13
             // 
             this.button13.FlatAppearance.BorderSize = 0;
@@ -410,8 +400,7 @@
             this.button13.Size = new System.Drawing.Size(33, 30);
             this.button13.TabIndex = 0;
             this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button6_Click);
-            // 
+         // 
             // panel5
             // 
             this.panel5.Controls.Add(this.secondCustomContrl1);
@@ -456,8 +445,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
+        this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -1,0 +1,11 @@
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1117\HelloCSharp04_01\HelloCSharp04_01\bin\Debug\HelloCSharp04_01.exe.config
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1117\HelloCSharp04_01\HelloCSharp04_01\bin\Debug\HelloCSharp04_01.exe
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1117\HelloCSharp04_01\HelloCSharp04_01\bin\Debug\HelloCSharp04_01.pdb
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1117\HelloCSharp04_01\HelloCSharp04_01\obj\Debug\HelloCSharp04_01.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1117\HelloCSharp04_01\HelloCSharp04_01\obj\Debug\HelloCSharp04_01.csproj.SuggestedBindingRedirects.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1117\HelloCSharp04_01\HelloCSharp04_01\obj\Debug\HelloCSharp04_01.Form1.resources
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1117\HelloCSharp04_01\HelloCSharp04_01\obj\Debug\HelloCSharp04_01.Properties.Resources.resources
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1117\HelloCSharp04_01\HelloCSharp04_01\obj\Debug\HelloCSharp04_01.csproj.GenerateResource.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1117\HelloCSharp04_01\HelloCSharp04_01\obj\Debug\HelloCSharp04_01.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1117\HelloCSharp04_01\HelloCSharp04_01\obj\Debug\HelloCSharp04_01.exe
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1117\HelloCSharp04_01\HelloCSharp04_01\obj\Debug\HelloCSharp04_01.pdb
