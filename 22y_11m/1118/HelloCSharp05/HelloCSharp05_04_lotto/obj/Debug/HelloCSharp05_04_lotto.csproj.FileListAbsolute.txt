@@ -1,0 +1,11 @@
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1118\HelloCSharp05\HelloCSharp05_04_lotto\bin\Debug\HelloCSharp05_04_lotto.exe.config
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1118\HelloCSharp05\HelloCSharp05_04_lotto\bin\Debug\HelloCSharp05_04_lotto.exe
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1118\HelloCSharp05\HelloCSharp05_04_lotto\bin\Debug\HelloCSharp05_04_lotto.pdb
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1118\HelloCSharp05\HelloCSharp05_04_lotto\obj\Debug\HelloCSharp05_04_lotto.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1118\HelloCSharp05\HelloCSharp05_04_lotto\obj\Debug\HelloCSharp05_04_lotto.csproj.SuggestedBindingRedirects.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1118\HelloCSharp05\HelloCSharp05_04_lotto\obj\Debug\HelloCSharp05_04_lotto.Form1.resources
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1118\HelloCSharp05\HelloCSharp05_04_lotto\obj\Debug\HelloCSharp05_04_lotto.Properties.Resources.resources
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1118\HelloCSharp05\HelloCSharp05_04_lotto\obj\Debug\HelloCSharp05_04_lotto.csproj.GenerateResource.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1118\HelloCSharp05\HelloCSharp05_04_lotto\obj\Debug\HelloCSharp05_04_lotto.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1118\HelloCSharp05\HelloCSharp05_04_lotto\obj\Debug\HelloCSharp05_04_lotto.exe
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1118\HelloCSharp05\HelloCSharp05_04_lotto\obj\Debug\HelloCSharp05_04_lotto.pdb

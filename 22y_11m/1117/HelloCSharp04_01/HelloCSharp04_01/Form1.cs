@@ -44,8 +44,15 @@ namespace HelloCSharp04_01
             for (int i = 44032; i < 55204; i++)
             {
                 char code = Convert.ToChar(i);
+                if (i % 150 != 0)
+                {
+                label1.Text += $"{code}";
+                }
+                else
+                {
+                    label1.Text += $"\n{code}";
+                }
                 Console.Write(code);
-                textBox1.Text += $"{code}";
                 
             }
         }
