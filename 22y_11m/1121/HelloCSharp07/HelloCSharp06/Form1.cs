@@ -23,7 +23,7 @@ namespace HelloCSharp06
             p1.Name = "김성근";
             p1.Age = 28;
             p2.Name = "장태연";
-            p2.Age = 30;
+            p2.Age = 30;    
             c1.Name = "이용희";
             c1.Age = 20;
             Console.WriteLine($"부모 클래스 :{MyParent.money}, 자식 클래스 : {MyChild.money}");
