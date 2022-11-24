@@ -41,7 +41,7 @@ namespace HelloCSharp09_05
         private void button3_Click(object sender, EventArgs e)
         {
             string name = textBox1.Text;
-            for (int i = 0; i < studentsBindingSource.Count; i++)
+            for (int i = studentsBindingSource.Count - 1; i >= 0; i--)
             {
                 Students s = studentsBindingSource[i] as Students;
                 if (s.Name == name)
