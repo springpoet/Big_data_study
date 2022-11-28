@@ -1,0 +1,11 @@
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1126\ParkingCarManager\ParkingCarManager\bin\Debug\ParkingCarManager.exe.config
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1126\ParkingCarManager\ParkingCarManager\bin\Debug\ParkingCarManager.exe
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1126\ParkingCarManager\ParkingCarManager\bin\Debug\ParkingCarManager.pdb
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1126\ParkingCarManager\ParkingCarManager\obj\Debug\ParkingCarManager.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1126\ParkingCarManager\ParkingCarManager\obj\Debug\ParkingCarManager.csproj.SuggestedBindingRedirects.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1126\ParkingCarManager\ParkingCarManager\obj\Debug\ParkingCarManager.Form1.resources
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1126\ParkingCarManager\ParkingCarManager\obj\Debug\ParkingCarManager.Properties.Resources.resources
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1126\ParkingCarManager\ParkingCarManager\obj\Debug\ParkingCarManager.csproj.GenerateResource.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1126\ParkingCarManager\ParkingCarManager\obj\Debug\ParkingCarManager.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1126\ParkingCarManager\ParkingCarManager\obj\Debug\ParkingCarManager.exe
+C:\Users\USER\Documents\GitHub\Big_data_study\22y_11m\1126\ParkingCarManager\ParkingCarManager\obj\Debug\ParkingCarManager.pdb
