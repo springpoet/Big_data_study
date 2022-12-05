@@ -19,21 +19,55 @@ namespace MyPCRoom
             InitializeComponent();
             try
             {
-                DataGridViewRow dr = dataGridView1.SelectedRows[0]; 
+                DataGridViewRow dr = dataGridView1.SelectedRows[0];
             }
             catch (Exception ex)
             {
-              
+
             }
             //Cars 길이가 0 인데,
             //DataSource로 넣으려고 하면 셀 선택시 오류 남
             //셀 : datagridview의 칸들을 의미(엑셀의 셀처럼)
             if (DataManager.Cars.Count > 0)
                 dataGridView1.DataSource = DataManager.Cars;
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                PC_User user = DataManager.Cars.SingleOrDefault(x => x.User_id == textBox1.Text);
+                DataManager.search(user.User_id);
 
+                dataGridView1.DataSource = null;
+                if (DataManager.Cars.Count > 0)
+                {
+                    dataGridView1.DataSource = DataManager.Cars;
+                }
+                MessageBox.Show($"'{user.User_id}' 회원이 성공적으로 조회되었습니다.");
+            }
+            catch (Exception ee)
+            {
+                MessageBox.Show(ee.Message + ", Form4.button1Click error.");
+            }
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                dataGridView1.DataSource = "";
+                DataManager.Load();
+            }
+            catch (Exception ex)
+            {
 
+            }
+            //Cars 길이가 0 인데,
+            //DataSource로 넣으려고 하면 셀 선택시 오류 남
+            //셀 : datagridview의 칸들을 의미(엑셀의 셀처럼)
+            if (DataManager.Cars.Count > 0)
+                dataGridView1.DataSource = DataManager.Cars;
         }
     }
 }

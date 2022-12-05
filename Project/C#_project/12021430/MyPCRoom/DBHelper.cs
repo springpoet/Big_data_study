@@ -126,12 +126,37 @@ namespace MyPCRoom
                 conn.Close();
             }
         }
+        public static void searchQuery(string user_id)
+        {
+            try
+            {
+                ConnectDB(); // DB연결
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conn;  // 어디에 커맨드 보낼지 지정
+                cmd.CommandText = "select * from PCRoom where User_id=@p1";
 
-
-
-
-
-
+                cmd.Parameters.AddWithValue("@p1", user_id);
+                da = new SqlDataAdapter(cmd);
+                ds = new DataSet();
+                da.Fill(ds, "PCRoom");
+                dt = ds.Tables[0];
+            }
+            catch (Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show(e.Message + "DBHelper.searchQuery Error");
+                return;
+            }
+            finally
+            {
+                conn.Close(); // DB연결 해제
+            }
 
         }
+
+
+
+
+
+
+    }
 }

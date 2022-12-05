@@ -73,6 +73,7 @@ namespace MyPCRoom
         private void button24_Click(object sender, EventArgs e)
         {
             // 회원 조회
+            DataManager.Load(); //누르자마자 데이터 다 불러옴. 초기화 안누르고 꺼도 됨 
             Form4 newform = new Form4();
             newform.ShowDialog();
         }

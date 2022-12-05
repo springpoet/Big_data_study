@@ -14,9 +14,9 @@
   <name>22</name>
   <publisher>33</publisher>
   <page>44</page>
-  <borrowedAt>0001-01-01 오전 12:00:00</borrowedAt>
-  <isborrowed>0</isborrowed>
-  <userid>0</userid>
-  <username></username>
+  <borrowedAt>2022-12-05 오전 9:57:50</borrowedAt>
+  <isborrowed>1</isborrowed>
+  <userid>2</userid>
+  <username>dddd</username>
  </book>
 </books>
