@@ -70,7 +70,7 @@ namespace MyPCRoom
             }
             catch (Exception ee)
             {
-                MessageBox.Show("해당 회원 없음");
+                MessageBox.Show(ee.Message+"해당 회원 없음");
             }
 
         }
@@ -86,7 +86,7 @@ namespace MyPCRoom
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message+"btn2_click1 error");
             }
             //Users 길이가 0 인데,
             //DataSource로 넣으려고 하면 셀 선택시 오류 남
