@@ -96,6 +96,26 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button25 = new System.Windows.Forms.Button();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.timer4 = new System.Windows.Forms.Timer(this.components);
+            this.timer5 = new System.Windows.Forms.Timer(this.components);
+            this.timer6 = new System.Windows.Forms.Timer(this.components);
+            this.timer7 = new System.Windows.Forms.Timer(this.components);
+            this.timer8 = new System.Windows.Forms.Timer(this.components);
+            this.timer9 = new System.Windows.Forms.Timer(this.components);
+            this.timer10 = new System.Windows.Forms.Timer(this.components);
+            this.timer11 = new System.Windows.Forms.Timer(this.components);
+            this.timer12 = new System.Windows.Forms.Timer(this.components);
+            this.timer13 = new System.Windows.Forms.Timer(this.components);
+            this.timer14 = new System.Windows.Forms.Timer(this.components);
+            this.timer15 = new System.Windows.Forms.Timer(this.components);
+            this.timer16 = new System.Windows.Forms.Timer(this.components);
+            this.timer17 = new System.Windows.Forms.Timer(this.components);
+            this.timer18 = new System.Windows.Forms.Timer(this.components);
+            this.timer19 = new System.Windows.Forms.Timer(this.components);
+            this.timer20 = new System.Windows.Forms.Timer(this.components);
+            this.timer21 = new System.Windows.Forms.Timer(this.components);
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -315,9 +335,9 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.BackColor = System.Drawing.Color.PaleVioletRed;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(19, 78);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
@@ -822,6 +842,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label37);
             this.panel1.Controls.Add(this.label36);
             this.panel1.Controls.Add(this.label35);
@@ -879,6 +900,115 @@
             this.button25.Text = "지도";
             this.button25.UseVisualStyleBackColor = true;
             this.button25.Click += new System.EventHandler(this.button25_Click);
+            // 
+            // timer2
+            // 
+            this.timer2.Interval = 1000;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // timer3
+            // 
+            this.timer3.Interval = 1000;
+            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
+            // 
+            // timer4
+            // 
+            this.timer4.Interval = 1000;
+            this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
+            // 
+            // timer5
+            // 
+            this.timer5.Interval = 1000;
+            this.timer5.Tick += new System.EventHandler(this.timer5_Tick);
+            // 
+            // timer6
+            // 
+            this.timer6.Interval = 1000;
+            this.timer6.Tick += new System.EventHandler(this.timer6_Tick);
+            // 
+            // timer7
+            // 
+            this.timer7.Interval = 1000;
+            this.timer7.Tick += new System.EventHandler(this.timer7_Tick);
+            // 
+            // timer8
+            // 
+            this.timer8.Interval = 1000;
+            this.timer8.Tick += new System.EventHandler(this.timer8_Tick);
+            // 
+            // timer9
+            // 
+            this.timer9.Interval = 1000;
+            this.timer9.Tick += new System.EventHandler(this.timer9_Tick);
+            // 
+            // timer10
+            // 
+            this.timer10.Interval = 1000;
+            this.timer10.Tick += new System.EventHandler(this.timer10_Tick);
+            // 
+            // timer11
+            // 
+            this.timer11.Interval = 1000;
+            this.timer11.Tick += new System.EventHandler(this.timer11_Tick);
+            // 
+            // timer12
+            // 
+            this.timer12.Interval = 1000;
+            this.timer12.Tick += new System.EventHandler(this.timer12_Tick);
+            // 
+            // timer13
+            // 
+            this.timer13.Interval = 1000;
+            this.timer13.Tick += new System.EventHandler(this.timer13_Tick);
+            // 
+            // timer14
+            // 
+            this.timer14.Interval = 1000;
+            this.timer14.Tick += new System.EventHandler(this.timer14_Tick);
+            // 
+            // timer15
+            // 
+            this.timer15.Interval = 1000;
+            this.timer15.Tick += new System.EventHandler(this.timer15_Tick);
+            // 
+            // timer16
+            // 
+            this.timer16.Interval = 1000;
+            this.timer16.Tick += new System.EventHandler(this.timer16_Tick);
+            // 
+            // timer17
+            // 
+            this.timer17.Interval = 1000;
+            this.timer17.Tick += new System.EventHandler(this.timer17_Tick);
+            // 
+            // timer18
+            // 
+            this.timer18.Interval = 1000;
+            this.timer18.Tick += new System.EventHandler(this.timer18_Tick);
+            // 
+            // timer19
+            // 
+            this.timer19.Interval = 1000;
+            this.timer19.Tick += new System.EventHandler(this.timer19_Tick);
+            // 
+            // timer20
+            // 
+            this.timer20.Interval = 1000;
+            this.timer20.Tick += new System.EventHandler(this.timer20_Tick);
+            // 
+            // timer21
+            // 
+            this.timer21.Interval = 1000;
+            this.timer21.Tick += new System.EventHandler(this.timer21_Tick);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(377, 31);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(38, 12);
+            this.label6.TabIndex = 86;
+            this.label6.Text = "label6";
             // 
             // Main
             // 
@@ -980,6 +1110,26 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Timer timer3;
+        private System.Windows.Forms.Timer timer4;
+        private System.Windows.Forms.Timer timer5;
+        private System.Windows.Forms.Timer timer6;
+        private System.Windows.Forms.Timer timer7;
+        private System.Windows.Forms.Timer timer8;
+        private System.Windows.Forms.Timer timer9;
+        private System.Windows.Forms.Timer timer10;
+        private System.Windows.Forms.Timer timer11;
+        private System.Windows.Forms.Timer timer12;
+        private System.Windows.Forms.Timer timer13;
+        private System.Windows.Forms.Timer timer14;
+        private System.Windows.Forms.Timer timer15;
+        private System.Windows.Forms.Timer timer16;
+        private System.Windows.Forms.Timer timer17;
+        private System.Windows.Forms.Timer timer18;
+        private System.Windows.Forms.Timer timer19;
+        private System.Windows.Forms.Timer timer20;
+        private System.Windows.Forms.Timer timer21;
+        private System.Windows.Forms.Label label6;
     }
 }
 

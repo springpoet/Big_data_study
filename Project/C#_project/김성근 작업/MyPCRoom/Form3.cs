@@ -36,17 +36,6 @@ namespace MyPCRoom
 
         private void button2_Click(object sender, EventArgs e)
         {
-            // 중복체크
-
-            //if(textBox1.Text=="")
-            //{
-            //    MessageBox.Show("아이디를 입력해주세요");
-            //}
-            //else if (textBox2.Text == "")
-            //{
-            //    MessageBox.Show("이름을 입력해주세요");
-            //}
-
             try
             {
                 PC_User user = DataManager.Users.Single(x => x.User_id == textBox1.Text);

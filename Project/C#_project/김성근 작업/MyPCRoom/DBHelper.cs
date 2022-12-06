@@ -213,10 +213,29 @@ namespace MyPCRoom
 
         }
 
-        //  Users
-        public static void scroll_time(string user_id, string user_name)
+        public static void LateTimeQuery(string user_id,string late_time)
         {
+            ConnectDB();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = conn;
+            cmd.CommandType = CommandType.Text;
+
+            string sqlcommand = "";
+
+            try
+            {
+                sqlcommand = "update PCRoom set Late_time=@p1, Using_status='OFF', Seat_num='' where User_id=@p2";
+                cmd.Parameters.AddWithValue("@p1", late_time);
+                cmd.Parameters.AddWithValue("@p2", user_id);
+                cmd.CommandText = sqlcommand;
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show(e.Message+" DBHelper.lateTimeQuery error");
+            }
         }
+        
 
 
 

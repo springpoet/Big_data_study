@@ -99,6 +99,18 @@ namespace MyPCRoom
             }
         }
 
+        public static void LateTimeSave(string user_id,string latetime)
+        {
+            try
+            {
+                DBHelper.LateTimeQuery(user_id, latetime);
+                System.Windows.Forms.MessageBox.Show($"'{user_id}' 회원의 사용이 종료되었습니다.");
+            }
+            catch (Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show(e.Message+" DataManager.LateTimeSave error.");
+            }
+        }
 
 
 

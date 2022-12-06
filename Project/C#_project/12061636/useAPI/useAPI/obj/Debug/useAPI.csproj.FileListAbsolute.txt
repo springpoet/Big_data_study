@@ -1,0 +1,11 @@
+C:\팀프로젝트\useAPI\useAPI\bin\Debug\useAPI.exe.config
+C:\팀프로젝트\useAPI\useAPI\bin\Debug\useAPI.exe
+C:\팀프로젝트\useAPI\useAPI\bin\Debug\useAPI.pdb
+C:\팀프로젝트\useAPI\useAPI\obj\Debug\useAPI.csproj.AssemblyReference.cache
+C:\팀프로젝트\useAPI\useAPI\obj\Debug\useAPI.csproj.SuggestedBindingRedirects.cache
+C:\팀프로젝트\useAPI\useAPI\obj\Debug\useAPI.Form1.resources
+C:\팀프로젝트\useAPI\useAPI\obj\Debug\useAPI.Properties.Resources.resources
+C:\팀프로젝트\useAPI\useAPI\obj\Debug\useAPI.csproj.GenerateResource.cache
+C:\팀프로젝트\useAPI\useAPI\obj\Debug\useAPI.csproj.CoreCompileInputs.cache
+C:\팀프로젝트\useAPI\useAPI\obj\Debug\useAPI.exe
+C:\팀프로젝트\useAPI\useAPI\obj\Debug\useAPI.pdb
