@@ -28,49 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Conn_BTN = new System.Windows.Forms.Button();
+            this.Disconn_BTN = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.ServiceDesc_BTN = new System.Windows.Forms.Button();
+            this.MachineReady_BTN = new System.Windows.Forms.Button();
+            this.RevokeMachine_BTN = new System.Windows.Forms.Button();
+            this.StartTrans_BTN = new System.Windows.Forms.Button();
+            this.StopTrans_BTN = new System.Windows.Forms.Button();
+            this.Reset_BTN = new System.Windows.Forms.Button();
+            this.NotiData_BTN = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // Conn_BTN
             // 
-            this.button1.Location = new System.Drawing.Point(246, 80);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(83, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Connect";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Conn_BTN.Location = new System.Drawing.Point(246, 42);
+            this.Conn_BTN.Name = "Conn_BTN";
+            this.Conn_BTN.Size = new System.Drawing.Size(83, 23);
+            this.Conn_BTN.TabIndex = 0;
+            this.Conn_BTN.Text = "Connect";
+            this.Conn_BTN.UseVisualStyleBackColor = true;
+            this.Conn_BTN.Click += new System.EventHandler(this.Conn_BTN_Click);
             // 
-            // button2
+            // Disconn_BTN
             // 
-            this.button2.Location = new System.Drawing.Point(342, 80);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(83, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Disconnect";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Disconn_BTN.Location = new System.Drawing.Point(342, 42);
+            this.Disconn_BTN.Name = "Disconn_BTN";
+            this.Disconn_BTN.Size = new System.Drawing.Size(83, 23);
+            this.Disconn_BTN.TabIndex = 1;
+            this.Disconn_BTN.Text = "Disconnect";
+            this.Disconn_BTN.UseVisualStyleBackColor = true;
+            this.Disconn_BTN.Click += new System.EventHandler(this.Disconn_BTN_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(16, 82);
+            this.textBox1.Location = new System.Drawing.Point(16, 42);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 21);
             this.textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(122, 82);
+            this.textBox2.Location = new System.Drawing.Point(122, 42);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 21);
             this.textBox2.TabIndex = 3;
@@ -78,20 +81,20 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(14, 48);
+            this.label4.Location = new System.Drawing.Point(14, 27);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 12);
+            this.label4.Size = new System.Drawing.Size(52, 12);
             this.label4.TabIndex = 4;
-            this.label4.Text = "label4";
+            this.label4.Text = "Address";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(130, 48);
+            this.label5.Location = new System.Drawing.Point(120, 27);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 12);
+            this.label5.Size = new System.Drawing.Size(27, 12);
             this.label5.TabIndex = 5;
-            this.label5.Text = "label5";
+            this.label5.Text = "Port";
             // 
             // richTextBox1
             // 
@@ -101,68 +104,93 @@
             this.richTextBox1.TabIndex = 6;
             this.richTextBox1.Text = "";
             // 
-            // button3
+            // ServiceDesc_BTN
             // 
-            this.button3.Location = new System.Drawing.Point(246, 125);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(179, 23);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Service Description";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.ServiceDesc_BTN.Location = new System.Drawing.Point(246, 109);
+            this.ServiceDesc_BTN.Name = "ServiceDesc_BTN";
+            this.ServiceDesc_BTN.Size = new System.Drawing.Size(179, 23);
+            this.ServiceDesc_BTN.TabIndex = 7;
+            this.ServiceDesc_BTN.Text = "Service Description";
+            this.ServiceDesc_BTN.UseVisualStyleBackColor = true;
+            this.ServiceDesc_BTN.Click += new System.EventHandler(this.ServiceDesc_BTN_Click);
             // 
-            // button4
+            // MachineReady_BTN
             // 
-            this.button4.Location = new System.Drawing.Point(246, 165);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(179, 23);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "BoardAvailable";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.MachineReady_BTN.Location = new System.Drawing.Point(246, 138);
+            this.MachineReady_BTN.Name = "MachineReady_BTN";
+            this.MachineReady_BTN.Size = new System.Drawing.Size(179, 23);
+            this.MachineReady_BTN.TabIndex = 8;
+            this.MachineReady_BTN.Text = "Machine Ready";
+            this.MachineReady_BTN.UseVisualStyleBackColor = true;
+            this.MachineReady_BTN.Click += new System.EventHandler(this.MachineReady_BTN_Click);
             // 
-            // button5
+            // RevokeMachine_BTN
             // 
-            this.button5.Location = new System.Drawing.Point(246, 203);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(179, 23);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "Revok Board Available";
-            this.button5.UseVisualStyleBackColor = true;
+            this.RevokeMachine_BTN.Location = new System.Drawing.Point(246, 167);
+            this.RevokeMachine_BTN.Name = "RevokeMachine_BTN";
+            this.RevokeMachine_BTN.Size = new System.Drawing.Size(179, 23);
+            this.RevokeMachine_BTN.TabIndex = 9;
+            this.RevokeMachine_BTN.Text = "Revoke Machine Ready";
+            this.RevokeMachine_BTN.UseVisualStyleBackColor = true;
+            this.RevokeMachine_BTN.Click += new System.EventHandler(this.RevokeMachine_BTN_Click);
             // 
-            // button6
+            // StartTrans_BTN
             // 
-            this.button6.Location = new System.Drawing.Point(246, 244);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(179, 23);
-            this.button6.TabIndex = 10;
-            this.button6.Text = "Transport Finished";
-            this.button6.UseVisualStyleBackColor = true;
+            this.StartTrans_BTN.Location = new System.Drawing.Point(246, 196);
+            this.StartTrans_BTN.Name = "StartTrans_BTN";
+            this.StartTrans_BTN.Size = new System.Drawing.Size(179, 23);
+            this.StartTrans_BTN.TabIndex = 10;
+            this.StartTrans_BTN.Text = "Start Transport";
+            this.StartTrans_BTN.UseVisualStyleBackColor = true;
+            this.StartTrans_BTN.Click += new System.EventHandler(this.StartTrans_BTN_Click);
             // 
-            // button7
+            // StopTrans_BTN
             // 
-            this.button7.Location = new System.Drawing.Point(246, 285);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(179, 23);
-            this.button7.TabIndex = 11;
-            this.button7.Text = "Reset";
-            this.button7.UseVisualStyleBackColor = true;
+            this.StopTrans_BTN.Location = new System.Drawing.Point(246, 225);
+            this.StopTrans_BTN.Name = "StopTrans_BTN";
+            this.StopTrans_BTN.Size = new System.Drawing.Size(179, 23);
+            this.StopTrans_BTN.TabIndex = 11;
+            this.StopTrans_BTN.Text = "Stop Transport";
+            this.StopTrans_BTN.UseVisualStyleBackColor = true;
+            this.StopTrans_BTN.Click += new System.EventHandler(this.StopTrans_BTN_Click);
+            // 
+            // Reset_BTN
+            // 
+            this.Reset_BTN.Location = new System.Drawing.Point(246, 254);
+            this.Reset_BTN.Name = "Reset_BTN";
+            this.Reset_BTN.Size = new System.Drawing.Size(179, 23);
+            this.Reset_BTN.TabIndex = 12;
+            this.Reset_BTN.Text = "Reset";
+            this.Reset_BTN.UseVisualStyleBackColor = true;
+            this.Reset_BTN.Click += new System.EventHandler(this.Reset_BTN_Click);
+            // 
+            // NotiData_BTN
+            // 
+            this.NotiData_BTN.Location = new System.Drawing.Point(246, 283);
+            this.NotiData_BTN.Name = "NotiData_BTN";
+            this.NotiData_BTN.Size = new System.Drawing.Size(179, 23);
+            this.NotiData_BTN.TabIndex = 13;
+            this.NotiData_BTN.Text = "Notification Data";
+            this.NotiData_BTN.UseVisualStyleBackColor = true;
+            this.NotiData_BTN.Click += new System.EventHandler(this.NotiData_BTN_Click);
             // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(437, 328);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.NotiData_BTN);
+            this.Controls.Add(this.Reset_BTN);
+            this.Controls.Add(this.StopTrans_BTN);
+            this.Controls.Add(this.StartTrans_BTN);
+            this.Controls.Add(this.RevokeMachine_BTN);
+            this.Controls.Add(this.MachineReady_BTN);
+            this.Controls.Add(this.ServiceDesc_BTN);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Disconn_BTN);
+            this.Controls.Add(this.Conn_BTN);
             this.Name = "Form1";
             this.Text = "v";
             this.ResumeLayout(false);
@@ -180,18 +208,20 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Conn_BTN;
+        private System.Windows.Forms.Button Disconn_BTN;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button ServiceDesc_BTN;
+        private System.Windows.Forms.Button MachineReady_BTN;
+        private System.Windows.Forms.Button RevokeMachine_BTN;
+        private System.Windows.Forms.Button StartTrans_BTN;
+        private System.Windows.Forms.Button StopTrans_BTN;
+        private System.Windows.Forms.Button Reset_BTN;
+        private System.Windows.Forms.Button NotiData_BTN;
     }
 }
 

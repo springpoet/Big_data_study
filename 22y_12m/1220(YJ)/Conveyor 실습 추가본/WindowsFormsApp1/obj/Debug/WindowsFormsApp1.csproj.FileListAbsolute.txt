@@ -31,3 +31,14 @@ C:\Users\USER\Documents\GitHub\Big_data_study\22y_12m\1220(YJ)\Conveyor 실습 �
 C:\Users\USER\Documents\GitHub\Big_data_study\22y_12m\1220(YJ)\Conveyor 실습 추가본\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\USER\Documents\GitHub\Big_data_study\22y_12m\1220(YJ)\Conveyor 실습 추가본\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\USER\Documents\GitHub\Big_data_study\22y_12m\1220(YJ)\Conveyor 실습 추가본\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1220(YJ)\Conveyor 실습 추가본\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1220(YJ)\Conveyor 실습 추가본\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1220(YJ)\Conveyor 실습 추가본\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1220(YJ)\Conveyor 실습 추가본\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1220(YJ)\Conveyor 실습 추가본\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1220(YJ)\Conveyor 실습 추가본\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1220(YJ)\Conveyor 실습 추가본\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1220(YJ)\Conveyor 실습 추가본\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1220(YJ)\Conveyor 실습 추가본\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1220(YJ)\Conveyor 실습 추가본\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1220(YJ)\Conveyor 실습 추가본\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb

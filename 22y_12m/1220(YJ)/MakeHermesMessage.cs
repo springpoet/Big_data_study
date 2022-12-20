@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace WindowsFormsApp1
+namespace HermesState
 {
     public static class MakeHermesMessage
     {
@@ -160,8 +157,8 @@ namespace WindowsFormsApp1
 
                 if (bIdGeneration)
                 {
-                 // BoardData.getInstance().m_receiveBoardInfo.m_boardId = boardInfo.m_boardId = Guid.NewGuid().ToString();
-                  //BoardData.getInstance().m_receiveBoardInfo.m_boardIdCreatedMachine = boardInfo.m_boardIdCreatedMachine = machineName;
+                    BoardData.getInstance().m_receiveBoardInfo.m_boardId = boardInfo.m_boardId = Guid.NewGuid().ToString();
+                    BoardData.getInstance().m_receiveBoardInfo.m_boardIdCreatedMachine = boardInfo.m_boardIdCreatedMachine = machineName;
                 }
 
                 Dictionary<string, string> value = new Dictionary<string, string>();

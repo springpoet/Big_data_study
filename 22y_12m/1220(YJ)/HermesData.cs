@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace WindowsFormsApp1
+namespace HermesState
 {
 
     public struct ServiceDesc
@@ -53,7 +53,6 @@ namespace WindowsFormsApp1
         public double? m_botClearance;
         public double? m_weight;
         public int m_transferState;
-        //public string m_forcastId;
-        public string m_forecastId;
+        public string m_forcastId;
     }
 }
