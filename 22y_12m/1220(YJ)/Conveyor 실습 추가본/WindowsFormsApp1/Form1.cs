@@ -20,13 +20,9 @@ namespace WindowsFormsApp1
     public partial class Form1 : Form
     {
         static private List<string> m_logMsg = new List<string>();
-        Thread thread1;
-        MachineInfo machineInfo = new MachineInfo();
-        BoardInfo boardInfo = new BoardInfo();
-        NotificationCode enumNoti = new NotificationCode();
-        Severity enumSev = new Severity();
-        Notification structNoti = new Notification();
-        TcpClient tcpClient1 = new TcpClient(); 
+
+
+        TcpClient tcpClient1 = new TcpClient();
 
         public Form1()
         {
@@ -40,24 +36,25 @@ namespace WindowsFormsApp1
 
         private void Conn_BTN_Click(object sender, EventArgs e)
         {
-            thread1 = new Thread(connect);  // Thread 객채 생성, Form과는 별도 쓰레드에서 connect 함수가 실행됨.
+            Thread thread1 = new Thread(connect);  // Thread 객채 생성, Form과는 별도 쓰레드에서 connect 함수가 실행됨.
             //thread1.IsBackground = true;  // Form이 종료되면 thread1도 종료.
             thread1.Start();  // thread1 시작. 
         }
 
         private void Disconn_BTN_Click(object sender, EventArgs e)
         {
-            thread1 = new Thread(disconnect);
+            //thread1 = new Thread(disconnect);
         }
 
         private void ServiceDesc_BTN_Click(object sender, EventArgs e)
         {
+            MachineInfo machineInfo = new MachineInfo();
             streamWriter.WriteLine(MakeHermesMessage.GetServiceDesc(machineInfo));
             Console.WriteLine(MakeHermesMessage.GetServiceDesc(machineInfo));
         }
         private void MachineReady_BTN_Click(object sender, EventArgs e)
         {
-
+            BoardInfo boardInfo = new BoardInfo();
             streamWriter.WriteLine(MakeHermesMessage.GetMachineReady(boardInfo.m_forecastId, boardInfo));
             Console.WriteLine(MakeHermesMessage.GetMachineReady(boardInfo.m_forecastId, boardInfo));
         }
@@ -69,12 +66,14 @@ namespace WindowsFormsApp1
 
         private void StartTrans_BTN_Click(object sender, EventArgs e)
         {
+            BoardInfo boardInfo = new BoardInfo();
             streamWriter.WriteLine(MakeHermesMessage.GetStartTransport(boardInfo.m_boardId));
             Console.WriteLine(MakeHermesMessage.GetStartTransport(boardInfo.m_boardId));
         }
 
         private void StopTrans_BTN_Click(object sender, EventArgs e)
         {
+            BoardInfo boardInfo = new BoardInfo();
             //streamReader.ReadLine(MakeHermesMessage.GetBoardAvailable(boardInfo,true,""));
             streamWriter.WriteLine(MakeHermesMessage.GetStopTrasnport(boardInfo.m_transferState, boardInfo.m_boardId));
             Console.WriteLine(MakeHermesMessage.GetStopTrasnport(boardInfo.m_transferState, boardInfo.m_boardId));
@@ -87,7 +86,9 @@ namespace WindowsFormsApp1
 
         private void NotiData_BTN_Click(object sender, EventArgs e)
         {
-
+            NotificationCode enumNoti = new NotificationCode();
+            Severity enumSev = new Severity();
+            Notification structNoti = new Notification();
             streamWriter.WriteLine(MakeHermesMessage.GetNotification(enumNoti, enumSev, structNoti.m_desc));
             Console.WriteLine(MakeHermesMessage.GetNotification(enumNoti, enumSev, structNoti.m_desc));
         }
