@@ -1,0 +1,121 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Threading;  // 추가
+using System.Net; // 추가
+using System.Net.Sockets;  // 추가
+using System.IO;  // 추가
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
+//checkalive 는 없어도 됨. 확인하는 작업이기 때문에
+//Im Downstream!!
+namespace WindowsFormsApp1
+{
+    public partial class Form1 : Form
+    {
+        static private List<string> m_logMsg = new List<string>();
+        TcpClient tcpClient1 = new TcpClient();
+        public Form1()
+        {
+            InitializeComponent();
+            textBox1.Text = "127.0.0.1";
+            textBox2.Text = "50101";
+        }
+
+        StreamReader streamReader;  // 데이타 읽기 위한 스트림리더
+        StreamWriter streamWriter;  // 데이타 쓰기 위한 스트림라이터 
+
+        private void Conn_BTN_Click(object sender, EventArgs e)
+        {
+            Thread thread1 = new Thread(connect);  // Thread 객채 생성, Form과는 별도 쓰레드에서 connect 함수가 실행됨.
+            //thread1.IsBackground = true;  // Form이 종료되면 thread1도 종료.
+            thread1.Start();  // thread1 시작. 
+        }
+
+        private void Disconn_BTN_Click(object sender, EventArgs e)
+        {
+            //Thread thread2 = new Thread(disconnect);
+            //disconnect에 close를 이용한 함수 만들기
+            tcpClient1.Close();
+        }
+
+        private void ServiceDesc_BTN_Click(object sender, EventArgs e)
+        {
+            MachineInfo machineInfo = new MachineInfo();
+            streamWriter.WriteLine(MakeHermesMessage.GetServiceDesc(machineInfo));
+            Console.WriteLine(MakeHermesMessage.GetServiceDesc(machineInfo));
+        }
+        private void MachineReady_BTN_Click(object sender, EventArgs e)
+        {
+            BoardInfo boardInfo = new BoardInfo();
+            streamWriter.WriteLine(MakeHermesMessage.GetMachineReady(boardInfo.m_forecastId, boardInfo));
+            Console.WriteLine(MakeHermesMessage.GetMachineReady(boardInfo.m_forecastId, boardInfo));
+        }
+        private void RevokeMachine_BTN_Click(object sender, EventArgs e)
+        {
+            streamWriter.WriteLine(MakeHermesMessage.GetRevokeMachineReady());
+            Console.WriteLine(MakeHermesMessage.GetRevokeMachineReady());
+        }
+
+        private void StartTrans_BTN_Click(object sender, EventArgs e)
+        {
+            BoardInfo boardInfo = new BoardInfo();
+            boardInfo.m_boardId = "board_ID"; // 임의로 값 지정
+            //BoardInfo boardinfo;
+            streamWriter.WriteLine(MakeHermesMessage.GetStartTransport(boardInfo.m_boardId));
+            Console.WriteLine(MakeHermesMessage.GetStartTransport(boardInfo.m_boardId));
+        }
+
+        private void StopTrans_BTN_Click(object sender, EventArgs e)
+        {
+            BoardInfo boardInfo = new BoardInfo();
+            //streamReader.ReadLine(MakeHermesMessage.GetBoardAvailable(boardInfo,true,""));
+            streamWriter.WriteLine(MakeHermesMessage.GetStopTrasnport(boardInfo.m_transferState, boardInfo.m_boardId));
+            Console.WriteLine(MakeHermesMessage.GetStopTrasnport(boardInfo.m_transferState, boardInfo.m_boardId));
+        }
+
+        private void Reset_BTN_Click(object sender, EventArgs e)
+        {
+            //ServiceDesc_BTN으로 넘어가야함
+        }
+
+        private void NotiData_BTN_Click(object sender, EventArgs e)
+        {
+            streamWriter.WriteLine(MakeHermesMessage.GetNotification(NotificationCode.Configuration_error, Severity.Error, "desc"));
+            Console.WriteLine(MakeHermesMessage.GetNotification(NotificationCode.Configuration_error, Severity.Error, "desc"));
+        }
+        private void CheckAlive_BTN_Click(object sender, EventArgs e)
+        {
+            streamWriter.WriteLine(MakeHermesMessage.GetCheckAlive());
+            Console.WriteLine(MakeHermesMessage.GetCheckAlive());
+        }
+        private void connect()  // threcad1에 연결된 함수. 메인폼과는 별도로 동작한다.
+        {
+            IPEndPoint ipEnd = new IPEndPoint(IPAddress.Parse(textBox1.Text), int.Parse(textBox2.Text));  // IP주소와 Port번호를 할당
+            tcpClient1.Connect(ipEnd);  // 서버에 연결 요청
+            writeRichTextbox("서버 연결됨...");
+
+            streamReader = new StreamReader(tcpClient1.GetStream());  // 읽기 스트림 연결
+            streamWriter = new StreamWriter(tcpClient1.GetStream());  // 쓰기 스트림 연결
+            streamWriter.AutoFlush = true;  // 쓰기 버퍼 자동으로 뭔가 처리..
+
+            while(tcpClient1.Connected)  // 클라이언트가 연결되어 있는 동안
+            {
+                string receiveData1 = streamReader.ReadLine();  // 수신 데이타를 읽어서 receiveData1 변수에 저장
+                writeRichTextbox(receiveData1);  // 데이타를 수신창에 쓰기
+            }
+        }
+
+        private void writeRichTextbox(string data)  // richTextbox1 에 쓰기 함수
+        {
+            richTextBox1.Invoke((MethodInvoker)delegate { richTextBox1.AppendText(data + "\r\n"); }); //  데이타를 수신창에 표시, 반드시 invoke 사용. 충돌피함.
+            richTextBox1.Invoke((MethodInvoker)delegate { richTextBox1.ScrollToCaret(); });  // 스크롤을 젤 밑으로.
+        }
+    }
+}
