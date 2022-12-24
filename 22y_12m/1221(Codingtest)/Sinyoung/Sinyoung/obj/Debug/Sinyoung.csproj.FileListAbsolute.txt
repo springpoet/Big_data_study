@@ -1,0 +1,11 @@
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1221(Codingtest)\Sinyoung\Sinyoung\bin\Debug\Sinyoung.exe.config
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1221(Codingtest)\Sinyoung\Sinyoung\bin\Debug\Sinyoung.exe
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1221(Codingtest)\Sinyoung\Sinyoung\bin\Debug\Sinyoung.pdb
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1221(Codingtest)\Sinyoung\Sinyoung\obj\Debug\Sinyoung.csproj.AssemblyReference.cache
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1221(Codingtest)\Sinyoung\Sinyoung\obj\Debug\Sinyoung.csproj.SuggestedBindingRedirects.cache
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1221(Codingtest)\Sinyoung\Sinyoung\obj\Debug\Sinyoung.Form1.resources
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1221(Codingtest)\Sinyoung\Sinyoung\obj\Debug\Sinyoung.Properties.Resources.resources
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1221(Codingtest)\Sinyoung\Sinyoung\obj\Debug\Sinyoung.csproj.GenerateResource.cache
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1221(Codingtest)\Sinyoung\Sinyoung\obj\Debug\Sinyoung.csproj.CoreCompileInputs.cache
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1221(Codingtest)\Sinyoung\Sinyoung\obj\Debug\Sinyoung.exe
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1221(Codingtest)\Sinyoung\Sinyoung\obj\Debug\Sinyoung.pdb
