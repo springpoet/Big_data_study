@@ -108,8 +108,6 @@ namespace YJLink_Conveyor
                     default:
                         break;
                 }
-                
-            
         }
 
         private void read_BTN_Click(object sender, EventArgs e)

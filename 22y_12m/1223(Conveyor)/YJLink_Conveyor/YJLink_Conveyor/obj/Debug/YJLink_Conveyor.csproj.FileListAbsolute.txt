@@ -9,3 +9,14 @@ C:\Users\USER\Documents\GitHub\Big_data_study\22y_12m\1223(Conveyor)\YJLink_Conv
 C:\Users\USER\Documents\GitHub\Big_data_study\22y_12m\1223(Conveyor)\YJLink_Conveyor\YJLink_Conveyor\bin\Debug\YJLink_Conveyor.pdb
 C:\Users\USER\Documents\GitHub\Big_data_study\22y_12m\1223(Conveyor)\YJLink_Conveyor\YJLink_Conveyor\obj\Debug\YJLink_Conveyor.exe
 C:\Users\USER\Documents\GitHub\Big_data_study\22y_12m\1223(Conveyor)\YJLink_Conveyor\YJLink_Conveyor\obj\Debug\YJLink_Conveyor.pdb
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1223(Conveyor)\YJLink_Conveyor\YJLink_Conveyor\bin\Debug\YJLink_Conveyor.exe.config
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1223(Conveyor)\YJLink_Conveyor\YJLink_Conveyor\bin\Debug\YJLink_Conveyor.exe
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1223(Conveyor)\YJLink_Conveyor\YJLink_Conveyor\bin\Debug\YJLink_Conveyor.pdb
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1223(Conveyor)\YJLink_Conveyor\YJLink_Conveyor\obj\Debug\YJLink_Conveyor.csproj.AssemblyReference.cache
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1223(Conveyor)\YJLink_Conveyor\YJLink_Conveyor\obj\Debug\YJLink_Conveyor.csproj.SuggestedBindingRedirects.cache
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1223(Conveyor)\YJLink_Conveyor\YJLink_Conveyor\obj\Debug\YJLink_Conveyor.Form1.resources
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1223(Conveyor)\YJLink_Conveyor\YJLink_Conveyor\obj\Debug\YJLink_Conveyor.Properties.Resources.resources
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1223(Conveyor)\YJLink_Conveyor\YJLink_Conveyor\obj\Debug\YJLink_Conveyor.csproj.GenerateResource.cache
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1223(Conveyor)\YJLink_Conveyor\YJLink_Conveyor\obj\Debug\YJLink_Conveyor.csproj.CoreCompileInputs.cache
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1223(Conveyor)\YJLink_Conveyor\YJLink_Conveyor\obj\Debug\YJLink_Conveyor.exe
+C:\Users\김성근\Desktop\KSG\Programming\Big_data_study\22y_12m\1223(Conveyor)\YJLink_Conveyor\YJLink_Conveyor\obj\Debug\YJLink_Conveyor.pdb
