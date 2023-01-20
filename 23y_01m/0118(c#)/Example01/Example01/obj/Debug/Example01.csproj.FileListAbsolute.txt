@@ -1,0 +1,8 @@
+C:\Users\USER\Documents\GitHub\Big_data_study\23y_01m\0118(c#)\Example01\Example01\bin\Debug\Example01.exe.config
+C:\Users\USER\Documents\GitHub\Big_data_study\23y_01m\0118(c#)\Example01\Example01\bin\Debug\Example01.exe
+C:\Users\USER\Documents\GitHub\Big_data_study\23y_01m\0118(c#)\Example01\Example01\bin\Debug\Example01.pdb
+C:\Users\USER\Documents\GitHub\Big_data_study\23y_01m\0118(c#)\Example01\Example01\obj\Debug\Example01.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\23y_01m\0118(c#)\Example01\Example01\obj\Debug\Example01.csproj.SuggestedBindingRedirects.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\23y_01m\0118(c#)\Example01\Example01\obj\Debug\Example01.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\23y_01m\0118(c#)\Example01\Example01\obj\Debug\Example01.exe
+C:\Users\USER\Documents\GitHub\Big_data_study\23y_01m\0118(c#)\Example01\Example01\obj\Debug\Example01.pdb

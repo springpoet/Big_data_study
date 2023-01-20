@@ -1,0 +1,11 @@
+C:\Users\USER\Documents\GitHub\Big_data_study\23y_01m\0118(c#)\Example02\Example02\bin\Debug\Example02.exe.config
+C:\Users\USER\Documents\GitHub\Big_data_study\23y_01m\0118(c#)\Example02\Example02\bin\Debug\Example02.exe
+C:\Users\USER\Documents\GitHub\Big_data_study\23y_01m\0118(c#)\Example02\Example02\bin\Debug\Example02.pdb
+C:\Users\USER\Documents\GitHub\Big_data_study\23y_01m\0118(c#)\Example02\Example02\obj\Debug\Example02.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\23y_01m\0118(c#)\Example02\Example02\obj\Debug\Example02.csproj.SuggestedBindingRedirects.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\23y_01m\0118(c#)\Example02\Example02\obj\Debug\Example02.Calculator.resources
+C:\Users\USER\Documents\GitHub\Big_data_study\23y_01m\0118(c#)\Example02\Example02\obj\Debug\Example02.Properties.Resources.resources
+C:\Users\USER\Documents\GitHub\Big_data_study\23y_01m\0118(c#)\Example02\Example02\obj\Debug\Example02.csproj.GenerateResource.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\23y_01m\0118(c#)\Example02\Example02\obj\Debug\Example02.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\23y_01m\0118(c#)\Example02\Example02\obj\Debug\Example02.exe
+C:\Users\USER\Documents\GitHub\Big_data_study\23y_01m\0118(c#)\Example02\Example02\obj\Debug\Example02.pdb
